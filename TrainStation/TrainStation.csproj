@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,17 +53,43 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="DBManager.cs" />
     <Compile Include="Employee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Employee.Designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager_forms\Employees_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Employees_data.Designer.cs">
+      <DependentUpon>Employees_data.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Manager.Designer.cs">
       <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_forms\Hire_Emplotee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Hire_Emplotee.Designer.cs">
+      <DependentUpon>Hire_Emplotee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_forms\Passengers_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Passengers_data.Designer.cs">
+      <DependentUpon>Passengers_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_forms\Schedule_trips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Schedule_trips.Designer.cs">
+      <DependentUpon>Schedule_trips.cs</DependentUpon>
     </Compile>
     <Compile Include="Passenger.cs">
       <SubType>Form</SubType>
@@ -78,6 +105,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Manager_forms\Employees_data.resx">
+      <DependentUpon>Employees_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_forms\Hire_Emplotee.resx">
+      <DependentUpon>Hire_Emplotee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_forms\Passengers_data.resx">
+      <DependentUpon>Passengers_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_forms\Schedule_trips.resx">
+      <DependentUpon>Schedule_trips.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
