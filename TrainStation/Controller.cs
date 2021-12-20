@@ -16,13 +16,6 @@ namespace TrainStation
         dbMan = new DBManager();
     }
 
-    public int Insertemployee(string Fname, string Minit, string Lname, string SSN, string Dno)
-    {
-        string query = "INSERT INTO Employee (Fname, Minit, Lname, SSN, Dno) " +
-                        "Values ('" + Fname + "','" + Minit + "','" + Lname + "'," + SSN + "," + Dno + ");";
-        return dbMan.ExecuteNonQuery(query);
-    }
-
     public void TerminateConnection()
     {
         dbMan.CloseConnection();

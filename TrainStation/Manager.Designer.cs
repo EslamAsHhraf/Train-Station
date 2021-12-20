@@ -183,12 +183,12 @@ namespace TrainStation
             this.Hire_E.TabIndex = 15;
             this.Hire_E.Text = "Hire Employee";
             this.Hire_E.UseVisualStyleBackColor = true;
+            this.Hire_E.Click += new System.EventHandler(this.Hire_E_Click);
             // 
             // fileSystemWatcher1
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
-            this.fileSystemWatcher1.Changed += new System.IO.FileSystemEventHandler(this.fileSystemWatcher1_Changed);
             // 
             // button1
             // 
@@ -289,6 +289,7 @@ namespace TrainStation
             this.Controls.Add(this.view_passenger);
             this.Controls.Add(this.view_Employee);
             this.Name = "Manager";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manager";
             this.Load += new System.EventHandler(this.Manager_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.SSN_E)).EndInit();

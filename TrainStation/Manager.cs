@@ -43,9 +43,10 @@ namespace TrainStation
             Trip.Show();
         }
 
-        private void fileSystemWatcher1_Changed(object sender, System.IO.FileSystemEventArgs e)
+        private void Hire_E_Click(object sender, EventArgs e)
         {
-
+            Hire_Emplotee Hire = new Hire_Emplotee();
+            Hire.Show();
         }
     }
 }
