@@ -92,6 +92,30 @@
     <Compile Include="Manager_forms\Schedule_trips.Designer.cs">
       <DependentUpon>Schedule_trips.cs</DependentUpon>
     </Compile>
+    <Compile Include="Passenger forms\Book_Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Book_Ticket.Designer.cs">
+      <DependentUpon>Book_Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Edit_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Edit_Profile.Designer.cs">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Make_Complaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Make_Complaint.Designer.cs">
+      <DependentUpon>Make_Complaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Ticket_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Ticket_Details.Designer.cs">
+      <DependentUpon>Ticket_Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Passenger.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +145,21 @@
     <EmbeddedResource Include="Manager_forms\Schedule_trips.resx">
       <DependentUpon>Schedule_trips.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Book_Ticket.resx">
+      <DependentUpon>Book_Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Edit_Profile.resx">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Make_Complaint.resx">
+      <DependentUpon>Make_Complaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Ticket_Details.resx">
+      <DependentUpon>Ticket_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger.resx">
+      <DependentUpon>Passenger.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -146,5 +185,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

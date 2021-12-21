@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TrainStation
+namespace TrainStation.Passenger_forms
 {
-    public partial class Passenger : Form
+    public partial class Make_Complaint : Form
     {
-        public Passenger()
+        public Make_Complaint()
         {
             InitializeComponent();
         }
-
     }
 }
