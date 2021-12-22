@@ -47,12 +47,39 @@ namespace TrainStation.Manager_forms
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.Salary = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Rate = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.House_num = new System.Windows.Forms.NumericUpDown();
+            this.Street = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.City = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.Super_ssn = new System.Windows.Forms.NumericUpDown();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Dno = new System.Windows.Forms.NumericUpDown();
+            this.SN_vacc = new System.Windows.Forms.NumericUpDown();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.date_vacc = new System.Windows.Forms.DateTimePicker();
+            this.label20 = new System.Windows.Forms.Label();
+            this.Email = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Salary)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.House_num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Super_ssn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dno)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SN_vacc)).BeginInit();
             this.SuspendLayout();
             // 
             // New_Employee
             // 
-            this.New_Employee.Location = new System.Drawing.Point(275, 379);
+            this.New_Employee.Location = new System.Drawing.Point(586, 233);
             this.New_Employee.Name = "New_Employee";
             this.New_Employee.Size = new System.Drawing.Size(171, 47);
             this.New_Employee.TabIndex = 0;
@@ -219,11 +246,201 @@ namespace TrainStation.Manager_forms
             this.label9.TabIndex = 17;
             this.label9.Text = "Year";
             // 
+            // Salary
+            // 
+            this.Salary.Location = new System.Drawing.Point(123, 336);
+            this.Salary.Name = "Salary";
+            this.Salary.Size = new System.Drawing.Size(138, 22);
+            this.Salary.TabIndex = 18;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(46, 338);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 17);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Salary";
+            // 
+            // Rate
+            // 
+            this.Rate.Location = new System.Drawing.Point(122, 378);
+            this.Rate.Name = "Rate";
+            this.Rate.Size = new System.Drawing.Size(138, 22);
+            this.Rate.TabIndex = 20;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(46, 383);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 17);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Rate";
+            // 
+            // House_num
+            // 
+            this.House_num.Location = new System.Drawing.Point(125, 446);
+            this.House_num.Name = "House_num";
+            this.House_num.Size = new System.Drawing.Size(67, 22);
+            this.House_num.TabIndex = 22;
+            // 
+            // Street
+            // 
+            this.Street.Location = new System.Drawing.Point(225, 445);
+            this.Street.Name = "Street";
+            this.Street.Size = new System.Drawing.Size(135, 22);
+            this.Street.TabIndex = 23;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(385, 445);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(138, 22);
+            this.textBox2.TabIndex = 24;
+            // 
+            // City
+            // 
+            this.City.AutoSize = true;
+            this.City.Location = new System.Drawing.Point(409, 415);
+            this.City.Name = "City";
+            this.City.Size = new System.Drawing.Size(31, 17);
+            this.City.TabIndex = 27;
+            this.City.Text = "City";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(122, 415);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(86, 17);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "House Num ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(266, 415);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(46, 17);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Street";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(46, 450);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(52, 17);
+            this.label15.TabIndex = 28;
+            this.label15.Text = "Adress";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(28, 490);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(78, 17);
+            this.label16.TabIndex = 29;
+            this.label16.Text = "Super SSN";
+            // 
+            // Super_ssn
+            // 
+            this.Super_ssn.Location = new System.Drawing.Point(130, 485);
+            this.Super_ssn.Name = "Super_ssn";
+            this.Super_ssn.Size = new System.Drawing.Size(138, 22);
+            this.Super_ssn.TabIndex = 30;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(479, 44);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(115, 17);
+            this.label17.TabIndex = 31;
+            this.label17.Text = "Department Num";
+            // 
+            // Dno
+            // 
+            this.Dno.Location = new System.Drawing.Point(619, 39);
+            this.Dno.Name = "Dno";
+            this.Dno.Size = new System.Drawing.Size(138, 22);
+            this.Dno.TabIndex = 32;
+            // 
+            // SN_vacc
+            // 
+            this.SN_vacc.Location = new System.Drawing.Point(619, 73);
+            this.SN_vacc.Name = "SN_vacc";
+            this.SN_vacc.Size = new System.Drawing.Size(138, 22);
+            this.SN_vacc.TabIndex = 34;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(409, 78);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(189, 17);
+            this.label18.TabIndex = 33;
+            this.label18.Text = "Serial Number of vaccination";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(465, 112);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(129, 17);
+            this.label19.TabIndex = 35;
+            this.label19.Text = "Date of vaccination";
+            // 
+            // date_vacc
+            // 
+            this.date_vacc.Location = new System.Drawing.Point(619, 112);
+            this.date_vacc.Name = "date_vacc";
+            this.date_vacc.Size = new System.Drawing.Size(200, 22);
+            this.date_vacc.TabIndex = 36;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(552, 166);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(42, 17);
+            this.label20.TabIndex = 38;
+            this.label20.Text = "Email";
+            // 
+            // Email
+            // 
+            this.Email.Location = new System.Drawing.Point(619, 163);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(135, 22);
+            this.Email.TabIndex = 37;
+            // 
             // Hire_Emplotee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 482);
+            this.ClientSize = new System.Drawing.Size(903, 536);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.date_vacc);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.SN_vacc);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.Dno);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.Super_ssn);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.City);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Street);
+            this.Controls.Add(this.House_num);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.Rate);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.Salary);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -246,6 +463,12 @@ namespace TrainStation.Manager_forms
             this.Text = "Hire_Emplotee";
             this.Load += new System.EventHandler(this.Hire_Emplotee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Salary)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.House_num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Super_ssn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dno)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SN_vacc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,5 +494,26 @@ namespace TrainStation.Manager_forms
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.NumericUpDown Salary;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.NumericUpDown Rate;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.NumericUpDown House_num;
+        private System.Windows.Forms.TextBox Street;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label City;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.NumericUpDown Super_ssn;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.NumericUpDown Dno;
+        private System.Windows.Forms.NumericUpDown SN_vacc;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DateTimePicker date_vacc;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox Email;
     }
 }
