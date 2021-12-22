@@ -1,0 +1,15 @@
+D:\Projects\Data Base\TrainStation\TrainStation\bin\Debug\TrainStation.exe.config
+D:\Projects\Data Base\TrainStation\TrainStation\bin\Debug\TrainStation.exe
+D:\Projects\Data Base\TrainStation\TrainStation\bin\Debug\TrainStation.pdb
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.csproj.AssemblyReference.cache
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.Manager_s_forms.Employees__data.resources
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.Manager.resources
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.Manager_forms.Hire_Emplotee.resources
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.Manager_forms.Passengers_data.resources
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.Manager_forms.Schedule_trips.resources
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.Properties.Resources.resources
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.UserLog.resources
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.csproj.GenerateResource.cache
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.csproj.CoreCompileInputs.cache
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.exe
+D:\Projects\Data Base\TrainStation\TrainStation\obj\Debug\TrainStation.pdb
