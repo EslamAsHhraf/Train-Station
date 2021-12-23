@@ -1,7 +1,8 @@
 # Train Station
 
 <p align="center">
-  <a href="images/cover.jpg" rel="noopener">
+  <a href="" rel="noopener">
+   <img width=100% src="images/cover.jpg" alt="logo"></a>
 </p>
 <p align="center"> Train Station.
     <br> 
