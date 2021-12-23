@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="" rel="noopener">
-   <img width=100% src="images/cover.jpg" alt="logo"></a>
+   <img width=100% src="images/85729323622481.5632602e0db80.png" alt="logo"></a>
 </p>
 <p align="center"> Train Station.
     <br> 
