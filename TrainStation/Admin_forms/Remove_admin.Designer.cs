@@ -30,8 +30,8 @@ namespace TrainStation.Admin_forms
         private void InitializeComponent()
         {
             this.RemoveAdminButton = new System.Windows.Forms.Button();
-            this.RemoveAdminEmailtextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // RemoveAdminButton
@@ -43,13 +43,6 @@ namespace TrainStation.Admin_forms
             this.RemoveAdminButton.Text = "Remove Admin";
             this.RemoveAdminButton.UseVisualStyleBackColor = true;
             // 
-            // RemoveAdminEmailtextBox
-            // 
-            this.RemoveAdminEmailtextBox.Location = new System.Drawing.Point(101, 36);
-            this.RemoveAdminEmailtextBox.Name = "RemoveAdminEmailtextBox";
-            this.RemoveAdminEmailtextBox.Size = new System.Drawing.Size(194, 20);
-            this.RemoveAdminEmailtextBox.TabIndex = 4;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -59,13 +52,22 @@ namespace TrainStation.Admin_forms
             this.label1.TabIndex = 3;
             this.label1.Text = "Email";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(115, 36);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(173, 21);
+            this.comboBox1.TabIndex = 6;
+            // 
             // Remove_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 221);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.RemoveAdminButton);
-            this.Controls.Add(this.RemoveAdminEmailtextBox);
             this.Controls.Add(this.label1);
             this.Name = "Remove_admin";
             this.Text = "Remove Admin";
@@ -77,7 +79,7 @@ namespace TrainStation.Admin_forms
         #endregion
 
         private System.Windows.Forms.Button RemoveAdminButton;
-        private System.Windows.Forms.TextBox RemoveAdminEmailtextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -36,5 +36,17 @@ namespace TrainStation
             Form RemAdmin = new Remove_admin();
             RemAdmin.Show();
         }
+
+        private void BeManagerbutton_Click(object sender, EventArgs e)
+        {
+            Form manager = new Manager();
+            manager.Show();
+        }
+
+        private void BeEmployeebutton_Click(object sender, EventArgs e)
+        {
+            Form employee = new Employee();
+            employee.Show();
+        }
     }
 }
