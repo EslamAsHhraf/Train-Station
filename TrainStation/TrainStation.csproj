@@ -54,6 +54,24 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_forms\Remove_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Remove_admin.Designer.cs">
+      <DependentUpon>Remove_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\Add_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Add_admin.Designer.cs">
+      <DependentUpon>Add_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\Block_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Block_.Designer.cs">
+      <DependentUpon>Block_.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller.cs" />
     <Compile Include="DBManager.cs" />
     <Compile Include="Employee.cs">
@@ -130,6 +148,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Remove_admin.resx">
+      <DependentUpon>Remove_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Add_admin.resx">
+      <DependentUpon>Add_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Block_.resx">
+      <DependentUpon>Block_.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manager_forms\Employees_data.resx">
       <DependentUpon>Employees_data.cs</DependentUpon>
     </EmbeddedResource>
