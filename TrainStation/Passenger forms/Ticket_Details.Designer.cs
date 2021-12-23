@@ -35,20 +35,25 @@ namespace TrainStation.Passenger_forms
             // 
             // TicketDetailsGridView
             // 
+            this.TicketDetailsGridView.AllowUserToAddRows = false;
+            this.TicketDetailsGridView.AllowUserToDeleteRows = false;
             this.TicketDetailsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TicketDetailsGridView.Location = new System.Drawing.Point(28, 23);
+            this.TicketDetailsGridView.Location = new System.Drawing.Point(25, 18);
+            this.TicketDetailsGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TicketDetailsGridView.Name = "TicketDetailsGridView";
+            this.TicketDetailsGridView.ReadOnly = true;
             this.TicketDetailsGridView.RowHeadersWidth = 62;
             this.TicketDetailsGridView.RowTemplate.Height = 28;
-            this.TicketDetailsGridView.Size = new System.Drawing.Size(743, 401);
+            this.TicketDetailsGridView.Size = new System.Drawing.Size(660, 321);
             this.TicketDetailsGridView.TabIndex = 0;
             // 
             // Ticket_Details
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(711, 360);
             this.Controls.Add(this.TicketDetailsGridView);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Ticket_Details";
             this.Text = "Ticket_Details";
             ((System.ComponentModel.ISupportInitialize)(this.TicketDetailsGridView)).EndInit();

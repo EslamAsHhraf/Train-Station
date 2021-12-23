@@ -44,92 +44,101 @@ namespace TrainStation.Passenger_forms
             // 
             // From_TB
             // 
-            this.From_TB.Location = new System.Drawing.Point(121, 54);
+            this.From_TB.Location = new System.Drawing.Point(108, 43);
+            this.From_TB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.From_TB.Name = "From_TB";
-            this.From_TB.Size = new System.Drawing.Size(189, 26);
+            this.From_TB.Size = new System.Drawing.Size(168, 22);
             this.From_TB.TabIndex = 0;
             // 
             // To_TB
             // 
-            this.To_TB.Location = new System.Drawing.Point(506, 54);
+            this.To_TB.Location = new System.Drawing.Point(450, 43);
+            this.To_TB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.To_TB.Name = "To_TB";
-            this.To_TB.Size = new System.Drawing.Size(189, 26);
+            this.To_TB.Size = new System.Drawing.Size(168, 22);
             this.To_TB.TabIndex = 1;
             // 
             // From_L
             // 
             this.From_L.AutoSize = true;
-            this.From_L.Location = new System.Drawing.Point(55, 57);
+            this.From_L.Location = new System.Drawing.Point(49, 46);
             this.From_L.Name = "From_L";
-            this.From_L.Size = new System.Drawing.Size(46, 20);
+            this.From_L.Size = new System.Drawing.Size(40, 17);
             this.From_L.TabIndex = 2;
             this.From_L.Text = "From";
             // 
             // To_L
             // 
             this.To_L.AutoSize = true;
-            this.To_L.Location = new System.Drawing.Point(458, 57);
+            this.To_L.Location = new System.Drawing.Point(407, 46);
             this.To_L.Name = "To_L";
-            this.To_L.Size = new System.Drawing.Size(27, 20);
+            this.To_L.Size = new System.Drawing.Size(25, 17);
             this.To_L.TabIndex = 3;
             this.To_L.Text = "To";
             // 
             // Departure_L
             // 
             this.Departure_L.AutoSize = true;
-            this.Departure_L.Location = new System.Drawing.Point(201, 124);
+            this.Departure_L.Location = new System.Drawing.Point(179, 99);
             this.Departure_L.Name = "Departure_L";
-            this.Departure_L.Size = new System.Drawing.Size(120, 20);
+            this.Departure_L.Size = new System.Drawing.Size(106, 17);
             this.Departure_L.TabIndex = 4;
             this.Departure_L.Text = "Departure Date";
             // 
             // Departure_Date_Picker
             // 
-            this.Departure_Date_Picker.Location = new System.Drawing.Point(327, 118);
+            this.Departure_Date_Picker.Location = new System.Drawing.Point(291, 94);
+            this.Departure_Date_Picker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Departure_Date_Picker.Name = "Departure_Date_Picker";
-            this.Departure_Date_Picker.Size = new System.Drawing.Size(265, 26);
+            this.Departure_Date_Picker.Size = new System.Drawing.Size(236, 22);
             this.Departure_Date_Picker.TabIndex = 5;
             // 
             // View_Trips_Grid
             // 
+            this.View_Trips_Grid.AllowUserToAddRows = false;
+            this.View_Trips_Grid.AllowUserToDeleteRows = false;
             this.View_Trips_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.View_Trips_Grid.Location = new System.Drawing.Point(21, 168);
+            this.View_Trips_Grid.Location = new System.Drawing.Point(19, 134);
+            this.View_Trips_Grid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.View_Trips_Grid.Name = "View_Trips_Grid";
+            this.View_Trips_Grid.ReadOnly = true;
             this.View_Trips_Grid.RowHeadersWidth = 62;
             this.View_Trips_Grid.RowTemplate.Height = 28;
-            this.View_Trips_Grid.Size = new System.Drawing.Size(750, 197);
+            this.View_Trips_Grid.Size = new System.Drawing.Size(667, 158);
             this.View_Trips_Grid.TabIndex = 6;
             // 
             // Book_Ticket_Num_TB
             // 
-            this.Book_Ticket_Num_TB.Location = new System.Drawing.Point(144, 399);
+            this.Book_Ticket_Num_TB.Location = new System.Drawing.Point(128, 319);
+            this.Book_Ticket_Num_TB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Book_Ticket_Num_TB.Name = "Book_Ticket_Num_TB";
-            this.Book_Ticket_Num_TB.Size = new System.Drawing.Size(189, 26);
+            this.Book_Ticket_Num_TB.Size = new System.Drawing.Size(168, 22);
             this.Book_Ticket_Num_TB.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 405);
+            this.label4.Location = new System.Drawing.Point(15, 324);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 20);
+            this.label4.Size = new System.Drawing.Size(100, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "Ticket Number";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(569, 386);
+            this.button1.Location = new System.Drawing.Point(506, 309);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 53);
+            this.button1.Size = new System.Drawing.Size(195, 42);
             this.button1.TabIndex = 9;
             this.button1.Text = "Book Ticket";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Book_Ticket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(711, 360);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Book_Ticket_Num_TB);
@@ -140,6 +149,7 @@ namespace TrainStation.Passenger_forms
             this.Controls.Add(this.From_L);
             this.Controls.Add(this.To_TB);
             this.Controls.Add(this.From_TB);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Book_Ticket";
             this.Text = "Book_Ticket";
             ((System.ComponentModel.ISupportInitialize)(this.View_Trips_Grid)).EndInit();

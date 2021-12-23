@@ -19,20 +19,20 @@ namespace TrainStation.Manager_forms
 
         private void Hire_Emplotee_Load(object sender, EventArgs e)
         {
-            for(int i=1;i<32;i++)
-            {
-                BD.Items.Add(i.ToString());
-            }
-            for (int i = 1; i < 13; i++)
-            {
-                BM.Items.Add(i.ToString());
-            }
-            for (int i = 2020; i >=1905; i--)
-            {
-                BY.Items.Add(i.ToString());
-            }
+            //for(int i=1;i<32;i++)
+            //{
+            //    BD.Items.Add(i.ToString());
+            //}
+            //for (int i = 1; i < 13; i++)
+            //{
+            //    BM.Items.Add(i.ToString());
+            //}
+            //for (int i = 2020; i >=1905; i--)
+            //{
+            //    BY.Items.Add(i.ToString());
+            //}
         }
 
-       
+      
     }
 }

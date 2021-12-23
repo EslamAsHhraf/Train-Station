@@ -73,6 +73,12 @@
       <DependentUpon>Block_.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller.cs" />
+    <Compile Include="Create_acc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_acc.Designer.cs">
+      <DependentUpon>Create_acc.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBManager.cs" />
     <Compile Include="Employee.cs">
       <SubType>Form</SubType>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_forms\Block_.resx">
       <DependentUpon>Block_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_acc.resx">
+      <DependentUpon>Create_acc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager_forms\Employees_data.resx">
       <DependentUpon>Employees_data.cs</DependentUpon>
