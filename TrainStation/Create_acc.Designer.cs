@@ -45,13 +45,19 @@ namespace TrainStation
             this.Mname = new System.Windows.Forms.TextBox();
             this.Fname = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label18 = new System.Windows.Forms.Label();
-            this.SN_vacc = new System.Windows.Forms.NumericUpDown();
-            this.label19 = new System.Windows.Forms.Label();
-            this.date_vacc = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label21 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label22 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SN_vacc)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox2
@@ -190,57 +196,103 @@ namespace TrainStation
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 45;
             // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(374, 49);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(189, 17);
-            this.label18.TabIndex = 46;
-            this.label18.Text = "Serial Number of vaccination";
-            // 
-            // SN_vacc
-            // 
-            this.SN_vacc.Location = new System.Drawing.Point(584, 44);
-            this.SN_vacc.Name = "SN_vacc";
-            this.SN_vacc.Size = new System.Drawing.Size(138, 22);
-            this.SN_vacc.TabIndex = 47;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(401, 93);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(129, 17);
-            this.label19.TabIndex = 48;
-            this.label19.Text = "Date of vaccination";
-            // 
-            // date_vacc
-            // 
-            this.date_vacc.Location = new System.Drawing.Point(554, 93);
-            this.date_vacc.Name = "date_vacc";
-            this.date_vacc.Size = new System.Drawing.Size(200, 22);
-            this.date_vacc.TabIndex = 49;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(534, 176);
+            this.button1.Location = new System.Drawing.Point(508, 301);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(197, 70);
             this.button1.TabIndex = 50;
             this.button1.Text = "Create account";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.numericUpDown2);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Location = new System.Drawing.Point(425, 30);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(424, 222);
+            this.groupBox1.TabIndex = 51;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Covid Vaccination";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(220, 171);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(135, 22);
+            this.textBox4.TabIndex = 51;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(80, 171);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 17);
+            this.label9.TabIndex = 50;
+            this.label9.Text = "Organisation ";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(220, 129);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(135, 22);
+            this.textBox5.TabIndex = 49;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(66, 129);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(131, 17);
+            this.label12.TabIndex = 48;
+            this.label12.Text = "Type of vaccination";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(220, 80);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker2.TabIndex = 47;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(66, 80);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(129, 17);
+            this.label21.TabIndex = 46;
+            this.label21.Text = "Date of vaccination";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(220, 41);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(138, 22);
+            this.numericUpDown2.TabIndex = 45;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(10, 46);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(189, 17);
+            this.label22.TabIndex = 44;
+            this.label22.Text = "Serial Number of vaccination";
+            // 
             // Create_acc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 446);
+            this.ClientSize = new System.Drawing.Size(869, 446);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.date_vacc);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.SN_vacc);
-            this.Controls.Add(this.label18);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -260,7 +312,9 @@ namespace TrainStation
             this.Name = "Create_acc";
             this.Text = "Create_acc";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SN_vacc)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,10 +338,15 @@ namespace TrainStation
         private System.Windows.Forms.TextBox Mname;
         private System.Windows.Forms.TextBox Fname;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.NumericUpDown SN_vacc;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DateTimePicker date_vacc;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label label22;
     }
 }
