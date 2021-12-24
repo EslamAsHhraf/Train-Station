@@ -54,6 +54,30 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager_forms\Change_Deb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Change_Deb.Designer.cs">
+      <DependentUpon>Change_Deb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_forms\Change_rate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Change_rate.Designer.cs">
+      <DependentUpon>Change_rate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_forms\Change_Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Change_Salary.Designer.cs">
+      <DependentUpon>Change_Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_forms\Fire_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Fire_employee.Designer.cs">
+      <DependentUpon>Fire_employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_forms\Remove_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,11 +128,11 @@
     <Compile Include="Manager.Designer.cs">
       <DependentUpon>Manager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manager_forms\Hire_Emplotee.cs">
+    <Compile Include="Manager_forms\Hire_Employee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manager_forms\Hire_Emplotee.Designer.cs">
-      <DependentUpon>Hire_Emplotee.cs</DependentUpon>
+    <Compile Include="Manager_forms\Hire_Employee.Designer.cs">
+      <DependentUpon>Hire_Employee.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager_forms\Passengers_data.cs">
       <SubType>Form</SubType>
@@ -211,6 +235,18 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manager_forms\Change_Deb.resx">
+      <DependentUpon>Change_Deb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_forms\Change_rate.resx">
+      <DependentUpon>Change_rate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_forms\Change_Salary.resx">
+      <DependentUpon>Change_Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_forms\Fire_employee.resx">
+      <DependentUpon>Fire_employee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_forms\Remove_admin.resx">
       <DependentUpon>Remove_admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,8 +271,8 @@
     <EmbeddedResource Include="Manager.resx">
       <DependentUpon>Manager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manager_forms\Hire_Emplotee.resx">
-      <DependentUpon>Hire_Emplotee.cs</DependentUpon>
+    <EmbeddedResource Include="Manager_forms\Hire_Employee.resx">
+      <DependentUpon>Hire_Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager_forms\Passengers_data.resx">
       <DependentUpon>Passengers_data.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TrainStation.Manager_forms
 {
-    public partial class Hire_Emplotee : Form
+    public partial class Hire_Employee : Form
     {
-        public Hire_Emplotee()
+        public Hire_Employee()
         {
             InitializeComponent();
         }
