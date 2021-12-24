@@ -10,7 +10,7 @@ namespace TrainStation
     {
         /// <summary>
         /// The main entry point for the application.
-        /// </summary>
+        /// </summary>z
         [STAThread]
         static void Main()
         {

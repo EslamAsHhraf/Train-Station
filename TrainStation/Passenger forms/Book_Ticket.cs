@@ -8,19 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TrainStation
+namespace TrainStation.Passenger_forms
 {
-    public partial class UserLog : Form
+    public partial class Book_Ticket : Form
     {
-        public UserLog()
+        public Book_Ticket()
         {
             InitializeComponent();
         }
 
-        private void Create_acc_Click(object sender, EventArgs e)
-        {
-            Create_acc account = new Create_acc();
-            account.Show();
-        }
     }
 }

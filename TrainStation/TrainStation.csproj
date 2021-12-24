@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -34,7 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,23 +54,100 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+
     <Compile Include="CancelTicket.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CancelTicket.Designer.cs">
       <DependentUpon>CancelTicket.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="Admin_forms\Remove_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Remove_admin.Designer.cs">
+      <DependentUpon>Remove_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\Add_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Add_admin.Designer.cs">
+      <DependentUpon>Add_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\Block_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Block_.Designer.cs">
+      <DependentUpon>Block_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="Create_acc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_acc.Designer.cs">
+      <DependentUpon>Create_acc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBManager.cs" />
+
     <Compile Include="Employee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Employee.Designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager_forms\Employees_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Employees_data.Designer.cs">
+      <DependentUpon>Employees_data.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Manager.Designer.cs">
       <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_forms\Hire_Emplotee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Hire_Emplotee.Designer.cs">
+      <DependentUpon>Hire_Emplotee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_forms\Passengers_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Passengers_data.Designer.cs">
+      <DependentUpon>Passengers_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_forms\Schedule_trips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_forms\Schedule_trips.Designer.cs">
+      <DependentUpon>Schedule_trips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Book_Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Book_Ticket.Designer.cs">
+      <DependentUpon>Book_Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Edit_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Edit_Profile.Designer.cs">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Make_Complaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Make_Complaint.Designer.cs">
+      <DependentUpon>Make_Complaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Ticket_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Ticket_Details.Designer.cs">
+      <DependentUpon>Ticket_Details.cs</DependentUpon>
     </Compile>
     <Compile Include="Passenger.cs">
       <SubType>Form</SubType>
@@ -108,6 +187,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
     <Compile Include="ViewPassengerData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +217,51 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
+
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Remove_admin.resx">
+      <DependentUpon>Remove_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Add_admin.resx">
+      <DependentUpon>Add_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Block_.resx">
+      <DependentUpon>Block_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_acc.resx">
+      <DependentUpon>Create_acc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_forms\Employees_data.resx">
+      <DependentUpon>Employees_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_forms\Hire_Emplotee.resx">
+      <DependentUpon>Hire_Emplotee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_forms\Passengers_data.resx">
+      <DependentUpon>Passengers_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_forms\Schedule_trips.resx">
+      <DependentUpon>Schedule_trips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Book_Ticket.resx">
+      <DependentUpon>Book_Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Edit_Profile.resx">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Make_Complaint.resx">
+      <DependentUpon>Make_Complaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Ticket_Details.resx">
+      <DependentUpon>Ticket_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger.resx">
+      <DependentUpon>Passenger.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -187,5 +312,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
