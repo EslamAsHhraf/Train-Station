@@ -29,59 +29,36 @@ namespace TrainStation
         /// </summary>
         private void InitializeComponent()
         {
-            this.view_Employee = new System.Windows.Forms.Button();
-            this.view_passenger = new System.Windows.Forms.Button();
             this.Rate_employee = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.SSN_E = new System.Windows.Forms.NumericUpDown();
             this.Rate = new System.Windows.Forms.NumericUpDown();
-            this.Schedule_trips = new System.Windows.Forms.Button();
             this.Salary = new System.Windows.Forms.NumericUpDown();
-            this.SSN_E_S = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Change_Salary = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.Hire_E = new System.Windows.Forms.Button();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.button1 = new System.Windows.Forms.Button();
-            this.SSN_Fire = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.SSN_E_D = new System.Windows.Forms.NumericUpDown();
             this.DNum = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.SSN_E)).BeginInit();
+            this.Buttons = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Rate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salary)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SSN_E_S)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SSN_Fire)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SSN_E_D)).BeginInit();
+            this.Buttons.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // view_Employee
-            // 
-            this.view_Employee.Location = new System.Drawing.Point(760, 125);
-            this.view_Employee.Name = "view_Employee";
-            this.view_Employee.Size = new System.Drawing.Size(177, 40);
-            this.view_Employee.TabIndex = 0;
-            this.view_Employee.Text = "View Employee\'s data";
-            this.view_Employee.UseVisualStyleBackColor = true;
-            this.view_Employee.Click += new System.EventHandler(this.view_Employee_Click);
-            // 
-            // view_passenger
-            // 
-            this.view_passenger.Location = new System.Drawing.Point(760, 189);
-            this.view_passenger.Name = "view_passenger";
-            this.view_passenger.Size = new System.Drawing.Size(177, 40);
-            this.view_passenger.TabIndex = 1;
-            this.view_passenger.Text = "View Passenger\'s data";
-            this.view_passenger.UseVisualStyleBackColor = true;
-            this.view_passenger.Click += new System.EventHandler(this.view_passenger_Click);
             // 
             // Rate_employee
             // 
@@ -110,13 +87,6 @@ namespace TrainStation
             this.label2.TabIndex = 6;
             this.label2.Text = "Rate";
             // 
-            // SSN_E
-            // 
-            this.SSN_E.Location = new System.Drawing.Point(67, 305);
-            this.SSN_E.Name = "SSN_E";
-            this.SSN_E.Size = new System.Drawing.Size(120, 22);
-            this.SSN_E.TabIndex = 7;
-            // 
             // Rate
             // 
             this.Rate.Location = new System.Drawing.Point(253, 305);
@@ -124,29 +94,12 @@ namespace TrainStation
             this.Rate.Size = new System.Drawing.Size(120, 22);
             this.Rate.TabIndex = 8;
             // 
-            // Schedule_trips
-            // 
-            this.Schedule_trips.Location = new System.Drawing.Point(760, 244);
-            this.Schedule_trips.Name = "Schedule_trips";
-            this.Schedule_trips.Size = new System.Drawing.Size(177, 42);
-            this.Schedule_trips.TabIndex = 9;
-            this.Schedule_trips.Text = "Schedule trips";
-            this.Schedule_trips.UseVisualStyleBackColor = true;
-            this.Schedule_trips.Click += new System.EventHandler(this.Schedule_trips_Click);
-            // 
             // Salary
             // 
             this.Salary.Location = new System.Drawing.Point(253, 229);
             this.Salary.Name = "Salary";
             this.Salary.Size = new System.Drawing.Size(120, 22);
             this.Salary.TabIndex = 14;
-            // 
-            // SSN_E_S
-            // 
-            this.SSN_E_S.Location = new System.Drawing.Point(67, 229);
-            this.SSN_E_S.Name = "SSN_E_S";
-            this.SSN_E_S.Size = new System.Drawing.Size(120, 22);
-            this.SSN_E_S.TabIndex = 13;
             // 
             // label3
             // 
@@ -175,16 +128,6 @@ namespace TrainStation
             this.Change_Salary.Text = "Change salary of employee";
             this.Change_Salary.UseVisualStyleBackColor = true;
             // 
-            // Hire_E
-            // 
-            this.Hire_E.Location = new System.Drawing.Point(760, 57);
-            this.Hire_E.Name = "Hire_E";
-            this.Hire_E.Size = new System.Drawing.Size(177, 40);
-            this.Hire_E.TabIndex = 15;
-            this.Hire_E.Text = "Hire Employee";
-            this.Hire_E.UseVisualStyleBackColor = true;
-            this.Hire_E.Click += new System.EventHandler(this.Hire_E_Click);
-            // 
             // fileSystemWatcher1
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
@@ -199,18 +142,6 @@ namespace TrainStation
             this.button1.Text = "Fire Employee";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // SSN_Fire
-            // 
-            this.SSN_Fire.Location = new System.Drawing.Point(96, 67);
-            this.SSN_Fire.Maximum = new decimal(new int[] {
-            1410065408,
-            2,
-            0,
-            0});
-            this.SSN_Fire.Name = "SSN_Fire";
-            this.SSN_Fire.Size = new System.Drawing.Size(120, 22);
-            this.SSN_Fire.TabIndex = 18;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -219,20 +150,6 @@ namespace TrainStation
             this.label5.Size = new System.Drawing.Size(36, 17);
             this.label5.TabIndex = 17;
             this.label5.Text = "SSN";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(368, 151);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown1.TabIndex = 24;
-            // 
-            // SSN_E_D
-            // 
-            this.SSN_E_D.Location = new System.Drawing.Point(67, 154);
-            this.SSN_E_D.Name = "SSN_E_D";
-            this.SSN_E_D.Size = new System.Drawing.Size(120, 22);
-            this.SSN_E_D.TabIndex = 23;
             // 
             // DNum
             // 
@@ -261,75 +178,157 @@ namespace TrainStation
             this.button3.Text = "Change Departrment of employee";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // Buttons
+            // 
+            this.Buttons.Controls.Add(this.button2);
+            this.Buttons.Controls.Add(this.button4);
+            this.Buttons.Controls.Add(this.button5);
+            this.Buttons.Controls.Add(this.button6);
+            this.Buttons.Location = new System.Drawing.Point(737, 34);
+            this.Buttons.Name = "Buttons";
+            this.Buttons.Size = new System.Drawing.Size(200, 293);
+            this.Buttons.TabIndex = 25;
+            this.Buttons.TabStop = false;
+            this.Buttons.Text = "Buttons";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 57);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(177, 40);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "Hire Employee";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(6, 244);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(177, 42);
+            this.button4.TabIndex = 18;
+            this.button4.Text = "Schedule trips";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(6, 189);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(177, 40);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "View Passenger\'s data";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(6, 125);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(177, 40);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "View Employee\'s data";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(87, 66);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 26;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(82, 153);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 27;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(364, 150);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 24);
+            this.comboBox3.TabIndex = 28;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(72, 228);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 24);
+            this.comboBox4.TabIndex = 29;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(72, 300);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(121, 24);
+            this.comboBox5.TabIndex = 30;
+            // 
             // Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 392);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.SSN_E_D);
+            this.ClientSize = new System.Drawing.Size(949, 379);
+            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.Buttons);
             this.Controls.Add(this.DNum);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.SSN_Fire);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.Hire_E);
             this.Controls.Add(this.Salary);
-            this.Controls.Add(this.SSN_E_S);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Change_Salary);
-            this.Controls.Add(this.Schedule_trips);
             this.Controls.Add(this.Rate);
-            this.Controls.Add(this.SSN_E);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Rate_employee);
-            this.Controls.Add(this.view_passenger);
-            this.Controls.Add(this.view_Employee);
             this.Name = "Manager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manager";
             this.Load += new System.EventHandler(this.Manager_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.SSN_E)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salary)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SSN_E_S)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SSN_Fire)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SSN_E_D)).EndInit();
+            this.Buttons.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button view_Employee;
-        private System.Windows.Forms.Button view_passenger;
         private System.Windows.Forms.Button Rate_employee;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown SSN_E;
         private System.Windows.Forms.NumericUpDown Rate;
-        private System.Windows.Forms.Button Schedule_trips;
         private System.Windows.Forms.NumericUpDown Salary;
-        private System.Windows.Forms.NumericUpDown SSN_E_S;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Change_Salary;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button Hire_E;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
-        private System.Windows.Forms.NumericUpDown SSN_Fire;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown SSN_E_D;
         private System.Windows.Forms.Label DNum;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.GroupBox Buttons;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

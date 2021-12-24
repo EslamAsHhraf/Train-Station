@@ -48,5 +48,7 @@ namespace TrainStation
             Hire_Emplotee Hire = new Hire_Emplotee();
             Hire.Show();
         }
+
+        
     }
 }
