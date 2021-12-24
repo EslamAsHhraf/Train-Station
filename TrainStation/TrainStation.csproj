@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -54,6 +54,14 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="CancelTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelTicket.Designer.cs">
+      <DependentUpon>CancelTicket.cs</DependentUpon>
+    </Compile>
+
     <Compile Include="Admin_forms\Remove_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +88,7 @@
       <DependentUpon>Create_acc.cs</DependentUpon>
     </Compile>
     <Compile Include="DBManager.cs" />
+
     <Compile Include="Employee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +155,30 @@
     <Compile Include="Passenger.Designer.cs">
       <DependentUpon>Passenger.cs</DependentUpon>
     </Compile>
+    <Compile Include="TicketBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketBooking.Designer.cs">
+      <DependentUpon>TicketBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrainStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainStatus.Designer.cs">
+      <DependentUpon>TrainStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatePassengerData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatePassengerData.Designer.cs">
+      <DependentUpon>updatePassengerData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpgradeTicket.Designer.cs">
+      <DependentUpon>UpgradeTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserLog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +187,37 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
+    <Compile Include="ViewPassengerData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPassengerData.Designer.cs">
+      <DependentUpon>ViewPassengerData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSeats.Designer.cs">
+      <DependentUpon>ViewSeats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTicketDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTicketDetails.Designer.cs">
+      <DependentUpon>ViewTicketDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTrips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTrips.Designer.cs">
+      <DependentUpon>ViewTrips.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CancelTicket.resx">
+      <DependentUpon>CancelTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,8 +272,32 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TicketBooking.resx">
+      <DependentUpon>TicketBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainStatus.resx">
+      <DependentUpon>TrainStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatePassengerData.resx">
+      <DependentUpon>updatePassengerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpgradeTicket.resx">
+      <DependentUpon>UpgradeTicket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserLog.resx">
       <DependentUpon>UserLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPassengerData.resx">
+      <DependentUpon>ViewPassengerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSeats.resx">
+      <DependentUpon>ViewSeats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTicketDetails.resx">
+      <DependentUpon>ViewTicketDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTrips.resx">
+      <DependentUpon>ViewTrips.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
