@@ -16,5 +16,10 @@ namespace TrainStation
         {
             InitializeComponent();
         }
+
+        private void ViewPassengerData_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

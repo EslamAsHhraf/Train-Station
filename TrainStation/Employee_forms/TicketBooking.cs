@@ -21,5 +21,30 @@ namespace TrainStation
         {
             MessageBox.Show("You succefully booked a ticket with Serial No. : ");
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sourceComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void destinantionComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ticket_booking_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

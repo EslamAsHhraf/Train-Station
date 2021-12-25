@@ -39,48 +39,56 @@ namespace TrainStation
             // ticketSerialNoComboBox
             // 
             this.ticketSerialNoComboBox.FormattingEnabled = true;
-            this.ticketSerialNoComboBox.Location = new System.Drawing.Point(215, 78);
+            this.ticketSerialNoComboBox.Location = new System.Drawing.Point(269, 102);
+            this.ticketSerialNoComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ticketSerialNoComboBox.Name = "ticketSerialNoComboBox";
-            this.ticketSerialNoComboBox.Size = new System.Drawing.Size(186, 24);
+            this.ticketSerialNoComboBox.Size = new System.Drawing.Size(232, 29);
             this.ticketSerialNoComboBox.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(238, 43);
+            this.label1.Location = new System.Drawing.Point(298, 56);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 17);
+            this.label1.Size = new System.Drawing.Size(183, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ticket Serial Number";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(41, 193);
+            this.dataGridView1.Location = new System.Drawing.Point(51, 253);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(579, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(724, 197);
             this.dataGridView1.TabIndex = 2;
             // 
             // viewTicketDetailsBtn
             // 
-            this.viewTicketDetailsBtn.Location = new System.Drawing.Point(215, 126);
+            this.viewTicketDetailsBtn.Location = new System.Drawing.Point(269, 165);
+            this.viewTicketDetailsBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.viewTicketDetailsBtn.Name = "viewTicketDetailsBtn";
-            this.viewTicketDetailsBtn.Size = new System.Drawing.Size(186, 34);
+            this.viewTicketDetailsBtn.Size = new System.Drawing.Size(232, 45);
             this.viewTicketDetailsBtn.TabIndex = 3;
             this.viewTicketDetailsBtn.Text = "View Ticket Details";
             this.viewTicketDetailsBtn.UseVisualStyleBackColor = true;
             // 
             // ViewTicketDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 367);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.ClientSize = new System.Drawing.Size(816, 482);
             this.Controls.Add(this.viewTicketDetailsBtn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ticketSerialNoComboBox);
+            this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ViewTicketDetails";
             this.Text = "ViewTicketDetails";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

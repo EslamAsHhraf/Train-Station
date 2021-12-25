@@ -40,55 +40,64 @@ namespace TrainStation.Manager_forms
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(122, 29);
+            this.comboBox5.Location = new System.Drawing.Point(217, 189);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 24);
+            this.comboBox5.Size = new System.Drawing.Size(150, 29);
             this.comboBox5.TabIndex = 35;
             // 
             // Rate
             // 
-            this.Rate.Location = new System.Drawing.Point(308, 29);
+            this.Rate.Location = new System.Drawing.Point(417, 189);
+            this.Rate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Rate.Name = "Rate";
-            this.Rate.Size = new System.Drawing.Size(120, 22);
+            this.Rate.Size = new System.Drawing.Size(150, 29);
             this.Rate.TabIndex = 34;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(264, 31);
+            this.label2.Location = new System.Drawing.Point(413, 155);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 17);
+            this.label2.Size = new System.Drawing.Size(50, 21);
             this.label2.TabIndex = 33;
             this.label2.Text = "Rate";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(70, 31);
+            this.label1.Location = new System.Drawing.Point(213, 155);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 17);
+            this.label1.Size = new System.Drawing.Size(43, 21);
             this.label1.TabIndex = 32;
             this.label1.Text = "SSN";
             // 
             // Rate_employee
             // 
-            this.Rate_employee.Location = new System.Drawing.Point(152, 83);
+            this.Rate_employee.Location = new System.Drawing.Point(288, 277);
+            this.Rate_employee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Rate_employee.Name = "Rate_employee";
-            this.Rate_employee.Size = new System.Drawing.Size(178, 51);
+            this.Rate_employee.Size = new System.Drawing.Size(222, 67);
             this.Rate_employee.TabIndex = 31;
             this.Rate_employee.Text = "Change rate of employee";
             this.Rate_employee.UseVisualStyleBackColor = true;
             // 
             // Change_rate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 193);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(836, 454);
             this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.Rate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Rate_employee);
+            this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Change_rate";
             this.Text = "Change_rate";
             ((System.ComponentModel.ISupportInitialize)(this.Rate)).EndInit();

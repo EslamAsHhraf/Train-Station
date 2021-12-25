@@ -36,9 +36,10 @@ namespace TrainStation
             // 
             // cancelBtn
             // 
-            this.cancelBtn.Location = new System.Drawing.Point(60, 155);
+            this.cancelBtn.Location = new System.Drawing.Point(261, 279);
+            this.cancelBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(186, 34);
+            this.cancelBtn.Size = new System.Drawing.Size(372, 72);
             this.cancelBtn.TabIndex = 6;
             this.cancelBtn.Text = "Cancel Ticket";
             this.cancelBtn.UseVisualStyleBackColor = true;
@@ -47,29 +48,35 @@ namespace TrainStation
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 72);
+            this.label1.Location = new System.Drawing.Point(307, 103);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 17);
+            this.label1.Size = new System.Drawing.Size(279, 34);
             this.label1.TabIndex = 5;
             this.label1.Text = "Ticket Serial Number";
             // 
             // ticketSerialNoComboBox
             // 
             this.ticketSerialNoComboBox.FormattingEnabled = true;
-            this.ticketSerialNoComboBox.Location = new System.Drawing.Point(60, 107);
+            this.ticketSerialNoComboBox.Location = new System.Drawing.Point(261, 177);
+            this.ticketSerialNoComboBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ticketSerialNoComboBox.Name = "ticketSerialNoComboBox";
-            this.ticketSerialNoComboBox.Size = new System.Drawing.Size(186, 24);
+            this.ticketSerialNoComboBox.Size = new System.Drawing.Size(368, 42);
             this.ticketSerialNoComboBox.TabIndex = 4;
             // 
-            // CancelTicketBtn
+            // CancelTicket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 34F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(294, 242);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(894, 455);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ticketSerialNoComboBox);
-            this.Name = "CancelTicketBtn";
+            this.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Name = "CancelTicket";
             this.Text = "CancelTicket";
             this.ResumeLayout(false);
             this.PerformLayout();

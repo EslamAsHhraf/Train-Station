@@ -39,56 +39,65 @@ namespace TrainStation.Admin_forms
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(406, 47);
+            this.comboBox3.Location = new System.Drawing.Point(422, 152);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 24);
+            this.comboBox3.Size = new System.Drawing.Size(150, 29);
             this.comboBox3.TabIndex = 33;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(124, 50);
+            this.comboBox2.Location = new System.Drawing.Point(142, 152);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.Size = new System.Drawing.Size(150, 29);
             this.comboBox2.TabIndex = 32;
             // 
             // DNum
             // 
             this.DNum.AutoSize = true;
-            this.DNum.Location = new System.Drawing.Point(251, 53);
+            this.DNum.Location = new System.Drawing.Point(418, 117);
+            this.DNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DNum.Name = "DNum";
-            this.DNum.Size = new System.Drawing.Size(134, 17);
+            this.DNum.Size = new System.Drawing.Size(174, 21);
             this.DNum.TabIndex = 31;
             this.DNum.Text = "Department number";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(67, 53);
+            this.label7.Location = new System.Drawing.Point(138, 117);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(36, 17);
+            this.label7.Size = new System.Drawing.Size(43, 21);
             this.label7.TabIndex = 30;
             this.label7.Text = "SSN";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(207, 130);
+            this.button3.Location = new System.Drawing.Point(185, 257);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(178, 51);
+            this.button3.Size = new System.Drawing.Size(350, 67);
             this.button3.TabIndex = 29;
             this.button3.Text = "Change Departrment of employee";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // Change_Deb
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 230);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(745, 430);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.DNum);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
+            this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Change_Deb";
             this.Text = "Change_Deb";
             this.ResumeLayout(false);

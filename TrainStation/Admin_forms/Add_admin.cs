@@ -16,5 +16,10 @@ namespace TrainStation.Admin_forms
         {
             InitializeComponent();
         }
+
+        private void AddAdminButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

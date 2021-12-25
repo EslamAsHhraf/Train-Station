@@ -16,5 +16,15 @@ namespace TrainStation
         {
             InitializeComponent();
         }
+
+        private void changePhoneNumButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newPhoneNumTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

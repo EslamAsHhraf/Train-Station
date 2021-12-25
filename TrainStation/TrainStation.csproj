@@ -358,6 +358,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Employee_forms\TicketBooking.resx">
       <DependentUpon>TicketBooking.cs</DependentUpon>
@@ -399,6 +400,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\michal-parzuchowski-dmH3NWhYTHQ-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\michal-parzuchowski-dmH3NWhYTHQ-unsplash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6108b580.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\railway-station-platform-with-modern-high-speed-trains-clock_273525-355.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1419767.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

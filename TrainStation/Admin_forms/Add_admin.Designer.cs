@@ -37,36 +37,46 @@ namespace TrainStation.Admin_forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 36);
+            this.label1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(107, 141);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(81, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Email";
             // 
             // AddAdminEmailtextBox
             // 
-            this.AddAdminEmailtextBox.Location = new System.Drawing.Point(83, 33);
+            this.AddAdminEmailtextBox.Font = new System.Drawing.Font("Lucida Sans", 12F);
+            this.AddAdminEmailtextBox.Location = new System.Drawing.Point(208, 144);
+            this.AddAdminEmailtextBox.Margin = new System.Windows.Forms.Padding(4);
             this.AddAdminEmailtextBox.Name = "AddAdminEmailtextBox";
-            this.AddAdminEmailtextBox.Size = new System.Drawing.Size(194, 20);
+            this.AddAdminEmailtextBox.Size = new System.Drawing.Size(257, 31);
             this.AddAdminEmailtextBox.TabIndex = 1;
             // 
             // AddAdminButton
             // 
-            this.AddAdminButton.Location = new System.Drawing.Point(128, 102);
+            this.AddAdminButton.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.AddAdminButton.Location = new System.Drawing.Point(279, 195);
+            this.AddAdminButton.Margin = new System.Windows.Forms.Padding(4);
             this.AddAdminButton.Name = "AddAdminButton";
-            this.AddAdminButton.Size = new System.Drawing.Size(75, 23);
+            this.AddAdminButton.Size = new System.Drawing.Size(113, 44);
             this.AddAdminButton.TabIndex = 2;
             this.AddAdminButton.Text = "Add Admin";
             this.AddAdminButton.UseVisualStyleBackColor = true;
+            this.AddAdminButton.Click += new System.EventHandler(this.AddAdminButton_Click);
             // 
             // Add_admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 193);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(660, 336);
             this.Controls.Add(this.AddAdminButton);
             this.Controls.Add(this.AddAdminEmailtextBox);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Add_admin";
             this.Text = "Add_admin";
             this.ResumeLayout(false);

@@ -39,50 +39,60 @@ namespace TrainStation
             // passengerSSNComboBox
             // 
             this.passengerSSNComboBox.FormattingEnabled = true;
-            this.passengerSSNComboBox.Location = new System.Drawing.Point(303, 68);
+            this.passengerSSNComboBox.Location = new System.Drawing.Point(404, 220);
+            this.passengerSSNComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passengerSSNComboBox.Name = "passengerSSNComboBox";
-            this.passengerSSNComboBox.Size = new System.Drawing.Size(155, 24);
+            this.passengerSSNComboBox.Size = new System.Drawing.Size(193, 29);
             this.passengerSSNComboBox.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(314, 39);
+            this.label1.Location = new System.Drawing.Point(417, 182);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 17);
+            this.label1.Size = new System.Drawing.Size(146, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Passenger\'s SSN";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 153);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 336);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 57);
+            this.dataGridView1.Size = new System.Drawing.Size(970, 75);
             this.dataGridView1.TabIndex = 2;
             // 
             // viewDetialsBtn
             // 
-            this.viewDetialsBtn.Location = new System.Drawing.Point(303, 110);
+            this.viewDetialsBtn.Location = new System.Drawing.Point(404, 275);
+            this.viewDetialsBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.viewDetialsBtn.Name = "viewDetialsBtn";
-            this.viewDetialsBtn.Size = new System.Drawing.Size(155, 23);
+            this.viewDetialsBtn.Size = new System.Drawing.Size(194, 30);
             this.viewDetialsBtn.TabIndex = 3;
             this.viewDetialsBtn.Text = "View details";
             this.viewDetialsBtn.UseVisualStyleBackColor = true;
             // 
             // ViewPassengerData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 243);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1000, 535);
             this.Controls.Add(this.viewDetialsBtn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passengerSSNComboBox);
+            this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ViewPassengerData";
             this.Text = "ViewPassengerData";
+            this.Load += new System.EventHandler(this.ViewPassengerData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

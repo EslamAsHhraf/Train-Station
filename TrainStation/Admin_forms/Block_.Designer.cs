@@ -41,68 +41,84 @@ namespace TrainStation.Admin_forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 41);
+            this.label1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(29, 63);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.Size = new System.Drawing.Size(202, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Passenger SSN";
             // 
             // Pass_SSN_ComboBox
             // 
             this.Pass_SSN_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Pass_SSN_ComboBox.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.Pass_SSN_ComboBox.FormattingEnabled = true;
-            this.Pass_SSN_ComboBox.Location = new System.Drawing.Point(135, 38);
+            this.Pass_SSN_ComboBox.Location = new System.Drawing.Point(265, 63);
+            this.Pass_SSN_ComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Pass_SSN_ComboBox.Name = "Pass_SSN_ComboBox";
-            this.Pass_SSN_ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.Pass_SSN_ComboBox.Size = new System.Drawing.Size(160, 42);
             this.Pass_SSN_ComboBox.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 193);
+            this.label2.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(130, 197);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(101, 34);
             this.label2.TabIndex = 2;
             this.label2.Text = "Reason";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 109);
+            this.label3.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(154, 129);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.Size = new System.Drawing.Size(77, 34);
             this.label3.TabIndex = 3;
             this.label3.Text = "Date";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(135, 109);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.dateTimePicker1.Location = new System.Drawing.Point(265, 129);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(265, 41);
             this.dateTimePicker1.TabIndex = 4;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(135, 193);
+            this.richTextBox1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.richTextBox1.Location = new System.Drawing.Point(265, 197);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(210, 96);
+            this.richTextBox1.Size = new System.Drawing.Size(279, 117);
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
             // 
             // Blockbutton
             // 
-            this.Blockbutton.Location = new System.Drawing.Point(512, 110);
+            this.Blockbutton.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.Blockbutton.Location = new System.Drawing.Point(312, 348);
+            this.Blockbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Blockbutton.Name = "Blockbutton";
-            this.Blockbutton.Size = new System.Drawing.Size(90, 43);
+            this.Blockbutton.Size = new System.Drawing.Size(187, 53);
             this.Blockbutton.TabIndex = 7;
             this.Blockbutton.Text = "Block";
             this.Blockbutton.UseVisualStyleBackColor = true;
             // 
             // Block_
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 362);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(789, 446);
             this.Controls.Add(this.Blockbutton);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.dateTimePicker1);
@@ -110,6 +126,7 @@ namespace TrainStation.Admin_forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Pass_SSN_ComboBox);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Block_";
             this.Text = "Block User";
             this.ResumeLayout(false);

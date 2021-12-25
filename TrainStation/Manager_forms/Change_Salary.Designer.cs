@@ -39,40 +39,45 @@ namespace TrainStation.Manager_forms
             // 
             // comboBox4
             // 
+            this.comboBox4.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(79, 46);
+            this.comboBox4.Location = new System.Drawing.Point(203, 172);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 24);
+            this.comboBox4.Size = new System.Drawing.Size(121, 29);
             this.comboBox4.TabIndex = 34;
             // 
             // Salary
             // 
-            this.Salary.Location = new System.Drawing.Point(260, 47);
+            this.Salary.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Salary.Location = new System.Drawing.Point(384, 172);
             this.Salary.Name = "Salary";
-            this.Salary.Size = new System.Drawing.Size(120, 22);
+            this.Salary.Size = new System.Drawing.Size(120, 29);
             this.Salary.TabIndex = 33;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(206, 49);
+            this.label3.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(380, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 17);
+            this.label3.Size = new System.Drawing.Size(60, 21);
             this.label3.TabIndex = 32;
             this.label3.Text = "Salary";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 49);
+            this.label4.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(199, 138);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 17);
+            this.label4.Size = new System.Drawing.Size(43, 21);
             this.label4.TabIndex = 31;
             this.label4.Text = "SSN";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(119, 112);
+            this.button1.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(262, 249);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(178, 51);
             this.button1.TabIndex = 30;
@@ -83,7 +88,9 @@ namespace TrainStation.Manager_forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 209);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(732, 423);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.Salary);
             this.Controls.Add(this.label3);
