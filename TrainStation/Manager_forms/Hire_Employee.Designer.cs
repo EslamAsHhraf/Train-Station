@@ -94,6 +94,7 @@ namespace TrainStation.Manager_forms
             this.New_Employee.TabIndex = 0;
             this.New_Employee.Text = "Insert new employee";
             this.New_Employee.UseVisualStyleBackColor = true;
+            this.New_Employee.Click += new System.EventHandler(this.New_Employee_Click);
             // 
             // Fname
             // 
@@ -510,7 +511,7 @@ namespace TrainStation.Manager_forms
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.New_Employee);
             this.Name = "Hire_Employee";
-            this.Text = "Hire_Emplotee";
+            this.Text = "Hire_Employee";
             this.Load += new System.EventHandler(this.Hire_Emplotee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salary)).EndInit();

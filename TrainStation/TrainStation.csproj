@@ -54,6 +54,7 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Handle.cs" />
     <Compile Include="Manager_forms\Change_Deb.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,10 +97,10 @@
     <Compile Include="Admin_forms\Block_.Designer.cs">
       <DependentUpon>Block_.cs</DependentUpon>
     </Compile>
-    <Compile Include="CancelTicket.cs">
+    <Compile Include="Employee_forms\CancelTicket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CancelTicket.Designer.cs">
+    <Compile Include="Employee_forms\CancelTicket.Designer.cs">
       <DependentUpon>CancelTicket.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller.cs" />
@@ -176,28 +177,28 @@
     <Compile Include="Passenger.Designer.cs">
       <DependentUpon>Passenger.cs</DependentUpon>
     </Compile>
-    <Compile Include="TicketBooking.cs">
+    <Compile Include="Employee_forms\TicketBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TicketBooking.Designer.cs">
+    <Compile Include="Employee_forms\TicketBooking.Designer.cs">
       <DependentUpon>TicketBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="TrainStatus.cs">
+    <Compile Include="Employee_forms\TrainStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TrainStatus.Designer.cs">
+    <Compile Include="Employee_forms\TrainStatus.Designer.cs">
       <DependentUpon>TrainStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="updatePassengerData.cs">
+    <Compile Include="Employee_forms\updatePassengerData.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="updatePassengerData.Designer.cs">
+    <Compile Include="Employee_forms\updatePassengerData.Designer.cs">
       <DependentUpon>updatePassengerData.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpgradeTicket.cs">
+    <Compile Include="Employee_forms\UpgradeTicket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpgradeTicket.Designer.cs">
+    <Compile Include="Employee_forms\UpgradeTicket.Designer.cs">
       <DependentUpon>UpgradeTicket.cs</DependentUpon>
     </Compile>
     <Compile Include="UserLog.cs">
@@ -208,28 +209,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewPassengerData.cs">
+    <Compile Include="Employee_forms\ViewPassengerData.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewPassengerData.Designer.cs">
+    <Compile Include="Employee_forms\ViewPassengerData.Designer.cs">
       <DependentUpon>ViewPassengerData.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewSeats.cs">
+    <Compile Include="Employee_forms\ViewSeats.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewSeats.Designer.cs">
+    <Compile Include="Employee_forms\ViewSeats.Designer.cs">
       <DependentUpon>ViewSeats.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewTicketDetails.cs">
+    <Compile Include="Employee_forms\ViewTicketDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewTicketDetails.Designer.cs">
+    <Compile Include="Employee_forms\ViewTicketDetails.Designer.cs">
       <DependentUpon>ViewTicketDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewTrips.cs">
+    <Compile Include="Employee_forms\ViewTrips.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewTrips.Designer.cs">
+    <Compile Include="Employee_forms\ViewTrips.Designer.cs">
       <DependentUpon>ViewTrips.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admin.resx">
@@ -256,7 +257,7 @@
     <EmbeddedResource Include="Admin_forms\Block_.resx">
       <DependentUpon>Block_.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CancelTicket.resx">
+    <EmbeddedResource Include="Employee_forms\CancelTicket.resx">
       <DependentUpon>CancelTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Create_acc.resx">
@@ -304,31 +305,31 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TicketBooking.resx">
+    <EmbeddedResource Include="Employee_forms\TicketBooking.resx">
       <DependentUpon>TicketBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TrainStatus.resx">
+    <EmbeddedResource Include="Employee_forms\TrainStatus.resx">
       <DependentUpon>TrainStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="updatePassengerData.resx">
+    <EmbeddedResource Include="Employee_forms\updatePassengerData.resx">
       <DependentUpon>updatePassengerData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpgradeTicket.resx">
+    <EmbeddedResource Include="Employee_forms\UpgradeTicket.resx">
       <DependentUpon>UpgradeTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserLog.resx">
       <DependentUpon>UserLog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewPassengerData.resx">
+    <EmbeddedResource Include="Employee_forms\ViewPassengerData.resx">
       <DependentUpon>ViewPassengerData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewSeats.resx">
+    <EmbeddedResource Include="Employee_forms\ViewSeats.resx">
       <DependentUpon>ViewSeats.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewTicketDetails.resx">
+    <EmbeddedResource Include="Employee_forms\ViewTicketDetails.resx">
       <DependentUpon>ViewTicketDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewTrips.resx">
+    <EmbeddedResource Include="Employee_forms\ViewTrips.resx">
       <DependentUpon>ViewTrips.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

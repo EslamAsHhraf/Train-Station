@@ -12,9 +12,11 @@ namespace TrainStation.Manager_forms
 {
     public partial class Hire_Employee : Form
     {
+        Handle Hand;
         public Hire_Employee()
         {
             InitializeComponent();
+            Hand = new Handle();
         }
 
         private void Hire_Emplotee_Load(object sender, EventArgs e)
@@ -33,6 +35,11 @@ namespace TrainStation.Manager_forms
             //}
         }
 
-      
+        private void New_Employee_Click(object sender, EventArgs e)
+        {
+            Fname = Hand.Trim(Fname);
+            bool t = true;
+               t = Hand.is_valid(Fname);
+        }
     }
 }
