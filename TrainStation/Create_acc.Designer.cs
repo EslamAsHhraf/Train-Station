@@ -40,7 +40,6 @@ namespace TrainStation
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,19 +52,23 @@ namespace TrainStation
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(508, 301);
+            this.button1.Location = new System.Drawing.Point(508, 269);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(197, 70);
             this.button1.TabIndex = 50;
@@ -167,20 +170,16 @@ namespace TrainStation
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.textBox9);
-            this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Location = new System.Drawing.Point(22, 30);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(367, 407);
+            this.groupBox2.Size = new System.Drawing.Size(367, 282);
             this.groupBox2.TabIndex = 52;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Information";
             // 
             // dateTimePicker3
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(129, 356);
+            this.dateTimePicker3.Location = new System.Drawing.Point(130, 239);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker3.TabIndex = 61;
@@ -188,7 +187,7 @@ namespace TrainStation
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(23, 361);
+            this.label7.Location = new System.Drawing.Point(24, 239);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 17);
             this.label7.TabIndex = 60;
@@ -197,7 +196,7 @@ namespace TrainStation
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(53, 299);
+            this.label8.Location = new System.Drawing.Point(54, 208);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(60, 17);
             this.label8.TabIndex = 59;
@@ -211,9 +210,9 @@ namespace TrainStation
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(132, 292);
+            "M",
+            "F"});
+            this.comboBox1.Location = new System.Drawing.Point(133, 201);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 58;
@@ -221,7 +220,7 @@ namespace TrainStation
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(35, 128);
+            this.label13.Location = new System.Drawing.Point(36, 37);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(36, 17);
             this.label13.TabIndex = 57;
@@ -229,7 +228,7 @@ namespace TrainStation
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(129, 123);
+            this.numericUpDown3.Location = new System.Drawing.Point(130, 32);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(138, 22);
             this.numericUpDown3.TabIndex = 56;
@@ -237,7 +236,7 @@ namespace TrainStation
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(35, 198);
+            this.label14.Location = new System.Drawing.Point(36, 107);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(88, 17);
             this.label14.TabIndex = 55;
@@ -246,7 +245,7 @@ namespace TrainStation
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(35, 247);
+            this.label15.Location = new System.Drawing.Point(36, 156);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(74, 17);
             this.label15.TabIndex = 54;
@@ -255,7 +254,7 @@ namespace TrainStation
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(35, 156);
+            this.label16.Location = new System.Drawing.Point(36, 65);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(74, 17);
             this.label16.TabIndex = 53;
@@ -263,62 +262,94 @@ namespace TrainStation
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(130, 247);
+            this.textBox3.Location = new System.Drawing.Point(131, 156);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(137, 22);
             this.textBox3.TabIndex = 52;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(129, 198);
+            this.textBox6.Location = new System.Drawing.Point(130, 107);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(138, 22);
             this.textBox6.TabIndex = 51;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(132, 156);
+            this.textBox7.Location = new System.Drawing.Point(133, 65);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(135, 22);
             this.textBox7.TabIndex = 50;
             // 
-            // textBox8
+            // groupBox4
             // 
-            this.textBox8.Location = new System.Drawing.Point(141, 75);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(203, 22);
-            this.textBox8.TabIndex = 49;
+            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.textBox10);
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Controls.Add(this.textBox11);
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Location = new System.Drawing.Point(22, 333);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(367, 206);
+            this.groupBox4.TabIndex = 72;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Account";
             // 
-            // textBox9
+            // textBox2
             // 
-            this.textBox9.Location = new System.Drawing.Point(140, 28);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(204, 22);
-            this.textBox9.TabIndex = 48;
+            this.textBox2.Location = new System.Drawing.Point(107, 55);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(204, 22);
+            this.textBox2.TabIndex = 66;
             // 
-            // label17
+            // label2
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(24, 80);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(69, 17);
-            this.label17.TabIndex = 47;
-            this.label17.Text = "Password";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 152);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 17);
+            this.label2.TabIndex = 69;
+            this.label2.Text = "User Name";
             // 
-            // label18
+            // textBox10
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(24, 33);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(42, 17);
-            this.label18.TabIndex = 46;
-            this.label18.Text = "Email";
+            this.textBox10.Location = new System.Drawing.Point(108, 109);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(203, 22);
+            this.textBox10.TabIndex = 67;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 109);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.TabIndex = 65;
+            this.label3.Text = "Password";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(108, 149);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(203, 22);
+            this.textBox11.TabIndex = 68;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(28, 55);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 17);
+            this.label4.TabIndex = 64;
+            this.label4.Text = "Email";
             // 
             // Create_acc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 453);
+            this.ClientSize = new System.Drawing.Size(869, 548);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
@@ -330,6 +361,8 @@ namespace TrainStation
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -358,10 +391,12 @@ namespace TrainStation
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label4;
     }
 }

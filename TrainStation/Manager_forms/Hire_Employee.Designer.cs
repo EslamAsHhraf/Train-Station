@@ -56,8 +56,6 @@ namespace TrainStation.Manager_forms
             this.Super_ssn = new System.Windows.Forms.NumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
             this.Dno = new System.Windows.Forms.NumericUpDown();
-            this.label20 = new System.Windows.Forms.Label();
-            this.Email = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -69,6 +67,13 @@ namespace TrainStation.Manager_forms
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rate)).BeginInit();
@@ -78,11 +83,12 @@ namespace TrainStation.Manager_forms
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // New_Employee
             // 
-            this.New_Employee.Location = new System.Drawing.Point(720, 282);
+            this.New_Employee.Location = new System.Drawing.Point(722, 528);
             this.New_Employee.Name = "New_Employee";
             this.New_Employee.Size = new System.Drawing.Size(171, 47);
             this.New_Employee.TabIndex = 0;
@@ -161,8 +167,8 @@ namespace TrainStation.Manager_forms
             this.Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Gender.FormattingEnabled = true;
             this.Gender.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
+            "M",
+            "F"});
             this.Gender.Location = new System.Drawing.Point(134, 190);
             this.Gender.Name = "Gender";
             this.Gender.Size = new System.Drawing.Size(121, 24);
@@ -307,22 +313,6 @@ namespace TrainStation.Manager_forms
             this.Dno.Size = new System.Drawing.Size(138, 22);
             this.Dno.TabIndex = 32;
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(65, 548);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(42, 17);
-            this.label20.TabIndex = 38;
-            this.label20.Text = "Email";
-            // 
-            // Email
-            // 
-            this.Email.Location = new System.Drawing.Point(157, 543);
-            this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(135, 22);
-            this.Email.TabIndex = 37;
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(131, 254);
@@ -418,9 +408,7 @@ namespace TrainStation.Manager_forms
             this.groupBox2.Controls.Add(this.City);
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.Mname);
-            this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Controls.Add(this.Lname);
-            this.groupBox2.Controls.Add(this.Email);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.Dno);
             this.groupBox2.Controls.Add(this.label2);
@@ -444,20 +432,84 @@ namespace TrainStation.Manager_forms
             this.groupBox2.Controls.Add(this.House_num);
             this.groupBox2.Location = new System.Drawing.Point(27, 18);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(572, 586);
+            this.groupBox2.Size = new System.Drawing.Size(572, 555);
             this.groupBox2.TabIndex = 45;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Information";
             // 
-            // Hire_Emplotee
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(12, 152);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 17);
+            this.label7.TabIndex = 69;
+            this.label7.Text = "User Name";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(108, 149);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(203, 22);
+            this.textBox1.TabIndex = 68;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(108, 109);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(203, 22);
+            this.textBox8.TabIndex = 67;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(107, 55);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(204, 22);
+            this.textBox9.TabIndex = 66;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 109);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 17);
+            this.label8.TabIndex = 65;
+            this.label8.Text = "Password";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(28, 55);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(42, 17);
+            this.label18.TabIndex = 64;
+            this.label18.Text = "Email";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.textBox9);
+            this.groupBox4.Controls.Add(this.label7);
+            this.groupBox4.Controls.Add(this.textBox8);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.label18);
+            this.groupBox4.Location = new System.Drawing.Point(627, 277);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(331, 206);
+            this.groupBox4.TabIndex = 71;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Account";
+            // 
+            // Hire_Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1041, 616);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.New_Employee);
-            this.Name = "Hire_Emplotee";
+            this.Name = "Hire_Employee";
             this.Text = "Hire_Emplotee";
             this.Load += new System.EventHandler(this.Hire_Emplotee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -471,6 +523,8 @@ namespace TrainStation.Manager_forms
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -504,8 +558,6 @@ namespace TrainStation.Manager_forms
         private System.Windows.Forms.NumericUpDown Super_ssn;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.NumericUpDown Dno;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox Email;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox4;
@@ -517,5 +569,12 @@ namespace TrainStation.Manager_forms
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }

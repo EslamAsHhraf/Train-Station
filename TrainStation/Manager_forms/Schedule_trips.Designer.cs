@@ -29,9 +29,6 @@ namespace TrainStation.Manager_forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.Come_station = new System.Windows.Forms.NumericUpDown();
-            this.Train_platenumber = new System.Windows.Forms.NumericUpDown();
-            this.Go_station = new System.Windows.Forms.NumericUpDown();
             this.Trip_code = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,31 +46,10 @@ namespace TrainStation.Manager_forms
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Come_station)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Train_platenumber)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Go_station)).BeginInit();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // Come_station
-            // 
-            this.Come_station.Location = new System.Drawing.Point(188, 297);
-            this.Come_station.Name = "Come_station";
-            this.Come_station.Size = new System.Drawing.Size(161, 22);
-            this.Come_station.TabIndex = 0;
-            // 
-            // Train_platenumber
-            // 
-            this.Train_platenumber.Location = new System.Drawing.Point(188, 245);
-            this.Train_platenumber.Name = "Train_platenumber";
-            this.Train_platenumber.Size = new System.Drawing.Size(161, 22);
-            this.Train_platenumber.TabIndex = 1;
-            // 
-            // Go_station
-            // 
-            this.Go_station.Location = new System.Drawing.Point(188, 346);
-            this.Go_station.Name = "Go_station";
-            this.Go_station.Size = new System.Drawing.Size(161, 22);
-            this.Go_station.TabIndex = 2;
             // 
             // Trip_code
             // 
@@ -241,11 +217,38 @@ namespace TrainStation.Manager_forms
             this.label9.TabIndex = 19;
             this.label9.Text = "Seconds";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(188, 250);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(171, 24);
+            this.comboBox1.TabIndex = 20;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(188, 299);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(171, 24);
+            this.comboBox2.TabIndex = 21;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(188, 346);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(171, 24);
+            this.comboBox3.TabIndex = 22;
+            // 
             // Schedule_trips
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(496, 510);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -263,25 +266,15 @@ namespace TrainStation.Manager_forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Trip_code);
-            this.Controls.Add(this.Go_station);
-            this.Controls.Add(this.Train_platenumber);
-            this.Controls.Add(this.Come_station);
             this.Name = "Schedule_trips";
             this.Text = "Schedule_trips";
             this.Load += new System.EventHandler(this.Schedule_trips_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Come_station)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Train_platenumber)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Go_station)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.NumericUpDown Come_station;
-        private System.Windows.Forms.NumericUpDown Train_platenumber;
-        private System.Windows.Forms.NumericUpDown Go_station;
         private System.Windows.Forms.TextBox Trip_code;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -299,5 +292,8 @@ namespace TrainStation.Manager_forms
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

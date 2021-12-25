@@ -6,10 +6,10 @@ USE TrainStation
 -------------CREATE TABLES----------------
 CREATE TABLE User_Login
 (
-Email varchar(50) NOT NULL,
+Email varchar(50) NOT NULL CHECK(Email LIKE '%@%' ),
 Pass varchar(50) NOT NULL,
 Authority varchar(20) NOT NULL,
-UserID varchar(30) NOT NULL,
+UserName varchar(30) NOT NULL,
 
 PRIMARY KEY (Email),
 )
@@ -18,7 +18,7 @@ CREATE TABLE CovidVaccination
 (
 SerialNo int NOT NULL,
 Vacc_Type varchar(20) NOT NULL, 
-Organisation varchar(30),
+Organisation varchar(30) NOT NULL,
 
 PRIMARY KEY (SerialNo),
 )
@@ -29,18 +29,18 @@ SSN int NOT NULL,
 Fname varchar(20) NOT NULL,
 Minit char NOT NULL,
 Lname varchar(20) NOT NULL,
-Gender char,
-DOB date,
-Salary int NOT NULL,
-Rate int,
-House_Num int,
-Street varchar(30),
-City varchar(20),
+Gender char NOT NULL CHECK(Gender='M' OR Gender='F' ),
+DOB date NOT NULL,
+Salary int NOT NULL  CHECK(Salary>=0 ),
+Rate int CHECK(Rate>=0 AND Rate<=10  ),
+House_Num int NOT NULL,
+Street varchar(30) NOT NULL,
+City varchar(20) NOT NULL,
 Super_SSN int,
 Dno int NOT NULL,
 CV_SerialNo int,
 Vacc_Date date,
-Emp_Email varchar(50) NOT NULL,
+Emp_Email varchar(50) NOT NULL  ,
 
 PRIMARY KEY (SSN),
 FOREIGN KEY (Super_SSN) REFERENCES Employee
@@ -50,7 +50,7 @@ FOREIGN KEY (Super_SSN) REFERENCES Employee
 FOREIGN KEY (Emp_Email) REFERENCES User_Login
 ON DELETE CASCADE
 ON UPDATE CASCADE,
-FOREIGN KEY (CV_SerialNo) REFERENCES CovidVaccination,
+FOREIGN KEY (CV_SerialNo) REFERENCES CovidVaccination
 )
 
 CREATE TABLE E_PhoneNumber
@@ -62,6 +62,7 @@ PRIMARY KEY (ESSN,PNumber),
 FOREIGN KEY (ESSN) REFERENCES Employee
 ON DELETE CASCADE
 ON UPDATE CASCADE,
+unique (PNumber)
 )
 
 CREATE TABLE Department
@@ -74,16 +75,17 @@ PRIMARY KEY (DepartmentNumber),
 FOREIGN KEY (Mgr_SSN) REFERENCES Employee
 ON DELETE SET NULL
 ON UPDATE CASCADE,
+unique (DepartmentName)
 )
 
 CREATE TABLE Passenger
 (
-Pass_SSN int NOT NULL,
+Pass_SSN int ,
 Pass_Fname varchar(20) NOT NULL,
 Pass_Minit char NOT NULL,
 Pass_Lname varchar(20) NOT NULL,
-Pass_Gender char,
-Pass_Email varchar(50),
+Pass_Gender char NOT NULL CHECK(Pass_Gender='M' OR Pass_Gender='F' ),
+Pass_Email varchar(50) ,
 Pass_CV_SerialNo int NOT NULL,
 Pass_Vacc_Date date NOT NULL,
 
@@ -96,9 +98,9 @@ FOREIGN KEY (Pass_CV_SerialNo) REFERENCES CovidVaccination,
 
 CREATE TABLE Complaints
 (
-C_Code varchar(20) NOT NULL,
+C_Code varchar(20) ,
 Descrip varchar(200) NOT NULL,
-P_SSN int,
+P_SSN int ,
 
 PRIMARY KEY (C_Code),
 FOREIGN KEY (P_SSN) REFERENCES Passenger
@@ -122,7 +124,7 @@ CREATE TABLE Blacklist
 (
 PSSN int NOT NULL,
 Date_Blacklisted date NOT NULL,
-Reason varchar(20),
+Reason varchar(20) NOT NULL,
 
 PRIMARY KEY (PSSN,Date_Blacklisted),
 FOREIGN KEY (PSSN) REFERENCES Passenger 
@@ -138,12 +140,13 @@ PRIMARY KEY (PSSN, P_PhoneNumber),
 FOREIGN KEY (PSSN) REFERENCES Passenger
 ON DELETE CASCADE
 ON UPDATE CASCADE,
+UNIQUE (P_PhoneNumber)
 )
 
 CREATE TABLE Train
 (
 PlateNumber int  NOT NULL,
-Maintenance bit,
+Maintenance bit NOT NULL,
 Colour varchar(10),
 Capacity int,
 
@@ -181,7 +184,7 @@ Arrival_Time time NOT NULL,
 Departure_Time time NOT NULL,
 Train_PlateNumber int,
 Come_Station int,
-Go_Station int,
+Go_Station int ,
 
 PRIMARY KEY (Trip_Code),
 FOREIGN KEY (Train_PlateNumber) REFERENCES Train
@@ -203,6 +206,7 @@ Class char NOT NULL,
 Price int NOT NULL,
 Ticket_Date date NOT NULL,
 ESSN int,
+PSSN int,
 TripCode varchar(20),
 
 PRIMARY KEY (TicketNo),
