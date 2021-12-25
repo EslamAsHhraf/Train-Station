@@ -153,6 +153,36 @@
     <Compile Include="Passenger forms\Book_Ticket.Designer.cs">
       <DependentUpon>Book_Ticket.cs</DependentUpon>
     </Compile>
+    <Compile Include="Passenger forms\Cancel_Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Cancel_Ticket.Designer.cs">
+      <DependentUpon>Cancel_Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Add_PhoneNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Add_PhoneNumber.Designer.cs">
+      <DependentUpon>Add_PhoneNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Change_Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Change_Email.Designer.cs">
+      <DependentUpon>Change_Email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Change_Password.Designer.cs">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Change_PhoneNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Change_PhoneNumber.Designer.cs">
+      <DependentUpon>Change_PhoneNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Passenger forms\Edit_Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +200,12 @@
     </Compile>
     <Compile Include="Passenger forms\Ticket_Details.Designer.cs">
       <DependentUpon>Ticket_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger forms\Upgrade_Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger forms\Upgrade_Ticket.Designer.cs">
+      <DependentUpon>Upgrade_Ticket.cs</DependentUpon>
     </Compile>
     <Compile Include="Passenger.cs">
       <SubType>Form</SubType>
@@ -281,8 +317,23 @@
     <EmbeddedResource Include="Manager_forms\Schedule_trips.resx">
       <DependentUpon>Schedule_trips.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Add_PhoneNumber.resx">
+      <DependentUpon>Add_PhoneNumber.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Passenger forms\Book_Ticket.resx">
       <DependentUpon>Book_Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Cancel_Ticket.resx">
+      <DependentUpon>Cancel_Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Change_Email.resx">
+      <DependentUpon>Change_Email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Change_Password.resx">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Change_PhoneNumber.resx">
+      <DependentUpon>Change_PhoneNumber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Passenger forms\Edit_Profile.resx">
       <DependentUpon>Edit_Profile.cs</DependentUpon>
@@ -292,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Passenger forms\Ticket_Details.resx">
       <DependentUpon>Ticket_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger forms\Upgrade_Ticket.resx">
+      <DependentUpon>Upgrade_Ticket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Passenger.resx">
       <DependentUpon>Passenger.cs</DependentUpon>
