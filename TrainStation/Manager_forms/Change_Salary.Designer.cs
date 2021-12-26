@@ -97,6 +97,7 @@ namespace TrainStation.Manager_forms
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Name = "Change_Salary";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change_Salary";
             ((System.ComponentModel.ISupportInitialize)(this.Salary)).EndInit();
             this.ResumeLayout(false);

@@ -37,7 +37,7 @@ namespace TrainStation.Manager_s_forms
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonShadow;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(71, 91);
             this.dataGridView1.Name = "dataGridView1";
@@ -56,6 +56,7 @@ namespace TrainStation.Manager_s_forms
             this.ClientSize = new System.Drawing.Size(914, 547);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Employees__data";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employees__data";
             this.Load += new System.EventHandler(this.Employees__data_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

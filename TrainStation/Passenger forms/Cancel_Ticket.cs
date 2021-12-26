@@ -16,5 +16,10 @@ namespace TrainStation.Passenger_forms
         {
             InitializeComponent();
         }
+
+        private void Cancel_Ticket_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

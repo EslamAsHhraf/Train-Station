@@ -40,7 +40,7 @@ namespace TrainStation
             // 
             this.passengerSSNComboBox.FormattingEnabled = true;
             this.passengerSSNComboBox.Location = new System.Drawing.Point(404, 220);
-            this.passengerSSNComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passengerSSNComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.passengerSSNComboBox.Name = "passengerSSNComboBox";
             this.passengerSSNComboBox.Size = new System.Drawing.Size(193, 29);
             this.passengerSSNComboBox.TabIndex = 0;
@@ -60,7 +60,7 @@ namespace TrainStation
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(17, 336);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -70,7 +70,7 @@ namespace TrainStation
             // viewDetialsBtn
             // 
             this.viewDetialsBtn.Location = new System.Drawing.Point(404, 275);
-            this.viewDetialsBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.viewDetialsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.viewDetialsBtn.Name = "viewDetialsBtn";
             this.viewDetialsBtn.Size = new System.Drawing.Size(194, 30);
             this.viewDetialsBtn.TabIndex = 3;
@@ -89,8 +89,9 @@ namespace TrainStation
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passengerSSNComboBox);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ViewPassengerData";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewPassengerData";
             this.Load += new System.EventHandler(this.ViewPassengerData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

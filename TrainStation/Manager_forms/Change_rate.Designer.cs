@@ -41,7 +41,7 @@ namespace TrainStation.Manager_forms
             // 
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(217, 189);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(150, 29);
             this.comboBox5.TabIndex = 35;
@@ -49,7 +49,7 @@ namespace TrainStation.Manager_forms
             // Rate
             // 
             this.Rate.Location = new System.Drawing.Point(417, 189);
-            this.Rate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Rate.Margin = new System.Windows.Forms.Padding(4);
             this.Rate.Name = "Rate";
             this.Rate.Size = new System.Drawing.Size(150, 29);
             this.Rate.TabIndex = 34;
@@ -77,7 +77,7 @@ namespace TrainStation.Manager_forms
             // Rate_employee
             // 
             this.Rate_employee.Location = new System.Drawing.Point(288, 277);
-            this.Rate_employee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Rate_employee.Margin = new System.Windows.Forms.Padding(4);
             this.Rate_employee.Name = "Rate_employee";
             this.Rate_employee.Size = new System.Drawing.Size(222, 67);
             this.Rate_employee.TabIndex = 31;
@@ -97,8 +97,9 @@ namespace TrainStation.Manager_forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Rate_employee);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Change_rate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change_rate";
             ((System.ComponentModel.ISupportInitialize)(this.Rate)).EndInit();
             this.ResumeLayout(false);

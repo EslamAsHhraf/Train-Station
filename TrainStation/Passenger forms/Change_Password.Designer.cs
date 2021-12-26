@@ -39,55 +39,69 @@ namespace TrainStation.Passenger_forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(103, 112);
+            this.label4.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(254, 168);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 20);
+            this.label4.Size = new System.Drawing.Size(194, 34);
             this.label4.TabIndex = 14;
             this.label4.Text = "New Password";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(241, 109);
+            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox4.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.textBox4.Location = new System.Drawing.Point(483, 161);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 26);
+            this.textBox4.Size = new System.Drawing.Size(257, 41);
             this.textBox4.TabIndex = 13;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(103, 63);
+            this.label1.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(254, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 20);
+            this.label1.Size = new System.Drawing.Size(180, 34);
             this.label1.TabIndex = 16;
             this.label1.Text = "Old Password";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(241, 60);
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(483, 106);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 26);
+            this.textBox1.Size = new System.Drawing.Size(257, 41);
             this.textBox1.TabIndex = 15;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(163, 178);
+            this.button3.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
+            this.button3.Location = new System.Drawing.Point(335, 252);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(178, 53);
+            this.button3.Size = new System.Drawing.Size(267, 45);
             this.button3.TabIndex = 17;
             this.button3.Text = "Change Password";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // Change_Password
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 291);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(840, 419);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Change_Password";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change_Password";
             this.ResumeLayout(false);
             this.PerformLayout();

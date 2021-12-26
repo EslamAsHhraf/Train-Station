@@ -39,7 +39,7 @@ namespace TrainStation
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(372, 213);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(165, 29);
             this.comboBox1.TabIndex = 0;
@@ -57,7 +57,7 @@ namespace TrainStation
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(300, 276);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(309, 39);
             this.button1.TabIndex = 2;
@@ -86,8 +86,9 @@ namespace TrainStation
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ViewSeats";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewSeats";
             this.ResumeLayout(false);
             this.PerformLayout();

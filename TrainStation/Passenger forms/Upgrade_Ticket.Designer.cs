@@ -36,9 +36,11 @@ namespace TrainStation.Passenger_forms
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(123, 162);
+            this.button1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(298, 285);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(279, 61);
+            this.button1.Size = new System.Drawing.Size(238, 53);
             this.button1.TabIndex = 8;
             this.button1.Text = "Upgrade Ticket";
             this.button1.UseVisualStyleBackColor = true;
@@ -46,30 +48,37 @@ namespace TrainStation.Passenger_forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(140, 66);
+            this.label1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(220, 177);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 20);
+            this.label1.Size = new System.Drawing.Size(200, 34);
             this.label1.TabIndex = 7;
             this.label1.Text = "Ticket Number";
             // 
             // UpgradeTicket_CB
             // 
             this.UpgradeTicket_CB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UpgradeTicket_CB.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.UpgradeTicket_CB.FormattingEnabled = true;
-            this.UpgradeTicket_CB.Location = new System.Drawing.Point(257, 63);
+            this.UpgradeTicket_CB.Location = new System.Drawing.Point(455, 174);
+            this.UpgradeTicket_CB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpgradeTicket_CB.Name = "UpgradeTicket_CB";
-            this.UpgradeTicket_CB.Size = new System.Drawing.Size(121, 28);
+            this.UpgradeTicket_CB.Size = new System.Drawing.Size(168, 42);
             this.UpgradeTicket_CB.TabIndex = 6;
             // 
             // Upgrade_Ticket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 287);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(800, 477);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.UpgradeTicket_CB);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Upgrade_Ticket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Upgrade_Ticket";
             this.ResumeLayout(false);
             this.PerformLayout();

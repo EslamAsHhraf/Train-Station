@@ -55,6 +55,7 @@ namespace TrainStation.Manager_forms
             this.ClientSize = new System.Drawing.Size(1061, 606);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Passengers_data";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Passengers_data";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

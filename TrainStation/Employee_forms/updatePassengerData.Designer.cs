@@ -45,7 +45,7 @@ namespace TrainStation
             // changePhoneNumButton
             // 
             this.changePhoneNumButton.Location = new System.Drawing.Point(359, 237);
-            this.changePhoneNumButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.changePhoneNumButton.Margin = new System.Windows.Forms.Padding(4);
             this.changePhoneNumButton.Name = "changePhoneNumButton";
             this.changePhoneNumButton.Size = new System.Drawing.Size(251, 38);
             this.changePhoneNumButton.TabIndex = 1;
@@ -56,7 +56,7 @@ namespace TrainStation
             // newPhoneNumTextBox
             // 
             this.newPhoneNumTextBox.Location = new System.Drawing.Point(104, 243);
-            this.newPhoneNumTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.newPhoneNumTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.newPhoneNumTextBox.Name = "newPhoneNumTextBox";
             this.newPhoneNumTextBox.Size = new System.Drawing.Size(223, 29);
             this.newPhoneNumTextBox.TabIndex = 0;
@@ -65,7 +65,7 @@ namespace TrainStation
             // changeEmailButton
             // 
             this.changeEmailButton.Location = new System.Drawing.Point(359, 348);
-            this.changeEmailButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.changeEmailButton.Margin = new System.Windows.Forms.Padding(4);
             this.changeEmailButton.Name = "changeEmailButton";
             this.changeEmailButton.Size = new System.Drawing.Size(251, 38);
             this.changeEmailButton.TabIndex = 1;
@@ -75,7 +75,7 @@ namespace TrainStation
             // newEmailTextBox
             // 
             this.newEmailTextBox.Location = new System.Drawing.Point(104, 357);
-            this.newEmailTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.newEmailTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.newEmailTextBox.Name = "newEmailTextBox";
             this.newEmailTextBox.Size = new System.Drawing.Size(223, 29);
             this.newEmailTextBox.TabIndex = 0;
@@ -95,7 +95,7 @@ namespace TrainStation
             // 
             this.passengerSSNComboBox.FormattingEnabled = true;
             this.passengerSSNComboBox.Location = new System.Drawing.Point(247, 151);
-            this.passengerSSNComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passengerSSNComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.passengerSSNComboBox.Name = "passengerSSNComboBox";
             this.passengerSSNComboBox.Size = new System.Drawing.Size(193, 29);
             this.passengerSSNComboBox.TabIndex = 4;
@@ -103,7 +103,7 @@ namespace TrainStation
             // changePasswordBtn
             // 
             this.changePasswordBtn.Location = new System.Drawing.Point(359, 455);
-            this.changePasswordBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.changePasswordBtn.Margin = new System.Windows.Forms.Padding(4);
             this.changePasswordBtn.Name = "changePasswordBtn";
             this.changePasswordBtn.Size = new System.Drawing.Size(251, 38);
             this.changePasswordBtn.TabIndex = 1;
@@ -113,7 +113,7 @@ namespace TrainStation
             // newPasswordTextBox
             // 
             this.newPasswordTextBox.Location = new System.Drawing.Point(104, 464);
-            this.newPasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.newPasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.newPasswordTextBox.Name = "newPasswordTextBox";
             this.newPasswordTextBox.Size = new System.Drawing.Size(223, 29);
             this.newPasswordTextBox.TabIndex = 0;
@@ -170,8 +170,9 @@ namespace TrainStation
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passengerSSNComboBox);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "updatePassengerData";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "updatePassengerData";
             this.ResumeLayout(false);
             this.PerformLayout();

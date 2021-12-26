@@ -19,6 +19,22 @@ namespace TrainStation
             }
             return false;
         }
+        public void Close()  // close all window and open log in
+        {
+             Environment.Exit(0);
+        }
+        //UserLog
+        public void log_out()  // close all window and open log in
+        {
+            Application.Restart();
+            //for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
+            //{
+            //    if (Application.OpenForms[i].Name != "UserLog")
+            //        Application.OpenForms[i].Close();
+            //}
+
+            // change text box to empty
+        }
         public TextBox Trim(TextBox str)  // Trim Space
         {
             str.Text= str.Text.TrimStart();

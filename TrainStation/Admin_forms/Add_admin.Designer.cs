@@ -41,7 +41,7 @@ namespace TrainStation.Admin_forms
             this.label1.Location = new System.Drawing.Point(107, 141);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 34);
+            this.label1.Size = new System.Drawing.Size(85, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Email";
             // 
@@ -78,6 +78,7 @@ namespace TrainStation.Admin_forms
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Add_admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_admin";
             this.ResumeLayout(false);
             this.PerformLayout();

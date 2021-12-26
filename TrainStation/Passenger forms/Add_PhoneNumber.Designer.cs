@@ -37,37 +37,48 @@ namespace TrainStation.Passenger_forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(105, 64);
+            this.label2.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(67, 144);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 20);
+            this.label2.Size = new System.Drawing.Size(255, 34);
             this.label2.TabIndex = 12;
             this.label2.Text = "New Phone Number";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(261, 61);
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.Location = new System.Drawing.Point(344, 141);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 26);
+            this.textBox2.Size = new System.Drawing.Size(266, 41);
             this.textBox2.TabIndex = 11;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(157, 138);
+            this.button1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(353, 224);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(226, 59);
+            this.button1.Size = new System.Drawing.Size(257, 60);
             this.button1.TabIndex = 13;
             this.button1.Text = "Add Phone Number";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Add_PhoneNumber
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 34F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 305);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(786, 414);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
+            this.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Name = "Add_PhoneNumber";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_PhoneNumber";
             this.ResumeLayout(false);
             this.PerformLayout();

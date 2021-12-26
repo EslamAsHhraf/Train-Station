@@ -436,6 +436,7 @@ namespace TrainStation.Manager_forms
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox4.Controls.Add(this.textBox9);
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.textBox8);
@@ -517,6 +518,7 @@ namespace TrainStation.Manager_forms
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.New_Employee);
             this.Name = "Hire_Employee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hire_Employee";
             this.Load += new System.EventHandler(this.Hire_Emplotee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

@@ -38,7 +38,7 @@ namespace TrainStation.Admin_forms
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(125, 105);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(150, 29);
             this.comboBox1.TabIndex = 29;
@@ -56,7 +56,7 @@ namespace TrainStation.Admin_forms
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(268, 265);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(221, 52);
             this.button1.TabIndex = 27;
@@ -74,8 +74,9 @@ namespace TrainStation.Admin_forms
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Fire_employee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fire_employee";
             this.ResumeLayout(false);
             this.PerformLayout();

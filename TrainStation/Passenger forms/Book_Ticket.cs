@@ -16,6 +16,5 @@ namespace TrainStation.Passenger_forms
         {
             InitializeComponent();
         }
-
     }
 }

@@ -36,9 +36,11 @@ namespace TrainStation.Passenger_forms
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(112, 172);
+            this.button1.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(308, 214);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(279, 61);
+            this.button1.Size = new System.Drawing.Size(248, 49);
             this.button1.TabIndex = 5;
             this.button1.Text = "Cancel Ticket";
             this.button1.UseVisualStyleBackColor = true;
@@ -46,31 +48,39 @@ namespace TrainStation.Passenger_forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(129, 76);
+            this.label1.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(224, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 20);
+            this.label1.Size = new System.Drawing.Size(200, 34);
             this.label1.TabIndex = 4;
             this.label1.Text = "Ticket Number";
             // 
             // CancelTicket_CB
             // 
             this.CancelTicket_CB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CancelTicket_CB.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.CancelTicket_CB.FormattingEnabled = true;
-            this.CancelTicket_CB.Location = new System.Drawing.Point(246, 73);
+            this.CancelTicket_CB.Location = new System.Drawing.Point(457, 131);
+            this.CancelTicket_CB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CancelTicket_CB.Name = "CancelTicket_CB";
-            this.CancelTicket_CB.Size = new System.Drawing.Size(121, 28);
+            this.CancelTicket_CB.Size = new System.Drawing.Size(217, 42);
             this.CancelTicket_CB.TabIndex = 3;
             // 
             // Cancel_Ticket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 314);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(835, 406);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CancelTicket_CB);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Cancel_Ticket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cancel_Ticket";
+            this.Load += new System.EventHandler(this.Cancel_Ticket_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

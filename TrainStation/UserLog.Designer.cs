@@ -35,64 +35,85 @@ namespace TrainStation
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Create_acc = new System.Windows.Forms.Button();
+            this.Close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 62);
+            this.label1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(197, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 17);
+            this.label1.Size = new System.Drawing.Size(85, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Email";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 109);
+            this.label2.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(197, 157);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.Size = new System.Drawing.Size(135, 34);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(182, 57);
+            this.textBox1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(359, 104);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 22);
+            this.textBox1.Size = new System.Drawing.Size(232, 41);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(183, 104);
+            this.textBox2.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.textBox2.Location = new System.Drawing.Point(359, 157);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 22);
+            this.textBox2.Size = new System.Drawing.Size(232, 41);
             this.textBox2.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(211, 165);
+            this.button1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(295, 232);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 37);
+            this.button1.Size = new System.Drawing.Size(296, 46);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Sign in";
+            this.button1.Text = "Log in";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Create_acc
             // 
-            this.Create_acc.Location = new System.Drawing.Point(211, 231);
+            this.Create_acc.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.Create_acc.Location = new System.Drawing.Point(295, 295);
             this.Create_acc.Name = "Create_acc";
-            this.Create_acc.Size = new System.Drawing.Size(142, 37);
+            this.Create_acc.Size = new System.Drawing.Size(301, 44);
             this.Create_acc.TabIndex = 5;
             this.Create_acc.Text = "Creat new account";
             this.Create_acc.UseVisualStyleBackColor = true;
             this.Create_acc.Click += new System.EventHandler(this.Create_acc_Click);
             // 
+            // Close
+            // 
+            this.Close.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.Close.Location = new System.Drawing.Point(574, 400);
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(251, 46);
+            this.Close.TabIndex = 6;
+            this.Close.Text = "Close program";
+            this.Close.UseVisualStyleBackColor = true;
+            this.Close.Click += new System.EventHandler(this.Close_Click);
+            // 
             // UserLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 363);
+            this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(916, 507);
+            this.Controls.Add(this.Close);
             this.Controls.Add(this.Create_acc);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
@@ -100,6 +121,7 @@ namespace TrainStation
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UserLog";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserLog";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -114,6 +136,7 @@ namespace TrainStation
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Create_acc;
+        private System.Windows.Forms.Button Close;
     }
 }
 

@@ -54,7 +54,7 @@ namespace TrainStation.Manager_forms
             // Trip_code
             // 
             this.Trip_code.Location = new System.Drawing.Point(460, 90);
-            this.Trip_code.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Trip_code.Margin = new System.Windows.Forms.Padding(4);
             this.Trip_code.Name = "Trip_code";
             this.Trip_code.Size = new System.Drawing.Size(204, 29);
             this.Trip_code.TabIndex = 3;
@@ -118,7 +118,7 @@ namespace TrainStation.Manager_forms
             // 
             this.button1.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(460, 530);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 59);
             this.button1.TabIndex = 9;
@@ -133,7 +133,7 @@ namespace TrainStation.Manager_forms
             this.MA.FormattingEnabled = true;
             this.MA.IntegralHeight = false;
             this.MA.Location = new System.Drawing.Point(523, 185);
-            this.MA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MA.Margin = new System.Windows.Forms.Padding(4);
             this.MA.Name = "MA";
             this.MA.Size = new System.Drawing.Size(82, 29);
             this.MA.TabIndex = 10;
@@ -146,7 +146,7 @@ namespace TrainStation.Manager_forms
             this.HA.FormattingEnabled = true;
             this.HA.IntegralHeight = false;
             this.HA.Location = new System.Drawing.Point(420, 188);
-            this.HA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HA.Margin = new System.Windows.Forms.Padding(4);
             this.HA.Name = "HA";
             this.HA.Size = new System.Drawing.Size(83, 29);
             this.HA.TabIndex = 11;
@@ -158,7 +158,7 @@ namespace TrainStation.Manager_forms
             this.SA.FormattingEnabled = true;
             this.SA.IntegralHeight = false;
             this.SA.Location = new System.Drawing.Point(624, 185);
-            this.SA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SA.Margin = new System.Windows.Forms.Padding(4);
             this.SA.Name = "SA";
             this.SA.Size = new System.Drawing.Size(93, 29);
             this.SA.TabIndex = 12;
@@ -170,7 +170,7 @@ namespace TrainStation.Manager_forms
             this.SD.FormattingEnabled = true;
             this.SD.IntegralHeight = false;
             this.SD.Location = new System.Drawing.Point(624, 237);
-            this.SD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SD.Margin = new System.Windows.Forms.Padding(4);
             this.SD.Name = "SD";
             this.SD.Size = new System.Drawing.Size(93, 29);
             this.SD.TabIndex = 16;
@@ -182,7 +182,7 @@ namespace TrainStation.Manager_forms
             this.HD.FormattingEnabled = true;
             this.HD.IntegralHeight = false;
             this.HD.Location = new System.Drawing.Point(420, 237);
-            this.HD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HD.Margin = new System.Windows.Forms.Padding(4);
             this.HD.Name = "HD";
             this.HD.Size = new System.Drawing.Size(83, 29);
             this.HD.TabIndex = 15;
@@ -195,7 +195,7 @@ namespace TrainStation.Manager_forms
             this.MD.FormattingEnabled = true;
             this.MD.IntegralHeight = false;
             this.MD.Location = new System.Drawing.Point(523, 237);
-            this.MD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MD.Margin = new System.Windows.Forms.Padding(4);
             this.MD.Name = "MD";
             this.MD.Size = new System.Drawing.Size(82, 29);
             this.MD.TabIndex = 14;
@@ -248,7 +248,7 @@ namespace TrainStation.Manager_forms
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(460, 305);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(213, 29);
             this.comboBox1.TabIndex = 20;
@@ -257,7 +257,7 @@ namespace TrainStation.Manager_forms
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(460, 369);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(213, 29);
             this.comboBox2.TabIndex = 21;
@@ -266,7 +266,7 @@ namespace TrainStation.Manager_forms
             // 
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(460, 431);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(213, 29);
             this.comboBox3.TabIndex = 22;
@@ -299,8 +299,9 @@ namespace TrainStation.Manager_forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Trip_code);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Schedule_trips";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Schedule_trips";
             this.Load += new System.EventHandler(this.Schedule_trips_Load);
             this.ResumeLayout(false);

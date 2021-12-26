@@ -39,7 +39,7 @@ namespace TrainStation
             // 
             this.trainPlateNumberComboBox.FormattingEnabled = true;
             this.trainPlateNumberComboBox.Location = new System.Drawing.Point(432, 159);
-            this.trainPlateNumberComboBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trainPlateNumberComboBox.Margin = new System.Windows.Forms.Padding(6);
             this.trainPlateNumberComboBox.Name = "trainPlateNumberComboBox";
             this.trainPlateNumberComboBox.Size = new System.Drawing.Size(238, 42);
             this.trainPlateNumberComboBox.TabIndex = 0;
@@ -50,7 +50,7 @@ namespace TrainStation
             this.label1.Location = new System.Drawing.Point(96, 166);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 34);
+            this.label1.Size = new System.Drawing.Size(285, 34);
             this.label1.TabIndex = 1;
             this.label1.Text = "Train\'s plate number";
             // 
@@ -60,7 +60,7 @@ namespace TrainStation
             this.label2.Location = new System.Drawing.Point(102, 397);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(266, 34);
+            this.label2.Size = new System.Drawing.Size(277, 34);
             this.label2.TabIndex = 2;
             this.label2.Text = "Maintenance status:";
             // 
@@ -70,7 +70,7 @@ namespace TrainStation
             this.trainStatusLabel.Location = new System.Drawing.Point(426, 397);
             this.trainStatusLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.trainStatusLabel.Name = "trainStatusLabel";
-            this.trainStatusLabel.Size = new System.Drawing.Size(216, 34);
+            this.trainStatusLabel.Size = new System.Drawing.Size(220, 34);
             this.trainStatusLabel.TabIndex = 3;
             this.trainStatusLabel.Text = "//To be chnaged";
             // 
@@ -85,8 +85,9 @@ namespace TrainStation
             this.Controls.Add(this.label1);
             this.Controls.Add(this.trainPlateNumberComboBox);
             this.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TrainStatus";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrainStatus";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -40,7 +40,7 @@ namespace TrainStation
             // 
             this.ticketSerialNoComboBox.FormattingEnabled = true;
             this.ticketSerialNoComboBox.Location = new System.Drawing.Point(269, 102);
-            this.ticketSerialNoComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ticketSerialNoComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.ticketSerialNoComboBox.Name = "ticketSerialNoComboBox";
             this.ticketSerialNoComboBox.Size = new System.Drawing.Size(232, 29);
             this.ticketSerialNoComboBox.TabIndex = 0;
@@ -60,7 +60,7 @@ namespace TrainStation
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(51, 253);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -70,7 +70,7 @@ namespace TrainStation
             // viewTicketDetailsBtn
             // 
             this.viewTicketDetailsBtn.Location = new System.Drawing.Point(269, 165);
-            this.viewTicketDetailsBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.viewTicketDetailsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.viewTicketDetailsBtn.Name = "viewTicketDetailsBtn";
             this.viewTicketDetailsBtn.Size = new System.Drawing.Size(232, 45);
             this.viewTicketDetailsBtn.TabIndex = 3;
@@ -88,8 +88,9 @@ namespace TrainStation
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ticketSerialNoComboBox);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ViewTicketDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewTicketDetails";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

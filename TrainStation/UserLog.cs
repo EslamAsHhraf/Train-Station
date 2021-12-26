@@ -12,15 +12,22 @@ namespace TrainStation
 {
     public partial class UserLog : Form
     {
+        Handle hand;
         public UserLog()
         {
             InitializeComponent();
+            hand = new Handle();
         }
 
         private void Create_acc_Click(object sender, EventArgs e)
         {
             Create_acc account = new Create_acc();
-            account.Show();
+            account.ShowDialog();
+        }
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

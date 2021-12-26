@@ -43,7 +43,7 @@ namespace TrainStation
             // 
             this.ticketSerialNoComboBox.FormattingEnabled = true;
             this.ticketSerialNoComboBox.Location = new System.Drawing.Point(210, 111);
-            this.ticketSerialNoComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ticketSerialNoComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.ticketSerialNoComboBox.Name = "ticketSerialNoComboBox";
             this.ticketSerialNoComboBox.Size = new System.Drawing.Size(258, 29);
             this.ticketSerialNoComboBox.TabIndex = 0;
@@ -77,7 +77,7 @@ namespace TrainStation
             // 
             this.newClassComboBox.FormattingEnabled = true;
             this.newClassComboBox.Location = new System.Drawing.Point(210, 225);
-            this.newClassComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.newClassComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.newClassComboBox.Name = "newClassComboBox";
             this.newClassComboBox.Size = new System.Drawing.Size(258, 29);
             this.newClassComboBox.TabIndex = 2;
@@ -97,7 +97,7 @@ namespace TrainStation
             // passengerSSNTextBox
             // 
             this.passengerSSNTextBox.Location = new System.Drawing.Point(210, 329);
-            this.passengerSSNTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passengerSSNTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.passengerSSNTextBox.Name = "passengerSSNTextBox";
             this.passengerSSNTextBox.Size = new System.Drawing.Size(276, 29);
             this.passengerSSNTextBox.TabIndex = 0;
@@ -105,7 +105,7 @@ namespace TrainStation
             // upgradeButton
             // 
             this.upgradeButton.Location = new System.Drawing.Point(271, 398);
-            this.upgradeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.upgradeButton.Margin = new System.Windows.Forms.Padding(4);
             this.upgradeButton.Name = "upgradeButton";
             this.upgradeButton.Size = new System.Drawing.Size(148, 46);
             this.upgradeButton.TabIndex = 7;
@@ -128,8 +128,9 @@ namespace TrainStation
             this.Controls.Add(this.ticketSerialNoComboBox);
             this.Controls.Add(this.passengerSSNTextBox);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UpgradeTicket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpgradeTicket";
             this.ResumeLayout(false);
             this.PerformLayout();

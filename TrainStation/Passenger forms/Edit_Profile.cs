@@ -16,5 +16,29 @@ namespace TrainStation.Passenger_forms
         {
             InitializeComponent();
         }
+
+        private void Change_Phone_Number_Click(object sender, EventArgs e)
+        {
+            Change_PhoneNumber f = new Change_PhoneNumber();
+            f.ShowDialog();
+        }
+
+        private void Add_Phone_Number_Click(object sender, EventArgs e)
+        {
+            Add_PhoneNumber f = new Add_PhoneNumber();
+            f.ShowDialog();
+        }
+
+        private void Change_Email_Click(object sender, EventArgs e)
+        {
+            Change_Email f = new Change_Email();
+            f.ShowDialog();
+        }
+
+        private void Change_Password_Click(object sender, EventArgs e)
+        {
+            Change_Password f = new Change_Password();
+            f.ShowDialog();
+        }
     }
 }

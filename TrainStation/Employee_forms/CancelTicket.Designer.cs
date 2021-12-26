@@ -37,7 +37,7 @@ namespace TrainStation
             // cancelBtn
             // 
             this.cancelBtn.Location = new System.Drawing.Point(261, 279);
-            this.cancelBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cancelBtn.Margin = new System.Windows.Forms.Padding(6);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(372, 72);
             this.cancelBtn.TabIndex = 6;
@@ -51,7 +51,7 @@ namespace TrainStation
             this.label1.Location = new System.Drawing.Point(307, 103);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 34);
+            this.label1.Size = new System.Drawing.Size(288, 34);
             this.label1.TabIndex = 5;
             this.label1.Text = "Ticket Serial Number";
             // 
@@ -59,7 +59,7 @@ namespace TrainStation
             // 
             this.ticketSerialNoComboBox.FormattingEnabled = true;
             this.ticketSerialNoComboBox.Location = new System.Drawing.Point(261, 177);
-            this.ticketSerialNoComboBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ticketSerialNoComboBox.Margin = new System.Windows.Forms.Padding(6);
             this.ticketSerialNoComboBox.Name = "ticketSerialNoComboBox";
             this.ticketSerialNoComboBox.Size = new System.Drawing.Size(368, 42);
             this.ticketSerialNoComboBox.TabIndex = 4;
@@ -75,8 +75,9 @@ namespace TrainStation
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ticketSerialNoComboBox);
             this.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "CancelTicket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancelTicket";
             this.ResumeLayout(false);
             this.PerformLayout();

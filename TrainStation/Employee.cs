@@ -11,9 +11,11 @@ namespace TrainStation
 {
     public partial class Employee : Form
     {
+        Handle hand;
         public Employee()
         {
             InitializeComponent();
+            hand = new Handle();
         }
 
       
@@ -73,5 +75,11 @@ namespace TrainStation
             Form f = new TrainStatus();
             f.ShowDialog();
         }
+
+        private void sign_out_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
     }
 }

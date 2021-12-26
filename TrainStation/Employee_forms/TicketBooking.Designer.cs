@@ -227,6 +227,7 @@ namespace TrainStation
             this.Controls.Add(this.sourceComboBox);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Ticket_booking";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ticket_booking";
             this.Load += new System.EventHandler(this.Ticket_booking_Load);
             this.ResumeLayout(false);
