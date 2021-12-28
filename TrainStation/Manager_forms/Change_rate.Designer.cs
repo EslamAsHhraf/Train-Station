@@ -29,7 +29,7 @@ namespace TrainStation.Manager_forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.SSN = new System.Windows.Forms.ComboBox();
             this.Rate = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,19 +37,25 @@ namespace TrainStation.Manager_forms
             ((System.ComponentModel.ISupportInitialize)(this.Rate)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox5
+            // SSN
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(217, 189);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(150, 29);
-            this.comboBox5.TabIndex = 35;
+            this.SSN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SSN.FormattingEnabled = true;
+            this.SSN.Location = new System.Drawing.Point(217, 189);
+            this.SSN.Margin = new System.Windows.Forms.Padding(4);
+            this.SSN.Name = "SSN";
+            this.SSN.Size = new System.Drawing.Size(150, 29);
+            this.SSN.TabIndex = 35;
             // 
             // Rate
             // 
             this.Rate.Location = new System.Drawing.Point(417, 189);
             this.Rate.Margin = new System.Windows.Forms.Padding(4);
+            this.Rate.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.Rate.Name = "Rate";
             this.Rate.Size = new System.Drawing.Size(150, 29);
             this.Rate.TabIndex = 34;
@@ -83,6 +89,7 @@ namespace TrainStation.Manager_forms
             this.Rate_employee.TabIndex = 31;
             this.Rate_employee.Text = "Change rate of employee";
             this.Rate_employee.UseVisualStyleBackColor = true;
+            this.Rate_employee.Click += new System.EventHandler(this.Rate_employee_Click);
             // 
             // Change_rate
             // 
@@ -91,7 +98,7 @@ namespace TrainStation.Manager_forms
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(836, 454);
-            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.SSN);
             this.Controls.Add(this.Rate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -109,7 +116,7 @@ namespace TrainStation.Manager_forms
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox SSN;
         private System.Windows.Forms.NumericUpDown Rate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

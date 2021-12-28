@@ -45,7 +45,7 @@ namespace TrainStation
             this.Change_rate.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.Change_rate.Location = new System.Drawing.Point(261, 286);
             this.Change_rate.Name = "Change_rate";
-            this.Change_rate.Size = new System.Drawing.Size(387, 51);
+            this.Change_rate.Size = new System.Drawing.Size(478, 51);
             this.Change_rate.TabIndex = 2;
             this.Change_rate.Text = "Change rate of employee";
             this.Change_rate.UseVisualStyleBackColor = true;
@@ -56,7 +56,7 @@ namespace TrainStation
             this.Change_Salary.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.Change_Salary.Location = new System.Drawing.Point(261, 229);
             this.Change_Salary.Name = "Change_Salary";
-            this.Change_Salary.Size = new System.Drawing.Size(387, 51);
+            this.Change_Salary.Size = new System.Drawing.Size(478, 51);
             this.Change_Salary.TabIndex = 10;
             this.Change_Salary.Text = "Change salary of employee";
             this.Change_Salary.UseVisualStyleBackColor = true;
@@ -67,7 +67,7 @@ namespace TrainStation
             this.Hire_E.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.Hire_E.Location = new System.Drawing.Point(262, 34);
             this.Hire_E.Name = "Hire_E";
-            this.Hire_E.Size = new System.Drawing.Size(386, 40);
+            this.Hire_E.Size = new System.Drawing.Size(477, 40);
             this.Hire_E.TabIndex = 19;
             this.Hire_E.Text = "Hire Employee";
             this.Hire_E.UseVisualStyleBackColor = true;
@@ -78,7 +78,7 @@ namespace TrainStation
             this.Schedule_trips.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.Schedule_trips.Location = new System.Drawing.Point(261, 432);
             this.Schedule_trips.Name = "Schedule_trips";
-            this.Schedule_trips.Size = new System.Drawing.Size(386, 42);
+            this.Schedule_trips.Size = new System.Drawing.Size(477, 42);
             this.Schedule_trips.TabIndex = 18;
             this.Schedule_trips.Text = "Schedule trips";
             this.Schedule_trips.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@ namespace TrainStation
             this.view_Employee.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.view_Employee.Location = new System.Drawing.Point(261, 126);
             this.view_Employee.Name = "view_Employee";
-            this.view_Employee.Size = new System.Drawing.Size(386, 40);
+            this.view_Employee.Size = new System.Drawing.Size(477, 40);
             this.view_Employee.TabIndex = 17;
             this.view_Employee.Text = "View Employess\'s data";
             this.view_Employee.UseVisualStyleBackColor = true;
@@ -100,7 +100,7 @@ namespace TrainStation
             this.view_passenger.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.view_passenger.Location = new System.Drawing.Point(262, 367);
             this.view_passenger.Name = "view_passenger";
-            this.view_passenger.Size = new System.Drawing.Size(386, 40);
+            this.view_passenger.Size = new System.Drawing.Size(477, 40);
             this.view_passenger.TabIndex = 16;
             this.view_passenger.Text = "View Passenger\'s data";
             this.view_passenger.UseVisualStyleBackColor = true;
@@ -111,7 +111,7 @@ namespace TrainStation
             this.Change_Dep.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.Change_Dep.Location = new System.Drawing.Point(261, 172);
             this.Change_Dep.Name = "Change_Dep";
-            this.Change_Dep.Size = new System.Drawing.Size(387, 51);
+            this.Change_Dep.Size = new System.Drawing.Size(478, 51);
             this.Change_Dep.TabIndex = 20;
             this.Change_Dep.Text = "Change Departrment of employee";
             this.Change_Dep.UseVisualStyleBackColor = true;
@@ -122,7 +122,7 @@ namespace TrainStation
             this.Fire_Employee.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.Fire_Employee.Location = new System.Drawing.Point(262, 80);
             this.Fire_Employee.Name = "Fire_Employee";
-            this.Fire_Employee.Size = new System.Drawing.Size(386, 40);
+            this.Fire_Employee.Size = new System.Drawing.Size(477, 40);
             this.Fire_Employee.TabIndex = 16;
             this.Fire_Employee.Text = "Fire Employee";
             this.Fire_Employee.UseVisualStyleBackColor = true;

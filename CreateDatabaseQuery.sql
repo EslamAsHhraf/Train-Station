@@ -25,7 +25,7 @@ PRIMARY KEY (SerialNo),
 
 CREATE TABLE Employee
 (
-SSN int NOT NULL,
+SSN int ,
 Fname varchar(20) NOT NULL,
 Minit char NOT NULL,
 Lname varchar(20) NOT NULL,
@@ -42,6 +42,8 @@ CV_SerialNo int,
 Vacc_Date date,
 Emp_Email varchar(50) NOT NULL  ,
 
+unique (CV_SerialNo),
+unique (Emp_Email),
 PRIMARY KEY (SSN),
 FOREIGN KEY (Super_SSN) REFERENCES Employee
 --ON DELETE SET NULL
@@ -89,6 +91,8 @@ Pass_Email varchar(50) ,
 Pass_CV_SerialNo int NOT NULL,
 Pass_Vacc_Date date NOT NULL,
 
+unique (Pass_CV_SerialNo),
+unique (Pass_Email),
 PRIMARY KEY (Pass_SSN),
 FOREIGN KEY (Pass_Email) REFERENCES User_Login
 ON DELETE SET NULL

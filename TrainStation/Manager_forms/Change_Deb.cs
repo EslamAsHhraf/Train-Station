@@ -12,9 +12,24 @@ namespace TrainStation.Admin_forms
 {
     public partial class Change_Deb : Form
     {
+        Controller con;
         public Change_Deb()
         {
             InitializeComponent();
+            con = new Controller();
+            DataTable dt = con.SSN_Employee();
+            SSN.DataSource = dt;
+            SSN.DisplayMember = "SSN";
+
+            DataTable dt2 = con.Dno_Department();
+            Department_num.DataSource = dt2;
+            Department_num.DisplayMember = "DepartmentNumber";
+        }
+
+        private void Change_department_Click(object sender, EventArgs e)
+        {
+            int r = con.Change_Department(SSN.Text, Department_num.Text);
+            MessageBox.Show("Change department of employee is successfully!");
         }
     }
 }

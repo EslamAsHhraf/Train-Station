@@ -29,36 +29,37 @@ namespace TrainStation.Admin_forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.Department_num = new System.Windows.Forms.ComboBox();
+            this.SSN = new System.Windows.Forms.ComboBox();
             this.DNum = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Change_department = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox3
+            // Department_num
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(422, 152);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(150, 29);
-            this.comboBox3.TabIndex = 33;
+            this.Department_num.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Department_num.FormattingEnabled = true;
+            this.Department_num.Location = new System.Drawing.Point(474, 155);
+            this.Department_num.Margin = new System.Windows.Forms.Padding(4);
+            this.Department_num.Name = "Department_num";
+            this.Department_num.Size = new System.Drawing.Size(150, 29);
+            this.Department_num.TabIndex = 33;
             // 
-            // comboBox2
+            // SSN
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(142, 152);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 29);
-            this.comboBox2.TabIndex = 32;
+            this.SSN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SSN.FormattingEnabled = true;
+            this.SSN.Location = new System.Drawing.Point(194, 155);
+            this.SSN.Margin = new System.Windows.Forms.Padding(4);
+            this.SSN.Name = "SSN";
+            this.SSN.Size = new System.Drawing.Size(150, 29);
+            this.SSN.TabIndex = 32;
             // 
             // DNum
             // 
             this.DNum.AutoSize = true;
-            this.DNum.Location = new System.Drawing.Point(418, 117);
+            this.DNum.Location = new System.Drawing.Point(470, 120);
             this.DNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DNum.Name = "DNum";
             this.DNum.Size = new System.Drawing.Size(174, 21);
@@ -68,22 +69,23 @@ namespace TrainStation.Admin_forms
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(138, 117);
+            this.label7.Location = new System.Drawing.Point(190, 120);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 21);
             this.label7.TabIndex = 30;
             this.label7.Text = "SSN";
             // 
-            // button3
+            // Change_department
             // 
-            this.button3.Location = new System.Drawing.Point(185, 257);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(350, 67);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "Change Departrment of employee";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Change_department.Location = new System.Drawing.Point(237, 260);
+            this.Change_department.Margin = new System.Windows.Forms.Padding(4);
+            this.Change_department.Name = "Change_department";
+            this.Change_department.Size = new System.Drawing.Size(350, 67);
+            this.Change_department.TabIndex = 29;
+            this.Change_department.Text = "Change Departrment of employee";
+            this.Change_department.UseVisualStyleBackColor = true;
+            this.Change_department.Click += new System.EventHandler(this.Change_department_Click);
             // 
             // Change_Deb
             // 
@@ -91,12 +93,12 @@ namespace TrainStation.Admin_forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(745, 430);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
+            this.ClientSize = new System.Drawing.Size(806, 455);
+            this.Controls.Add(this.Department_num);
+            this.Controls.Add(this.SSN);
             this.Controls.Add(this.DNum);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Change_department);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Change_Deb";
@@ -109,10 +111,10 @@ namespace TrainStation.Admin_forms
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox Department_num;
+        private System.Windows.Forms.ComboBox SSN;
         private System.Windows.Forms.Label DNum;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Change_department;
     }
 }

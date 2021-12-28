@@ -35,20 +35,17 @@ namespace TrainStation.Manager_forms
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Insert_trip = new System.Windows.Forms.Button();
             this.MA = new System.Windows.Forms.ComboBox();
             this.HA = new System.Windows.Forms.ComboBox();
-            this.SA = new System.Windows.Forms.ComboBox();
-            this.SD = new System.Windows.Forms.ComboBox();
             this.HD = new System.Windows.Forms.ComboBox();
             this.MD = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.trainNum = new System.Windows.Forms.ComboBox();
+            this.comestation = new System.Windows.Forms.ComboBox();
+            this.Gostation = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Trip_code
@@ -114,16 +111,17 @@ namespace TrainStation.Manager_forms
             this.label5.TabIndex = 8;
             this.label5.Text = "Go station";
             // 
-            // button1
+            // Insert_trip
             // 
-            this.button1.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(460, 530);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 59);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Inset Trip";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Insert_trip.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Insert_trip.Location = new System.Drawing.Point(460, 530);
+            this.Insert_trip.Margin = new System.Windows.Forms.Padding(4);
+            this.Insert_trip.Name = "Insert_trip";
+            this.Insert_trip.Size = new System.Drawing.Size(145, 59);
+            this.Insert_trip.TabIndex = 9;
+            this.Insert_trip.Text = "Inset Trip";
+            this.Insert_trip.UseVisualStyleBackColor = true;
+            this.Insert_trip.Click += new System.EventHandler(this.Insert_trip_Click);
             // 
             // MA
             // 
@@ -132,7 +130,7 @@ namespace TrainStation.Manager_forms
             this.MA.DropDownWidth = 53;
             this.MA.FormattingEnabled = true;
             this.MA.IntegralHeight = false;
-            this.MA.Location = new System.Drawing.Point(523, 185);
+            this.MA.Location = new System.Drawing.Point(572, 190);
             this.MA.Margin = new System.Windows.Forms.Padding(4);
             this.MA.Name = "MA";
             this.MA.Size = new System.Drawing.Size(82, 29);
@@ -145,35 +143,11 @@ namespace TrainStation.Manager_forms
             this.HA.DropDownWidth = 53;
             this.HA.FormattingEnabled = true;
             this.HA.IntegralHeight = false;
-            this.HA.Location = new System.Drawing.Point(420, 188);
+            this.HA.Location = new System.Drawing.Point(469, 193);
             this.HA.Margin = new System.Windows.Forms.Padding(4);
             this.HA.Name = "HA";
             this.HA.Size = new System.Drawing.Size(83, 29);
             this.HA.TabIndex = 11;
-            // 
-            // SA
-            // 
-            this.SA.DropDownHeight = 150;
-            this.SA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SA.FormattingEnabled = true;
-            this.SA.IntegralHeight = false;
-            this.SA.Location = new System.Drawing.Point(624, 185);
-            this.SA.Margin = new System.Windows.Forms.Padding(4);
-            this.SA.Name = "SA";
-            this.SA.Size = new System.Drawing.Size(93, 29);
-            this.SA.TabIndex = 12;
-            // 
-            // SD
-            // 
-            this.SD.DropDownHeight = 150;
-            this.SD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SD.FormattingEnabled = true;
-            this.SD.IntegralHeight = false;
-            this.SD.Location = new System.Drawing.Point(624, 237);
-            this.SD.Margin = new System.Windows.Forms.Padding(4);
-            this.SD.Name = "SD";
-            this.SD.Size = new System.Drawing.Size(93, 29);
-            this.SD.TabIndex = 16;
             // 
             // HD
             // 
@@ -181,7 +155,7 @@ namespace TrainStation.Manager_forms
             this.HD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.HD.FormattingEnabled = true;
             this.HD.IntegralHeight = false;
-            this.HD.Location = new System.Drawing.Point(420, 237);
+            this.HD.Location = new System.Drawing.Point(469, 242);
             this.HD.Margin = new System.Windows.Forms.Padding(4);
             this.HD.Name = "HD";
             this.HD.Size = new System.Drawing.Size(83, 29);
@@ -194,7 +168,7 @@ namespace TrainStation.Manager_forms
             this.MD.DropDownWidth = 53;
             this.MD.FormattingEnabled = true;
             this.MD.IntegralHeight = false;
-            this.MD.Location = new System.Drawing.Point(523, 237);
+            this.MD.Location = new System.Drawing.Point(572, 242);
             this.MD.Margin = new System.Windows.Forms.Padding(4);
             this.MD.Name = "MD";
             this.MD.Size = new System.Drawing.Size(82, 29);
@@ -215,7 +189,7 @@ namespace TrainStation.Manager_forms
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(421, 152);
+            this.label7.Location = new System.Drawing.Point(470, 157);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 25);
@@ -226,50 +200,42 @@ namespace TrainStation.Manager_forms
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(519, 152);
+            this.label8.Location = new System.Drawing.Point(568, 157);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 25);
             this.label8.TabIndex = 18;
             this.label8.Text = "Minutes";
             // 
-            // label9
+            // trainNum
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(619, 152);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 25);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Seconds";
+            this.trainNum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.trainNum.FormattingEnabled = true;
+            this.trainNum.Location = new System.Drawing.Point(460, 305);
+            this.trainNum.Margin = new System.Windows.Forms.Padding(4);
+            this.trainNum.Name = "trainNum";
+            this.trainNum.Size = new System.Drawing.Size(213, 29);
+            this.trainNum.TabIndex = 20;
             // 
-            // comboBox1
+            // comestation
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(460, 305);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(213, 29);
-            this.comboBox1.TabIndex = 20;
+            this.comestation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comestation.FormattingEnabled = true;
+            this.comestation.Location = new System.Drawing.Point(460, 369);
+            this.comestation.Margin = new System.Windows.Forms.Padding(4);
+            this.comestation.Name = "comestation";
+            this.comestation.Size = new System.Drawing.Size(213, 29);
+            this.comestation.TabIndex = 21;
             // 
-            // comboBox2
+            // Gostation
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(460, 369);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(213, 29);
-            this.comboBox2.TabIndex = 21;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(460, 431);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(213, 29);
-            this.comboBox3.TabIndex = 22;
+            this.Gostation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Gostation.FormattingEnabled = true;
+            this.Gostation.Location = new System.Drawing.Point(460, 431);
+            this.Gostation.Margin = new System.Windows.Forms.Padding(4);
+            this.Gostation.Name = "Gostation";
+            this.Gostation.Size = new System.Drawing.Size(213, 29);
+            this.Gostation.TabIndex = 22;
             // 
             // Schedule_trips
             // 
@@ -278,20 +244,17 @@ namespace TrainStation.Manager_forms
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1045, 652);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.Gostation);
+            this.Controls.Add(this.comestation);
+            this.Controls.Add(this.trainNum);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.SD);
             this.Controls.Add(this.HD);
             this.Controls.Add(this.MD);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.SA);
             this.Controls.Add(this.HA);
             this.Controls.Add(this.MA);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Insert_trip);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -316,19 +279,16 @@ namespace TrainStation.Manager_forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Insert_trip;
         private System.Windows.Forms.ComboBox MA;
         private System.Windows.Forms.ComboBox HA;
-        private System.Windows.Forms.ComboBox SA;
-        private System.Windows.Forms.ComboBox SD;
         private System.Windows.Forms.ComboBox HD;
         private System.Windows.Forms.ComboBox MD;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox trainNum;
+        private System.Windows.Forms.ComboBox comestation;
+        private System.Windows.Forms.ComboBox Gostation;
     }
 }

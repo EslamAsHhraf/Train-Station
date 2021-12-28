@@ -29,36 +29,42 @@ namespace TrainStation.Manager_forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.SSN = new System.Windows.Forms.ComboBox();
             this.Salary = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ChangeSalary = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Salary)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox4
+            // SSN
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(203, 172);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 29);
-            this.comboBox4.TabIndex = 34;
+            this.SSN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SSN.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.SSN.FormattingEnabled = true;
+            this.SSN.Location = new System.Drawing.Point(269, 186);
+            this.SSN.Name = "SSN";
+            this.SSN.Size = new System.Drawing.Size(160, 29);
+            this.SSN.TabIndex = 34;
             // 
             // Salary
             // 
             this.Salary.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.Salary.Location = new System.Drawing.Point(384, 172);
+            this.Salary.Location = new System.Drawing.Point(468, 186);
+            this.Salary.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
             this.Salary.Name = "Salary";
-            this.Salary.Size = new System.Drawing.Size(120, 29);
+            this.Salary.Size = new System.Drawing.Size(144, 29);
             this.Salary.TabIndex = 33;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(380, 138);
+            this.label3.Location = new System.Drawing.Point(464, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 21);
             this.label3.TabIndex = 32;
@@ -68,21 +74,22 @@ namespace TrainStation.Manager_forms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(199, 138);
+            this.label4.Location = new System.Drawing.Point(265, 152);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 21);
             this.label4.TabIndex = 31;
             this.label4.Text = "SSN";
             // 
-            // button1
+            // ChangeSalary
             // 
-            this.button1.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(262, 249);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 51);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Change salary of employee";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ChangeSalary.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.ChangeSalary.Location = new System.Drawing.Point(314, 273);
+            this.ChangeSalary.Name = "ChangeSalary";
+            this.ChangeSalary.Size = new System.Drawing.Size(264, 51);
+            this.ChangeSalary.TabIndex = 30;
+            this.ChangeSalary.Text = "Change salary of employee";
+            this.ChangeSalary.UseVisualStyleBackColor = true;
+            this.ChangeSalary.Click += new System.EventHandler(this.ChangeSalary_Click);
             // 
             // Change_Salary
             // 
@@ -90,12 +97,12 @@ namespace TrainStation.Manager_forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(732, 423);
-            this.Controls.Add(this.comboBox4);
+            this.ClientSize = new System.Drawing.Size(863, 479);
+            this.Controls.Add(this.SSN);
             this.Controls.Add(this.Salary);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ChangeSalary);
             this.Name = "Change_Salary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change_Salary";
@@ -107,10 +114,10 @@ namespace TrainStation.Manager_forms
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox SSN;
         private System.Windows.Forms.NumericUpDown Salary;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ChangeSalary;
     }
 }
