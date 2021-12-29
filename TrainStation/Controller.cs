@@ -98,17 +98,17 @@ namespace TrainStation
             return dbMan.ExecuteNonQuery(query);
         }
         public int Insert_Employee(string SSN, string Fname, string Minit, string Lname, string Gender, string DOB,
-            string Salary, string House_Num, string Street, string City, string Dno, string Emp_Email)
+            string Salary, string House_Num, string Street, string City,string Super_SSN, string Dno,string CV_SerialNo,string Vacc_Date, string Emp_Email)
         {
             string query = "INSERT INTO Employee ( SSN,  Fname, Minit, Lname, Gender,  DOB,"
-           + "Salary, House_Num, Street, City,  Dno,Emp_Email)"
-            + "Values (" + SSN + ",'" + Fname + "','" + Minit + "','" + Lname + "','" + Gender + "','" + DOB + "'," + Salary + "," + House_Num + "','"
-            + Street + "','" + City + "'," + Dno + ",'" + Emp_Email + "');";
+           + "Salary, House_Num, Street, City, Super_SSN, Dno,CV_SerialNo,Vacc_Date,Emp_Email)"
+            + "Values (" + SSN + ",'" + Fname + "','" + Minit + "','" + Lname + "','" + Gender + "','" + DOB + "'," + Salary + "," + House_Num + ",'"
+            + Street + "','" + City + "'," + Super_SSN + "," + Dno+ "," + CV_SerialNo + ",'" + Vacc_Date + "','" + Emp_Email + "');";
             return dbMan.ExecuteNonQuery(query);
         }
         public int Set_Rate_Employee(string SSN, string Rate)
         {
-            string query = "UPDATE Employee SET SSN=" + SSN + " WHERE Rate=" + Rate + ";";
+            string query = "UPDATE Employee SET Rate=" + Rate + " WHERE SSN=" + SSN + ";";
             return dbMan.ExecuteNonQuery(query);
         }
         public int Set_Super_SSN_Employee(string SSN, string Super_SSN)
@@ -146,17 +146,18 @@ namespace TrainStation
         }
         public int Is_Employee(string SSN)
         {
-            string query = "SELECT SSN FROM Employee where SSN =" + SSN + ";";
+            string query = "SELECT count(SSN) FROM Employee where SSN =" + SSN + ";";
             return (int)dbMan.ExecuteScalar(query);
         }
-        public string Is_User_Login(string Email)
+        public int Is_User_Login(string Email)
         {
-            string query = "SELECT Email FROM User_Login where Email ='" + Email + "';";
-            return (string)dbMan.ExecuteScalar(query);
+            string query = "SELECT count(Email) FROM User_Login where Email ='" + Email + "';";
+            return (int)dbMan.ExecuteScalar(query);
         }
         public int Is_CovidVaccination(string SerialNo)
         {
-            string query = "SELECT SerialNo FROM CovidVaccination where SerialNo =" + SerialNo + ";";
+            string query = "SELECT count(SerialNo) FROM CovidVaccination where SerialNo =" + SerialNo + ";";
+
             return (int)dbMan.ExecuteScalar(query);
         }
         public void TerminateConnection()

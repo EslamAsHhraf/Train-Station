@@ -13,10 +13,12 @@ namespace TrainStation.Manager_forms
     public partial class Schedule_trips : Form
     {
         Controller con;
+        Handle hand;
         public Schedule_trips()
         {
             InitializeComponent();
             con = new Controller();
+            hand = new Handle();
         }
 
         private void Schedule_trips_Load(object sender, EventArgs e)
@@ -44,12 +46,20 @@ namespace TrainStation.Manager_forms
 
         private void Insert_trip_Click(object sender, EventArgs e)
         {
-            if(Trip_code.Text.Length==0)
+            Trip_code = hand.Trim(Trip_code);
+            if (Trip_code.Text.Length==0)
             {
                 MessageBox.Show("Please Insert Trip Code!");
                 return;
             }
-            if(HA.SelectedIndex==-1|| MA.SelectedIndex == -1)
+            bool semo = true;
+            semo = hand.is_valid(Trip_code);
+            if (!semo)
+            {
+                MessageBox.Show("you can't insert ;");
+                return;
+            }
+            if (HA.SelectedIndex==-1|| MA.SelectedIndex == -1)
             {
                 MessageBox.Show("Please Insert Arrival Time!");
                 return;
