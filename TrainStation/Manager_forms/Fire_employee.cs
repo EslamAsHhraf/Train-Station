@@ -24,6 +24,11 @@ namespace TrainStation.Admin_forms
 
         private void Fireemployee_Click(object sender, EventArgs e)
         {
+            if (SSN.Text == "666664445")
+            {
+                MessageBox.Show("You can't fire manager");
+                return;
+            }
             con.Super_Employee(SSN.Text);
             int r = con.Delete_Employee(SSN.Text);
             if(r==0)
