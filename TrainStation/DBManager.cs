@@ -25,8 +25,8 @@ namespace TrainStation
                 // just for illustration when the database is opened, 
                 // this should NOT be shown in GUI to the user in the final application
                 // but we show it here only to make sure that the database is working
-                // MessageBox.Show("Successfully connected to the database!");
-                Console.WriteLine("The DB connection is opened successfully");
+                 MessageBox.Show("Successfully connected to the database!");
+                //Console.WriteLine("The DB connection is opened successfully");
             }
             catch (Exception e)
             {
@@ -46,8 +46,8 @@ namespace TrainStation
             catch (Exception ex)
             {
                 // this message should not appear to user in the final application
-                // MessageBox.Show(ex.Message);
-                Console.WriteLine(ex.Message);
+                 MessageBox.Show(ex.Message);
+               // Console.WriteLine(ex.Message);
                 return 0;
             }
         }
@@ -74,8 +74,8 @@ namespace TrainStation
             catch (Exception ex)
             {
                 // this message should not appear to user in the final application
-                //MessageBox.Show(ex.Message);
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
+                //Console.WriteLine(ex.Message);
                 return null;
             }
         }
@@ -90,8 +90,8 @@ namespace TrainStation
             catch (Exception ex)
             {
                 // this message should not appear to user in the final application
-                // MessageBox.Show(ex.Message);
-                Console.WriteLine(ex.Message);
+                 MessageBox.Show(ex.Message);
+              //  Console.WriteLine(ex.Message);
                 return 0;
             }
         }

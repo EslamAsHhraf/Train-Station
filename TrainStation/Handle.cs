@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace TrainStation
 {
     class Handle
-    {
+    {   
         public TextBox Trim(TextBox str)  // Trim Space
         {
             str.Text= str.Text.TrimStart();

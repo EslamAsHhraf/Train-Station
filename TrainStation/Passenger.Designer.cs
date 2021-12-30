@@ -42,7 +42,7 @@ namespace TrainStation
             // Edit_Profile
             // 
             this.Edit_Profile.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Edit_Profile.Location = new System.Drawing.Point(261, 187);
+            this.Edit_Profile.Location = new System.Drawing.Point(261, 204);
             this.Edit_Profile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Edit_Profile.Name = "Edit_Profile";
             this.Edit_Profile.Size = new System.Drawing.Size(298, 48);
@@ -110,7 +110,7 @@ namespace TrainStation
             // Make_Complaint
             // 
             this.Make_Complaint.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Make_Complaint.Location = new System.Drawing.Point(263, 116);
+            this.Make_Complaint.Location = new System.Drawing.Point(261, 148);
             this.Make_Complaint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Make_Complaint.Name = "Make_Complaint";
             this.Make_Complaint.Size = new System.Drawing.Size(296, 52);

@@ -237,6 +237,7 @@
     <Compile Include="Employee_forms\UpgradeTicket.Designer.cs">
       <DependentUpon>UpgradeTicket.cs</DependentUpon>
     </Compile>
+    <Compile Include="StoredProcedures.cs" />
     <Compile Include="UserLog.cs">
       <SubType>Form</SubType>
     </Compile>

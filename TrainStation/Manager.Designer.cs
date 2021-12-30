@@ -131,7 +131,7 @@ namespace TrainStation
             // sign_out
             // 
             this.sign_out.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.sign_out.Location = new System.Drawing.Point(733, 468);
+            this.sign_out.Location = new System.Drawing.Point(758, 487);
             this.sign_out.Name = "sign_out";
             this.sign_out.Size = new System.Drawing.Size(160, 52);
             this.sign_out.TabIndex = 21;
