@@ -94,6 +94,7 @@ namespace TrainStation.Manager_forms
             else
             {
                 MessageBox.Show("Hire new employee is successfully");
+                Hire_Emplotee_Load(sender, e);
             }
         }
         private bool is_embty()
@@ -250,5 +251,14 @@ namespace TrainStation.Manager_forms
             return false;
         }
 
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Exit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

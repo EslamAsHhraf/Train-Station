@@ -25,7 +25,7 @@ namespace TrainStation
                 // just for illustration when the database is opened, 
                 // this should NOT be shown in GUI to the user in the final application
                 // but we show it here only to make sure that the database is working
-                 MessageBox.Show("Successfully connected to the database!");
+                MessageBox.Show("Successfully connected to the database!");
                 //Console.WriteLine("The DB connection is opened successfully");
             }
             catch (Exception e)
@@ -46,8 +46,8 @@ namespace TrainStation
             catch (Exception ex)
             {
                 // this message should not appear to user in the final application
-                 MessageBox.Show(ex.Message);
-               // Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
+                // Console.WriteLine(ex.Message);
                 return 0;
             }
         }
@@ -90,8 +90,8 @@ namespace TrainStation
             catch (Exception ex)
             {
                 // this message should not appear to user in the final application
-                 MessageBox.Show(ex.Message);
-              //  Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
+                //  Console.WriteLine(ex.Message);
                 return 0;
             }
         }
@@ -106,6 +106,68 @@ namespace TrainStation
             {
                 // this message should not appear to user in the final application
                 MessageBox.Show(e.Message);
+            }
+        }
+        public DataTable ExecuteReader(string storedProcedureName, Dictionary<string, object> parameters)
+        {
+            try
+            {
+                SqlCommand myCommand = new SqlCommand(storedProcedureName, myConnection);
+
+                myCommand.CommandType = CommandType.StoredProcedure;
+
+                if (parameters != null)
+                {
+                    foreach (KeyValuePair<string, object> Param in parameters)
+                    {
+                        myCommand.Parameters.Add(new SqlParameter(Param.Key, Param.Value));
+                    }
+                }
+
+                SqlDataReader reader = myCommand.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
+                    reader.Close();
+                    return dt;
+                }
+                else
+                {
+                    reader.Close();
+                    return null;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public int ExecuteNonQuery(string storedProcedureName, Dictionary<string, object> parameters)
+        {
+            try
+            {
+                SqlCommand myCommand = new SqlCommand(storedProcedureName, myConnection);
+
+                myCommand.CommandType = CommandType.StoredProcedure;
+                if (parameters != null)
+                {
+                    foreach (KeyValuePair<string, object> Param in parameters)
+                    {
+                        myCommand.Parameters.Add(new SqlParameter(Param.Key, Param.Value));
+                    }
+                }
+                return myCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                // this message should not appear to user in the final application
+                MessageBox.Show(ex.Message);
+                // Console.WriteLine(ex.Message);
+                return 0;
             }
         }
     }

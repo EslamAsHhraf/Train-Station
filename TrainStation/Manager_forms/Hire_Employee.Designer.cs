@@ -74,6 +74,8 @@ namespace TrainStation.Manager_forms
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Super_SSN = new System.Windows.Forms.ComboBox();
             this.DNO = new System.Windows.Forms.ComboBox();
+            this.Back = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.SSN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rate)).BeginInit();
@@ -537,6 +539,30 @@ namespace TrainStation.Manager_forms
             this.DNO.Size = new System.Drawing.Size(135, 29);
             this.DNO.TabIndex = 40;
             // 
+            // Back
+            // 
+            this.Back.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.Location = new System.Drawing.Point(873, 603);
+            this.Back.Margin = new System.Windows.Forms.Padding(4);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(118, 59);
+            this.Back.TabIndex = 58;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // Exit
+            // 
+            this.Exit.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(999, 603);
+            this.Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(118, 59);
+            this.Exit.TabIndex = 57;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click_1);
+            // 
             // Hire_Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -544,6 +570,8 @@ namespace TrainStation.Manager_forms
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1153, 675);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -614,5 +642,7 @@ namespace TrainStation.Manager_forms
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox DNO;
         private System.Windows.Forms.ComboBox Super_SSN;
+        private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Button Exit;
     }
 }

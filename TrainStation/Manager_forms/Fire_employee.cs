@@ -17,9 +17,7 @@ namespace TrainStation.Admin_forms
         {
             InitializeComponent();
             con = new Controller();
-            DataTable dt = con.SSN_Employee();
-            SSN.DataSource = dt;
-            SSN.DisplayMember = "SSN";
+          
         }
 
         private void Fireemployee_Click(object sender, EventArgs e)
@@ -38,7 +36,26 @@ namespace TrainStation.Admin_forms
             else
             {
                 MessageBox.Show("Delete employee is successfully!");
+                Fire_employee_Load(sender,e);
             }
+
+        }
+
+        private void Fire_employee_Load(object sender, EventArgs e)
+        {
+            DataTable dt = con.SSN_Employee();
+            SSN.DataSource = dt;
+            SSN.DisplayMember = "SSN";
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

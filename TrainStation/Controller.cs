@@ -49,8 +49,10 @@ namespace TrainStation
         }
         public DataTable ID_Station()
         {
-            string query = "SELECT ID FROM Station;";
-            return dbMan.ExecuteReader(query);
+            String StoredProcedureName = StoredProcedures.ID_Station;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+            //string query = "SELECT ID FROM Station;";
+            //return dbMan.ExecuteReader(query);
         }
         public DataTable Trip_Code_Trip()
         {
@@ -65,8 +67,13 @@ namespace TrainStation
 
         public int Change_Department(string ssn, string dno)
         {
-            string query = "UPDATE Employee SET Dno=" + dno + " WHERE SSN=" + ssn + ";";
-            return dbMan.ExecuteNonQuery(query);
+            //string query = "UPDATE Employee SET Dno=" + dno + " WHERE SSN=" + ssn + ";";
+            //return dbMan.ExecuteNonQuery(query);
+            String StoredProcedureName = StoredProcedures.Change_Department;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ssn_e", ssn);
+            Parameters.Add("@dep_e", dno);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
         public int Change_Rate(string ssn, string rate)
         {
@@ -75,14 +82,28 @@ namespace TrainStation
         }
         public int Change_Salary(string ssn, string salary)
         {
-            string query = "UPDATE Employee SET Salary=" + salary + " WHERE SSN=" + ssn + ";";
-            return dbMan.ExecuteNonQuery(query);
+            //string query = "UPDATE Employee SET Salary=" + salary + " WHERE SSN=" + ssn + ";";
+            //return dbMan.ExecuteNonQuery(query);
+            String StoredProcedureName = StoredProcedures.Change_Salary;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ssn", ssn);
+            Parameters.Add("@salary", salary);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
         public int Insert_Trip(string Trip_Code, string Arrival_Time, string Departure_Time, string Train_PlateNumber, string Come_Station, string Go_Station)
         {
-            string query = "INSERT INTO Trip ( Trip_Code, Arrival_Time, Departure_Time,Train_PlateNumber,Come_Station,Go_Station)" +
-                                    "Values ('" + Trip_Code + "','" + Arrival_Time + "','" + Departure_Time + "'," + Train_PlateNumber + "," + Come_Station + "," + Go_Station + "); ";
-            return dbMan.ExecuteNonQuery(query);
+            //string query = "INSERT INTO Trip ( Trip_Code, Arrival_Time, Departure_Time,Train_PlateNumber,Come_Station,Go_Station)" +
+            //                        "Values ('" + Trip_Code + "','" + Arrival_Time + "','" + Departure_Time + "'," + Train_PlateNumber + "," + Come_Station + "," + Go_Station + "); ";
+            //return dbMan.ExecuteNonQuery(query);
+            String StoredProcedureName = StoredProcedures.Insert_Trip;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@TripCode", Trip_Code);
+            Parameters.Add("@Arrival_Time", Arrival_Time);
+            Parameters.Add("@Departure_Time", Departure_Time);
+            Parameters.Add("@Train_PlateNumber", Train_PlateNumber);
+            Parameters.Add("@Come_Station", Come_Station);
+            Parameters.Add("@Go_Station", Go_Station);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
         public int Set_Train_PlateNumber_Trip(string Trip_Code, string Train_PlateNumber)
         {
@@ -123,21 +144,6 @@ namespace TrainStation
             string query = "UPDATE Employee SET Rate=" + Rate + " WHERE SSN=" + SSN + ";";
             return dbMan.ExecuteNonQuery(query);
         }
-        public int Set_Super_SSN_Employee(string SSN, string Super_SSN)
-        {
-            string query = "UPDATE Employee SET SSN=" + SSN + " WHERE Super_SSN=" + Super_SSN + ";";
-            return dbMan.ExecuteNonQuery(query);
-        }
-        public int Set_CV_SerialNo_Employee(string SSN, string CV_SerialNo)
-        {
-            string query = "UPDATE Employee SET SSN=" + SSN + " WHERE CV_SerialNo=" + CV_SerialNo + ";";
-            return dbMan.ExecuteNonQuery(query);
-        }
-        public int Set_Vacc_Date_Employee(string SSN, string Vacc_Date)
-        {
-            string query = "UPDATE Employee SET SSN=" + SSN + " WHERE Vacc_Date=" + Vacc_Date + ";";
-            return dbMan.ExecuteNonQuery(query);
-        }
         public int Insert_User_Login(string Email, string Pass, string Authority, string UserName)
         {
             string query = "INSERT INTO User_Login ( Email, Pass, Authority,UserName)" +
@@ -172,6 +178,27 @@ namespace TrainStation
 
             return (int)dbMan.ExecuteScalar(query);
         }
+        public int Is_ticket(string TicketNo)
+        {
+            string query = "SELECT count(TicketNo) FROM Ticket where TicketNo =" + TicketNo + ";";
+
+            return (int)dbMan.ExecuteScalar(query);
+        }
+        public int Insetr_ticket(string TicketNo, string Class,string Price, string Ticket_Date,string TripCode)
+        {
+            //string query = "INSERT INTO Ticket ( TicketNo, Class, Price,Ticket_Date,TripCode)" +
+            //               "Values (" + TicketNo + ",'" + Class + "'," + Price + ",'" + Ticket_Date + "','" + TripCode + "');";
+            //return dbMan.ExecuteNonQuery(query);
+            String StoredProcedureName = StoredProcedures.Insert_ticket;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@TicketNo", TicketNo);
+            Parameters.Add("@Class", Class);
+            Parameters.Add("@Price", Price);
+            Parameters.Add("@Ticket_Date", Ticket_Date);
+            Parameters.Add("@TripCode", TripCode);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
         public void TerminateConnection()
         {
             dbMan.CloseConnection();

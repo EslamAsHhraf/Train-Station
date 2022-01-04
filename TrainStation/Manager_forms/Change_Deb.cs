@@ -29,7 +29,29 @@ namespace TrainStation.Admin_forms
         private void Change_department_Click(object sender, EventArgs e)
         {
             int r = con.Change_Department(SSN.Text, Department_num.Text);
-            MessageBox.Show("Change department of employee is successfully!");
+            if (r == 0)
+            {
+                MessageBox.Show("Change department of employee is failed!");
+            }
+            else
+            {
+                MessageBox.Show("Change department of employee is successfully!");
+            }
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Change_Deb_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -66,5 +66,10 @@ namespace TrainStation
         {
             Application.Restart();
         }
+
+        private void Create_acc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

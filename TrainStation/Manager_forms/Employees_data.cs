@@ -25,5 +25,15 @@ namespace TrainStation.Manager_s_forms
             data.DataSource = dt;
             data.Refresh();
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
