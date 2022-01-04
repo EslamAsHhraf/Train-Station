@@ -48,10 +48,11 @@ namespace TrainStation
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(417, 182);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 21);
+            this.label1.Size = new System.Drawing.Size(168, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Passenger\'s SSN";
             // 
@@ -64,7 +65,7 @@ namespace TrainStation
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(970, 75);
+            this.dataGridView1.Size = new System.Drawing.Size(970, 158);
             this.dataGridView1.TabIndex = 2;
             // 
             // viewDetialsBtn
@@ -76,6 +77,7 @@ namespace TrainStation
             this.viewDetialsBtn.TabIndex = 3;
             this.viewDetialsBtn.Text = "View details";
             this.viewDetialsBtn.UseVisualStyleBackColor = true;
+            this.viewDetialsBtn.Click += new System.EventHandler(this.viewDetialsBtn_Click);
             // 
             // ViewPassengerData
             // 

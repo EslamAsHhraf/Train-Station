@@ -59,12 +59,12 @@ namespace TrainStation
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(51, 253);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 253);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(724, 197);
+            this.dataGridView1.Size = new System.Drawing.Size(766, 124);
             this.dataGridView1.TabIndex = 2;
             // 
             // viewTicketDetailsBtn
@@ -76,6 +76,7 @@ namespace TrainStation
             this.viewTicketDetailsBtn.TabIndex = 3;
             this.viewTicketDetailsBtn.Text = "View Ticket Details";
             this.viewTicketDetailsBtn.UseVisualStyleBackColor = true;
+            this.viewTicketDetailsBtn.Click += new System.EventHandler(this.viewTicketDetailsBtn_Click);
             // 
             // ViewTicketDetails
             // 
@@ -92,6 +93,7 @@ namespace TrainStation
             this.Name = "ViewTicketDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewTicketDetails";
+            this.Load += new System.EventHandler(this.ViewTicketDetails_load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

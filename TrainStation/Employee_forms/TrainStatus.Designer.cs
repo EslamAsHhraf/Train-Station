@@ -31,8 +31,7 @@ namespace TrainStation
         {
             this.trainPlateNumberComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.trainStatusLabel = new System.Windows.Forms.Label();
+            this.ShowMaintenanceStatusButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // trainPlateNumberComboBox
@@ -54,25 +53,15 @@ namespace TrainStation
             this.label1.TabIndex = 1;
             this.label1.Text = "Train\'s plate number";
             // 
-            // label2
+            // ShowMaintenanceStatusButton
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 397);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 34);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Maintenance status:";
-            // 
-            // trainStatusLabel
-            // 
-            this.trainStatusLabel.AutoSize = true;
-            this.trainStatusLabel.Location = new System.Drawing.Point(426, 397);
-            this.trainStatusLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.trainStatusLabel.Name = "trainStatusLabel";
-            this.trainStatusLabel.Size = new System.Drawing.Size(220, 34);
-            this.trainStatusLabel.TabIndex = 3;
-            this.trainStatusLabel.Text = "//To be chnaged";
+            this.ShowMaintenanceStatusButton.Location = new System.Drawing.Point(193, 334);
+            this.ShowMaintenanceStatusButton.Name = "ShowMaintenanceStatusButton";
+            this.ShowMaintenanceStatusButton.Size = new System.Drawing.Size(392, 58);
+            this.ShowMaintenanceStatusButton.TabIndex = 4;
+            this.ShowMaintenanceStatusButton.Text = "Show Maintenance Status";
+            this.ShowMaintenanceStatusButton.UseVisualStyleBackColor = true;
+            this.ShowMaintenanceStatusButton.Click += new System.EventHandler(this.ShowMaintenanceStatusButton_Click);
             // 
             // TrainStatus
             // 
@@ -80,8 +69,7 @@ namespace TrainStation
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.ClientSize = new System.Drawing.Size(780, 620);
-            this.Controls.Add(this.trainStatusLabel);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ShowMaintenanceStatusButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.trainPlateNumberComboBox);
             this.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
@@ -89,6 +77,8 @@ namespace TrainStation
             this.Name = "TrainStatus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrainStatus";
+            this.Load += new System.EventHandler(this.TrainStatus_load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,7 +88,6 @@ namespace TrainStation
 
         private System.Windows.Forms.ComboBox trainPlateNumberComboBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label trainStatusLabel;
+        private System.Windows.Forms.Button ShowMaintenanceStatusButton;
     }
 }

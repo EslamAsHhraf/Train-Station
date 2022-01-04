@@ -41,7 +41,7 @@ namespace TrainStation
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(680, 285);
+            this.dataGridView1.Size = new System.Drawing.Size(914, 368);
             this.dataGridView1.TabIndex = 0;
             // 
             // ViewTrips
@@ -50,11 +50,12 @@ namespace TrainStation
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1031, 504);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ViewTrips";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewTrips";
+            this.Load += new System.EventHandler(this.ViewTrips_load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

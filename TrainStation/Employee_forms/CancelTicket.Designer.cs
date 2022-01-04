@@ -79,6 +79,8 @@ namespace TrainStation
             this.Name = "CancelTicket";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancelTicket";
+            this.Load += new System.EventHandler(this.CancelTicket_load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

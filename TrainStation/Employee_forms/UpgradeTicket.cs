@@ -12,36 +12,51 @@ namespace TrainStation
 {
     public partial class UpgradeTicket : Form
     {
+        Controller controllerObj;
+
         public UpgradeTicket()
         {
             InitializeComponent();
         }
+        private void UpgradeTicket_load(object sender, EventArgs e)
+        {
+            controllerObj = new Controller();
+            DataTable x = controllerObj.viewTicketNumbers();
+            foreach (DataRow row in x.Rows)
+                ticketSerialNoComboBox.Items.Add(row[0].ToString());
+            char[] arr = { 'A', 'B', 'C', 'D', 'E' };
+            for (int i = 0; i < arr.Length; i++)
+                 newClassComboBox.Items.Add(arr[i]); 
+          
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (ticketSerialNoComboBox.Text == "")
+            {
+                MessageBox.Show("Please select a ticket!");
+                return;
 
+            }
+            if (newClassComboBox.Text == "")
+            {
+                MessageBox.Show("Please select a class!");
+                return;
+
+            }
+            string tClass = controllerObj.getTicketClass(Int32.Parse(ticketSerialNoComboBox.Text));
+            if(tClass==newClassComboBox.Text)
+            {
+                MessageBox.Show("The ticket's class is already " + tClass + "!");
+                return;
+            }
+
+            int x = controllerObj.updateTicketEmployee(newClassComboBox.Text[0], Int32.Parse(ticketSerialNoComboBox.Text));
+            if(x==1)
             MessageBox.Show("You succefully upgraded a ticket with Serial No. : "+ticketSerialNoComboBox.Text+" \n " +
                 "To class : "+newClassComboBox.Text);
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void newClassComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ticketSerialNoComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

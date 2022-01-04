@@ -32,7 +32,6 @@ namespace TrainStation
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -47,12 +46,13 @@ namespace TrainStation
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(369, 171);
+            this.label1.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(367, 174);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 21);
+            this.label1.Size = new System.Drawing.Size(184, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Ticket serial number";
+            this.label1.Text = "Trip serial number";
             // 
             // button1
             // 
@@ -63,16 +63,7 @@ namespace TrainStation
             this.button1.TabIndex = 2;
             this.button1.Text = "View available seats number";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(385, 381);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 21);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "//To be changed";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ViewSeats
             // 
@@ -81,7 +72,6 @@ namespace TrainStation
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(889, 498);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
@@ -90,6 +80,7 @@ namespace TrainStation
             this.Name = "ViewSeats";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewSeats";
+            this.Load += new System.EventHandler(this.ViewSeats_load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,6 +91,5 @@ namespace TrainStation
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
     }
 }

@@ -44,9 +44,9 @@ namespace TrainStation
             // viewAvailableSeatsBtn
             // 
             this.viewAvailableSeatsBtn.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.viewAvailableSeatsBtn.Location = new System.Drawing.Point(253, 342);
+            this.viewAvailableSeatsBtn.Location = new System.Drawing.Point(214, 342);
             this.viewAvailableSeatsBtn.Name = "viewAvailableSeatsBtn";
-            this.viewAvailableSeatsBtn.Size = new System.Drawing.Size(333, 41);
+            this.viewAvailableSeatsBtn.Size = new System.Drawing.Size(435, 41);
             this.viewAvailableSeatsBtn.TabIndex = 0;
             this.viewAvailableSeatsBtn.Text = "View a trip\'s available seats ";
             this.viewAvailableSeatsBtn.UseVisualStyleBackColor = true;
@@ -55,9 +55,9 @@ namespace TrainStation
             // upgradeTicketBtn
             // 
             this.upgradeTicketBtn.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.upgradeTicketBtn.Location = new System.Drawing.Point(253, 118);
+            this.upgradeTicketBtn.Location = new System.Drawing.Point(214, 118);
             this.upgradeTicketBtn.Name = "upgradeTicketBtn";
-            this.upgradeTicketBtn.Size = new System.Drawing.Size(333, 41);
+            this.upgradeTicketBtn.Size = new System.Drawing.Size(435, 41);
             this.upgradeTicketBtn.TabIndex = 1;
             this.upgradeTicketBtn.Text = "Upgrade a ticket";
             this.upgradeTicketBtn.UseVisualStyleBackColor = true;
@@ -66,9 +66,9 @@ namespace TrainStation
             // bookTicketBtn
             // 
             this.bookTicketBtn.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.bookTicketBtn.Location = new System.Drawing.Point(253, 24);
+            this.bookTicketBtn.Location = new System.Drawing.Point(214, 24);
             this.bookTicketBtn.Name = "bookTicketBtn";
-            this.bookTicketBtn.Size = new System.Drawing.Size(333, 41);
+            this.bookTicketBtn.Size = new System.Drawing.Size(435, 41);
             this.bookTicketBtn.TabIndex = 2;
             this.bookTicketBtn.Text = "Book a ticket";
             this.bookTicketBtn.UseVisualStyleBackColor = true;
@@ -77,9 +77,9 @@ namespace TrainStation
             // viewAvailableTripsBtn
             // 
             this.viewAvailableTripsBtn.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.viewAvailableTripsBtn.Location = new System.Drawing.Point(253, 389);
+            this.viewAvailableTripsBtn.Location = new System.Drawing.Point(214, 389);
             this.viewAvailableTripsBtn.Name = "viewAvailableTripsBtn";
-            this.viewAvailableTripsBtn.Size = new System.Drawing.Size(333, 41);
+            this.viewAvailableTripsBtn.Size = new System.Drawing.Size(435, 41);
             this.viewAvailableTripsBtn.TabIndex = 3;
             this.viewAvailableTripsBtn.Text = "View available trips";
             this.viewAvailableTripsBtn.UseVisualStyleBackColor = true;
@@ -88,9 +88,9 @@ namespace TrainStation
             // upgradePassengerDataBtn
             // 
             this.upgradePassengerDataBtn.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.upgradePassengerDataBtn.Location = new System.Drawing.Point(253, 278);
+            this.upgradePassengerDataBtn.Location = new System.Drawing.Point(214, 278);
             this.upgradePassengerDataBtn.Name = "upgradePassengerDataBtn";
-            this.upgradePassengerDataBtn.Size = new System.Drawing.Size(333, 41);
+            this.upgradePassengerDataBtn.Size = new System.Drawing.Size(435, 41);
             this.upgradePassengerDataBtn.TabIndex = 7;
             this.upgradePassengerDataBtn.Text = "Update passenger\'s data";
             this.upgradePassengerDataBtn.UseVisualStyleBackColor = true;
@@ -99,9 +99,9 @@ namespace TrainStation
             // viewTicketDetailsBtn
             // 
             this.viewTicketDetailsBtn.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.viewTicketDetailsBtn.Location = new System.Drawing.Point(253, 71);
+            this.viewTicketDetailsBtn.Location = new System.Drawing.Point(214, 71);
             this.viewTicketDetailsBtn.Name = "viewTicketDetailsBtn";
-            this.viewTicketDetailsBtn.Size = new System.Drawing.Size(333, 41);
+            this.viewTicketDetailsBtn.Size = new System.Drawing.Size(435, 41);
             this.viewTicketDetailsBtn.TabIndex = 6;
             this.viewTicketDetailsBtn.Text = "View ticket details";
             this.viewTicketDetailsBtn.UseVisualStyleBackColor = true;
@@ -110,9 +110,9 @@ namespace TrainStation
             // viewPassengersDataBtn
             // 
             this.viewPassengersDataBtn.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.viewPassengersDataBtn.Location = new System.Drawing.Point(253, 231);
+            this.viewPassengersDataBtn.Location = new System.Drawing.Point(214, 231);
             this.viewPassengersDataBtn.Name = "viewPassengersDataBtn";
-            this.viewPassengersDataBtn.Size = new System.Drawing.Size(333, 41);
+            this.viewPassengersDataBtn.Size = new System.Drawing.Size(435, 41);
             this.viewPassengersDataBtn.TabIndex = 5;
             this.viewPassengersDataBtn.Text = "View passenger\'s data";
             this.viewPassengersDataBtn.UseVisualStyleBackColor = true;
@@ -121,9 +121,9 @@ namespace TrainStation
             // cancelTicketBtn
             // 
             this.cancelTicketBtn.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.cancelTicketBtn.Location = new System.Drawing.Point(253, 165);
+            this.cancelTicketBtn.Location = new System.Drawing.Point(214, 165);
             this.cancelTicketBtn.Name = "cancelTicketBtn";
-            this.cancelTicketBtn.Size = new System.Drawing.Size(333, 41);
+            this.cancelTicketBtn.Size = new System.Drawing.Size(435, 41);
             this.cancelTicketBtn.TabIndex = 4;
             this.cancelTicketBtn.Text = "Cancel a ticket";
             this.cancelTicketBtn.UseVisualStyleBackColor = true;
@@ -132,9 +132,9 @@ namespace TrainStation
             // checkTrainStatusBtn
             // 
             this.checkTrainStatusBtn.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.checkTrainStatusBtn.Location = new System.Drawing.Point(253, 450);
+            this.checkTrainStatusBtn.Location = new System.Drawing.Point(214, 450);
             this.checkTrainStatusBtn.Name = "checkTrainStatusBtn";
-            this.checkTrainStatusBtn.Size = new System.Drawing.Size(333, 41);
+            this.checkTrainStatusBtn.Size = new System.Drawing.Size(435, 41);
             this.checkTrainStatusBtn.TabIndex = 8;
             this.checkTrainStatusBtn.Text = "Check train\'s status";
             this.checkTrainStatusBtn.UseVisualStyleBackColor = true;

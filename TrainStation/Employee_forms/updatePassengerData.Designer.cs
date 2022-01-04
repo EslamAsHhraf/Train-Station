@@ -49,7 +49,7 @@ namespace TrainStation
             this.changePhoneNumButton.Name = "changePhoneNumButton";
             this.changePhoneNumButton.Size = new System.Drawing.Size(251, 38);
             this.changePhoneNumButton.TabIndex = 1;
-            this.changePhoneNumButton.Text = "Change Phone Number";
+            this.changePhoneNumButton.Text = "Add Phone Number";
             this.changePhoneNumButton.UseVisualStyleBackColor = true;
             this.changePhoneNumButton.Click += new System.EventHandler(this.changePhoneNumButton_Click);
             // 
@@ -60,7 +60,6 @@ namespace TrainStation
             this.newPhoneNumTextBox.Name = "newPhoneNumTextBox";
             this.newPhoneNumTextBox.Size = new System.Drawing.Size(223, 29);
             this.newPhoneNumTextBox.TabIndex = 0;
-            this.newPhoneNumTextBox.TextChanged += new System.EventHandler(this.newPhoneNumTextBox_TextChanged);
             // 
             // changeEmailButton
             // 
@@ -71,6 +70,7 @@ namespace TrainStation
             this.changeEmailButton.TabIndex = 1;
             this.changeEmailButton.Text = "Change Email";
             this.changeEmailButton.UseVisualStyleBackColor = true;
+            this.changeEmailButton.Click += new System.EventHandler(this.changeEmailButton_Click);
             // 
             // newEmailTextBox
             // 
@@ -109,12 +109,14 @@ namespace TrainStation
             this.changePasswordBtn.TabIndex = 1;
             this.changePasswordBtn.Text = "Change Password";
             this.changePasswordBtn.UseVisualStyleBackColor = true;
+            this.changePasswordBtn.Click += new System.EventHandler(this.changePasswordBtn_Click);
             // 
             // newPasswordTextBox
             // 
             this.newPasswordTextBox.Location = new System.Drawing.Point(104, 464);
             this.newPasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.newPasswordTextBox.Name = "newPasswordTextBox";
+            this.newPasswordTextBox.PasswordChar = '*';
             this.newPasswordTextBox.Size = new System.Drawing.Size(223, 29);
             this.newPasswordTextBox.TabIndex = 0;
             // 
@@ -174,6 +176,7 @@ namespace TrainStation
             this.Name = "updatePassengerData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "updatePassengerData";
+            this.Load += new System.EventHandler(this.updatePassengerData_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

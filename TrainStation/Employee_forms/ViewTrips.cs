@@ -12,9 +12,18 @@ namespace TrainStation
 {
     public partial class ViewTrips : Form
     {
+        Controller controllerObj;
         public ViewTrips()
         {
             InitializeComponent();
+        }
+        private void ViewTrips_load(object sender, EventArgs e)
+        {
+            controllerObj = new Controller();
+            DataTable dt = controllerObj.viewTrips();
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Refresh();
         }
     }
 }
