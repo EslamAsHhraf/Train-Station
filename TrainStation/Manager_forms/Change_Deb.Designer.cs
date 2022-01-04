@@ -32,8 +32,10 @@ namespace TrainStation.Admin_forms
             this.Department_num = new System.Windows.Forms.ComboBox();
             this.SSN = new System.Windows.Forms.ComboBox();
             this.DNum = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label_ssn = new System.Windows.Forms.Label();
             this.Change_department = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Department_num
@@ -66,15 +68,15 @@ namespace TrainStation.Admin_forms
             this.DNum.TabIndex = 31;
             this.DNum.Text = "Department number";
             // 
-            // label7
+            // label_ssn
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(190, 120);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 21);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "SSN";
+            this.label_ssn.AutoSize = true;
+            this.label_ssn.Location = new System.Drawing.Point(190, 120);
+            this.label_ssn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_ssn.Name = "label_ssn";
+            this.label_ssn.Size = new System.Drawing.Size(43, 21);
+            this.label_ssn.TabIndex = 30;
+            this.label_ssn.Text = "SSN";
             // 
             // Change_department
             // 
@@ -87,6 +89,30 @@ namespace TrainStation.Admin_forms
             this.Change_department.UseVisualStyleBackColor = true;
             this.Change_department.Click += new System.EventHandler(this.Change_department_Click);
             // 
+            // Back
+            // 
+            this.Back.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.Location = new System.Drawing.Point(540, 370);
+            this.Back.Margin = new System.Windows.Forms.Padding(4);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(118, 59);
+            this.Back.TabIndex = 60;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // Exit
+            // 
+            this.Exit.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(666, 370);
+            this.Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(118, 59);
+            this.Exit.TabIndex = 59;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // Change_Deb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -94,16 +120,19 @@ namespace TrainStation.Admin_forms
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(806, 455);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.Department_num);
             this.Controls.Add(this.SSN);
             this.Controls.Add(this.DNum);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label_ssn);
             this.Controls.Add(this.Change_department);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Change_Deb";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change_Deb";
+            this.Load += new System.EventHandler(this.Change_Deb_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,7 +143,9 @@ namespace TrainStation.Admin_forms
         private System.Windows.Forms.ComboBox Department_num;
         private System.Windows.Forms.ComboBox SSN;
         private System.Windows.Forms.Label DNum;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label_ssn;
         private System.Windows.Forms.Button Change_department;
+        private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Button Exit;
     }
 }

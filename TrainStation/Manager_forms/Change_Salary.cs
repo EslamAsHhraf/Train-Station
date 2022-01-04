@@ -37,7 +37,24 @@ namespace TrainStation.Manager_forms
                 return;
             }
             int r = con.Change_Salary(SSN.Text, Salary.Text);
-            MessageBox.Show("change salary of employee is successfully!");
+            if (r == 0)
+            {
+                MessageBox.Show("change salary of employee is failed!");
+            }
+            else
+            {
+                MessageBox.Show("change salary of employee is successfully!");
+            }
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

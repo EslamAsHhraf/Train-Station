@@ -31,9 +31,11 @@ namespace TrainStation.Manager_forms
         {
             this.SSN = new System.Windows.Forms.ComboBox();
             this.Salary = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label_salary = new System.Windows.Forms.Label();
+            this.label_ssn = new System.Windows.Forms.Label();
             this.ChangeSalary = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Salary)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,25 +62,25 @@ namespace TrainStation.Manager_forms
             this.Salary.Size = new System.Drawing.Size(144, 29);
             this.Salary.TabIndex = 33;
             // 
-            // label3
+            // label_salary
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(464, 152);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 21);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "Salary";
+            this.label_salary.AutoSize = true;
+            this.label_salary.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label_salary.Location = new System.Drawing.Point(464, 152);
+            this.label_salary.Name = "label_salary";
+            this.label_salary.Size = new System.Drawing.Size(60, 21);
+            this.label_salary.TabIndex = 32;
+            this.label_salary.Text = "Salary";
             // 
-            // label4
+            // label_ssn
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(265, 152);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 21);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "SSN";
+            this.label_ssn.AutoSize = true;
+            this.label_ssn.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label_ssn.Location = new System.Drawing.Point(265, 152);
+            this.label_ssn.Name = "label_ssn";
+            this.label_ssn.Size = new System.Drawing.Size(43, 21);
+            this.label_ssn.TabIndex = 31;
+            this.label_ssn.Text = "SSN";
             // 
             // ChangeSalary
             // 
@@ -91,6 +93,30 @@ namespace TrainStation.Manager_forms
             this.ChangeSalary.UseVisualStyleBackColor = true;
             this.ChangeSalary.Click += new System.EventHandler(this.ChangeSalary_Click);
             // 
+            // Back
+            // 
+            this.Back.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.Location = new System.Drawing.Point(583, 391);
+            this.Back.Margin = new System.Windows.Forms.Padding(4);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(118, 59);
+            this.Back.TabIndex = 60;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // Exit
+            // 
+            this.Exit.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(709, 391);
+            this.Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(118, 59);
+            this.Exit.TabIndex = 59;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // Change_Salary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -98,10 +124,12 @@ namespace TrainStation.Manager_forms
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(863, 479);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.SSN);
             this.Controls.Add(this.Salary);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label_salary);
+            this.Controls.Add(this.label_ssn);
             this.Controls.Add(this.ChangeSalary);
             this.Name = "Change_Salary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -116,8 +144,10 @@ namespace TrainStation.Manager_forms
 
         private System.Windows.Forms.ComboBox SSN;
         private System.Windows.Forms.NumericUpDown Salary;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label_salary;
+        private System.Windows.Forms.Label label_ssn;
         private System.Windows.Forms.Button ChangeSalary;
+        private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Button Exit;
     }
 }

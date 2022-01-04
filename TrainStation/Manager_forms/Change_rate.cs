@@ -37,7 +37,30 @@ namespace TrainStation.Manager_forms
                 return;
             }
             int r = con.Change_Rate(SSN.Text, Rate.Text);
-            MessageBox.Show("change rate of employee is successfully!");
+            if (r == 0)
+            {
+                 MessageBox.Show("change rate of employee is failed!");
+            }
+            else
+            {
+                MessageBox.Show("change rate of employee is successfully!");
+            }
+         
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Change_rate_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -410,6 +410,7 @@ namespace TrainStation
             this.Name = "Create_acc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create_acc";
+            this.Load += new System.EventHandler(this.Create_acc_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();

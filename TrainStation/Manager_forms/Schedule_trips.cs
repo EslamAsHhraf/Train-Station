@@ -14,11 +14,13 @@ namespace TrainStation.Manager_forms
     {
         Controller con;
         Handle hand;
+        Random random;
         public Schedule_trips()
         {
             InitializeComponent();
             con = new Controller();
             hand = new Handle();
+            random = new Random();
         }
 
         private void Schedule_trips_Load(object sender, EventArgs e)
@@ -57,6 +59,26 @@ namespace TrainStation.Manager_forms
             if (!semo)
             {
                 MessageBox.Show("you can't insert ;");
+                return;
+            }
+            if(VIP.Text.Length==0)
+            {
+                MessageBox.Show("Please Insert Price of VIP!");
+                return;
+            }
+            if (GENERAL.Text.Length == 0)
+            {
+                MessageBox.Show("Please Insert Price of General!");
+                return;
+            }
+            if (Num_VIP.Text.Length == 0)
+            {
+                MessageBox.Show("Please Insert Number of VIP Tickets!");
+                return;
+            }
+            if (NUM_G.Text.Length == 0)
+            {
+                MessageBox.Show("Please Insert Number of General Tickets!");
                 return;
             }
             if (HA.SelectedIndex==-1|| MA.SelectedIndex == -1)
@@ -102,12 +124,68 @@ namespace TrainStation.Manager_forms
             int r2 = con.Insert_Trip(Trip_code.Text, arrivel, departure,trainNum.Text,comestation.Text,Gostation.Text);
             if(r2==0)
             { 
-                MessageBox.Show("trip insert failed!");
+                MessageBox.Show("Trip insert failed!");
             }
             else
             {  
-                MessageBox.Show("trip inserted successfully");
+                MessageBox.Show("Trip inserted successfully");
+                /*for vip*/
+                int vnum, gnum;
+                Int32.TryParse(Num_VIP.Text, out vnum);
+                Int32.TryParse(NUM_G.Text, out gnum);
+                int num_ticke=0;
+                for(int i=0;i< vnum; i++)
+                {
+                    string temp;
+                    int num;
+                    while (true)
+                    {
+                        num = random.Next(10, 1000000);
+                        temp = num.ToString();
+                        int ti = con.Is_ticket(temp);
+                        if (ti == 0)
+                        {
+                            num_ticke+= con.Insetr_ticket(temp,"V",VIP.Text, Date_Of_trip.Text, Trip_code.Text);
+                            break;
+                        }
+                    }
+                }
+                /* for General*/
+                for (int i = 0; i < gnum; i++)
+                {
+                    string temp;
+                    int num;
+                    while (true)
+                    {
+                        num = random.Next(10, 1000000);
+                        temp = num.ToString();
+                        int ti = con.Is_ticket(temp);
+                        if (ti == 0)
+                        {
+                            num_ticke += con.Insetr_ticket(temp, "G", GENERAL.Text, Date_Of_trip.Text, Trip_code.Text);
+                            break;
+                        }
+                    }
+                }
+                if(num_ticke == gnum+ vnum)
+                {
+                    MessageBox.Show("Ticket inserted successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Ticket inserted failed!");
+                }
             }
 }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

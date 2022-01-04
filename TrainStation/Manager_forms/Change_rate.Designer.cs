@@ -31,9 +31,11 @@ namespace TrainStation.Manager_forms
         {
             this.SSN = new System.Windows.Forms.ComboBox();
             this.Rate = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_rate = new System.Windows.Forms.Label();
+            this.label_ssn = new System.Windows.Forms.Label();
             this.Rate_employee = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Rate)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,33 +54,33 @@ namespace TrainStation.Manager_forms
             this.Rate.Location = new System.Drawing.Point(417, 189);
             this.Rate.Margin = new System.Windows.Forms.Padding(4);
             this.Rate.Maximum = new decimal(new int[] {
-            10,
-            0,
+            1410065408,
+            2,
             0,
             0});
             this.Rate.Name = "Rate";
             this.Rate.Size = new System.Drawing.Size(150, 29);
             this.Rate.TabIndex = 34;
             // 
-            // label2
+            // label_rate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(413, 155);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 21);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "Rate";
+            this.label_rate.AutoSize = true;
+            this.label_rate.Location = new System.Drawing.Point(413, 155);
+            this.label_rate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_rate.Name = "label_rate";
+            this.label_rate.Size = new System.Drawing.Size(50, 21);
+            this.label_rate.TabIndex = 33;
+            this.label_rate.Text = "Rate";
             // 
-            // label1
+            // label_ssn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(213, 155);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 21);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "SSN";
+            this.label_ssn.AutoSize = true;
+            this.label_ssn.Location = new System.Drawing.Point(213, 155);
+            this.label_ssn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_ssn.Name = "label_ssn";
+            this.label_ssn.Size = new System.Drawing.Size(43, 21);
+            this.label_ssn.TabIndex = 32;
+            this.label_ssn.Text = "SSN";
             // 
             // Rate_employee
             // 
@@ -91,6 +93,30 @@ namespace TrainStation.Manager_forms
             this.Rate_employee.UseVisualStyleBackColor = true;
             this.Rate_employee.Click += new System.EventHandler(this.Rate_employee_Click);
             // 
+            // Back
+            // 
+            this.Back.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.Location = new System.Drawing.Point(558, 368);
+            this.Back.Margin = new System.Windows.Forms.Padding(4);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(118, 59);
+            this.Back.TabIndex = 60;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // Exit
+            // 
+            this.Exit.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(684, 368);
+            this.Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(118, 59);
+            this.Exit.TabIndex = 59;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // Change_rate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -98,16 +124,19 @@ namespace TrainStation.Manager_forms
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(836, 454);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.SSN);
             this.Controls.Add(this.Rate);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_rate);
+            this.Controls.Add(this.label_ssn);
             this.Controls.Add(this.Rate_employee);
             this.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Change_rate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change_rate";
+            this.Load += new System.EventHandler(this.Change_rate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Rate)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -118,8 +147,10 @@ namespace TrainStation.Manager_forms
 
         private System.Windows.Forms.ComboBox SSN;
         private System.Windows.Forms.NumericUpDown Rate;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_rate;
+        private System.Windows.Forms.Label label_ssn;
         private System.Windows.Forms.Button Rate_employee;
+        private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Button Exit;
     }
 }
