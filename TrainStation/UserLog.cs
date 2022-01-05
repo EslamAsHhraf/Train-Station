@@ -48,6 +48,7 @@ namespace TrainStation
             {
                 DataTable dt = control.GetAuthority(hand.Trim(LogIn_Email_TextBox).Text, hand.Trim(LogIn_Pass_TextBox).Text);
                 string auth = Convert.ToString(dt.Rows[0][0]);
+                auth = auth.ToLower();
                 if (auth == "admin")
                 {
                     Form adminForm = new Admin();
@@ -65,7 +66,7 @@ namespace TrainStation
                 }
                 else if (auth == "passenger")
                 {
-                    Form passengerForm = new Passenger();
+                    Form passengerForm = new Passenger(hand.Trim(LogIn_Email_TextBox).Text);
                     passengerForm.ShowDialog();
                 }
 
