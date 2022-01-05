@@ -81,5 +81,10 @@ namespace TrainStation
             Application.Restart();
         }
 
+        private void updateMyDataBtn_Click(object sender, EventArgs e)
+        {
+            Form f = new Employee_forms.UpdateMyData();
+            f.ShowDialog();
+        }
     }
 }

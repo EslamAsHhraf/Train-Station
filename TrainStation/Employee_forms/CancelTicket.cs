@@ -32,6 +32,7 @@ namespace TrainStation
                 return;
 
             }
+
             int ticketSerialNo = Int32.Parse(ticketSerialNoComboBox.Text);
             int m = controllerObj.cancelTicketEmployee(ticketSerialNo);
 

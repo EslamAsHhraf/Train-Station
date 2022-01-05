@@ -31,6 +31,7 @@ namespace TrainStation
                 MessageBox.Show("Please select a train!");
                 return;
 
+
             }
             int PlateNumber = Int32.Parse(trainPlateNumberComboBox.Text);
             bool m = controllerObj.checkTrainEmployee(PlateNumber);

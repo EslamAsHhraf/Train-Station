@@ -32,12 +32,18 @@ namespace TrainStation
             {
                 MessageBox.Show("Please select a passenger's SSN!");
                 return;
+
             }
             int ssn = Int32.Parse(passengerSSNComboBox.Text);
             DataTable dt = controllerObj.viewPassengerDataEmployee(ssn);
             dataGridView1.DataSource = dt;
 
             dataGridView1.Refresh();
+            DataTable dt2 = controllerObj.getPassPhoneNumberEmpoloyee(ssn);
+            dataGridView2.DataSource = dt2;
+
+            dataGridView2.Refresh();
+
         }
     }
 }

@@ -33,7 +33,7 @@ namespace TrainStation
             return dbMan.ExecuteReader(query);
         }
 
-        public int updateTicketEmployee(char newclass,int ticketNo)
+        public int updateTicketEmployee(char newclass, int ticketNo)
         {
             string query = $"update ticket set class = '{newclass}' where ticketno ={ticketNo}";
             return dbMan.ExecuteNonQuery(query);
@@ -65,7 +65,7 @@ namespace TrainStation
             return dbMan.ExecuteReader(query);
         }
 
-        public int getSeatsNumWithClass(char cls,int tripNo)
+        public int getSeatsNumWithClass(char cls, int tripNo)
         {
             string query = $"SELECT count(*)  FROM ticket,trip where Trip_Code ={tripNo} and class='{cls}'";
             return (int)dbMan.ExecuteScalar(query);
@@ -91,8 +91,8 @@ namespace TrainStation
             string query = $"SELECT * FROM passenger where Pass_SSN = { ssn}";
             return dbMan.ExecuteReader(query);
         }
-      
-        public int updatePassengerPhoneEmployee(Int32 newPhone,int ssn)
+
+        public int updatePassengerPhoneEmployee(Int32 newPhone, int ssn)
         {
             string query = $"insert into pass_phonenumber (pssn,p_phoneNumber) values ({ssn},'{newPhone}' )";
             return dbMan.ExecuteNonQuery(query);
@@ -102,7 +102,7 @@ namespace TrainStation
             string query = $"select pass_email from passenger where pass_ssn={ssn}";
             return (string)dbMan.ExecuteScalar(query);
         }
-        public int updatePassengerEMailEmployee(string email,int ssn,string oldemail)
+        public int updatePassengerEMailEmployee(string email, int ssn, string oldemail)
         {
             string query = $@"update user_login set email = '{email}' where email = '{oldemail}';
                                 update passenger set pass_email = '{email}' where pass_ssn = {ssn};
@@ -110,11 +110,16 @@ namespace TrainStation
             return dbMan.ExecuteNonQuery(query);
 
         }
-        public int updatePassengerPassowrdEmployee(string pass,string email)
+        public int updatePassengerPassowrdEmployee(string pass, string email)
         {
             string query = $@"update user_login set pass = '{pass}' where email = '{email}'";
             return dbMan.ExecuteNonQuery(query);
 
+        }
+        public DataTable getPassPhoneNumberEmpoloyee(int ssn)
+        {
+            string query = $"SELECT P_PhoneNumber FROM Pass_PhoneNumber where PSSN = { ssn}";
+            return dbMan.ExecuteReader(query);
         }
         /*Yasmine Elgendi*/
         public DataTable GetAuthority(string email, string password)
@@ -266,12 +271,12 @@ namespace TrainStation
             return dbMan.ExecuteNonQuery(query);
         }
         public int Insert_Employee(string SSN, string Fname, string Minit, string Lname, string Gender, string DOB,
-            string Salary, string House_Num, string Street, string City,string Super_SSN, string Dno,string CV_SerialNo,string Vacc_Date, string Emp_Email)
+            string Salary, string House_Num, string Street, string City, string Super_SSN, string Dno, string CV_SerialNo, string Vacc_Date, string Emp_Email)
         {
             string query = "INSERT INTO Employee ( SSN,  Fname, Minit, Lname, Gender,  DOB,"
            + "Salary, House_Num, Street, City, Super_SSN, Dno,CV_SerialNo,Vacc_Date,Emp_Email)"
             + "Values (" + SSN + ",'" + Fname + "','" + Minit + "','" + Lname + "','" + Gender + "','" + DOB + "'," + Salary + "," + House_Num + ",'"
-            + Street + "','" + City + "'," + Super_SSN + "," + Dno+ "," + CV_SerialNo + ",'" + Vacc_Date + "','" + Emp_Email + "');";
+            + Street + "','" + City + "'," + Super_SSN + "," + Dno + "," + CV_SerialNo + ",'" + Vacc_Date + "','" + Emp_Email + "');";
             return dbMan.ExecuteNonQuery(query);
         }
         public int Set_Rate_Employee(string SSN, string Rate)
@@ -319,7 +324,7 @@ namespace TrainStation
 
             return (int)dbMan.ExecuteScalar(query);
         }
-        public int Insetr_ticket(string TicketNo, string Class,string Price, string Ticket_Date,string TripCode)
+        public int Insetr_ticket(string TicketNo, string Class, string Price, string Ticket_Date, string TripCode)
         {
             //string query = "INSERT INTO Ticket ( TicketNo, Class, Price,Ticket_Date,TripCode)" +
             //               "Values (" + TicketNo + ",'" + Class + "'," + Price + ",'" + Ticket_Date + "','" + TripCode + "');";

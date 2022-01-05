@@ -33,13 +33,16 @@ namespace TrainStation
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.viewDetialsBtn = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // passengerSSNComboBox
             // 
             this.passengerSSNComboBox.FormattingEnabled = true;
-            this.passengerSSNComboBox.Location = new System.Drawing.Point(404, 220);
+            this.passengerSSNComboBox.Location = new System.Drawing.Point(410, 114);
             this.passengerSSNComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.passengerSSNComboBox.Name = "passengerSSNComboBox";
             this.passengerSSNComboBox.Size = new System.Drawing.Size(193, 29);
@@ -49,7 +52,7 @@ namespace TrainStation
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(417, 182);
+            this.label1.Location = new System.Drawing.Point(423, 76);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 25);
@@ -60,17 +63,17 @@ namespace TrainStation
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 336);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 207);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(970, 158);
+            this.dataGridView1.Size = new System.Drawing.Size(970, 102);
             this.dataGridView1.TabIndex = 2;
             // 
             // viewDetialsBtn
             // 
-            this.viewDetialsBtn.Location = new System.Drawing.Point(404, 275);
+            this.viewDetialsBtn.Location = new System.Drawing.Point(410, 169);
             this.viewDetialsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.viewDetialsBtn.Name = "viewDetialsBtn";
             this.viewDetialsBtn.Size = new System.Drawing.Size(194, 30);
@@ -79,6 +82,29 @@ namespace TrainStation
             this.viewDetialsBtn.UseVisualStyleBackColor = true;
             this.viewDetialsBtn.Click += new System.EventHandler(this.viewDetialsBtn_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(405, 324);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(213, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Passenger\'s Contacts";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(247, 353);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(533, 158);
+            this.dataGridView2.TabIndex = 5;
+            // 
             // ViewPassengerData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -86,6 +112,8 @@ namespace TrainStation
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 535);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.viewDetialsBtn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
@@ -97,6 +125,7 @@ namespace TrainStation
             this.Text = "ViewPassengerData";
             this.Load += new System.EventHandler(this.ViewPassengerData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,5 +137,7 @@ namespace TrainStation
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button viewDetialsBtn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
