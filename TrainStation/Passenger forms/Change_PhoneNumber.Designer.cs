@@ -29,76 +29,76 @@ namespace TrainStation.Passenger_forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Change_Phone = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.New_Phone_Num_TB = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Old_Phone_Num_TB = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // Change_Phone
             // 
-            this.button1.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(338, 266);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 47);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Change Phone Number";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Change_Phone.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
+            this.Change_Phone.Location = new System.Drawing.Point(306, 332);
+            this.Change_Phone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Change_Phone.Name = "Change_Phone";
+            this.Change_Phone.Size = new System.Drawing.Size(365, 59);
+            this.Change_Phone.TabIndex = 16;
+            this.Change_Phone.Text = "Change Phone Number";
+            this.Change_Phone.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(168, 187);
+            this.label2.Location = new System.Drawing.Point(131, 237);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(255, 34);
+            this.label2.Size = new System.Drawing.Size(297, 39);
             this.label2.TabIndex = 15;
             this.label2.Text = "New Phone Number";
             // 
-            // textBox2
+            // New_Phone_Num_TB
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(464, 187);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 41);
-            this.textBox2.TabIndex = 14;
+            this.New_Phone_Num_TB.BackColor = System.Drawing.SystemColors.Control;
+            this.New_Phone_Num_TB.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.New_Phone_Num_TB.Location = new System.Drawing.Point(507, 234);
+            this.New_Phone_Num_TB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.New_Phone_Num_TB.Name = "New_Phone_Num_TB";
+            this.New_Phone_Num_TB.Size = new System.Drawing.Size(280, 48);
+            this.New_Phone_Num_TB.TabIndex = 14;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(182, 136);
+            this.label5.Location = new System.Drawing.Point(147, 170);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(241, 34);
+            this.label5.Size = new System.Drawing.Size(281, 39);
             this.label5.TabIndex = 18;
             this.label5.Text = "Old Phone Number";
             // 
-            // textBox5
+            // Old_Phone_Num_TB
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox5.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.textBox5.Location = new System.Drawing.Point(464, 136);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(249, 41);
-            this.textBox5.TabIndex = 17;
+            this.Old_Phone_Num_TB.BackColor = System.Drawing.SystemColors.Control;
+            this.Old_Phone_Num_TB.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.Old_Phone_Num_TB.Location = new System.Drawing.Point(507, 170);
+            this.Old_Phone_Num_TB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Old_Phone_Num_TB.Name = "Old_Phone_Num_TB";
+            this.Old_Phone_Num_TB.Size = new System.Drawing.Size(280, 48);
+            this.Old_Phone_Num_TB.TabIndex = 17;
             // 
             // Change_PhoneNumber
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(812, 445);
+            this.ClientSize = new System.Drawing.Size(914, 556);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Old_Phone_Num_TB);
+            this.Controls.Add(this.Change_Phone);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.New_Phone_Num_TB);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Change_PhoneNumber";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -110,10 +110,10 @@ namespace TrainStation.Passenger_forms
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Change_Phone;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox New_Phone_Num_TB;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Old_Phone_Num_TB;
     }
 }

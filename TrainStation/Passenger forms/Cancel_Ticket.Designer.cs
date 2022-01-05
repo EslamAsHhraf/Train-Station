@@ -29,29 +29,29 @@ namespace TrainStation.Passenger_forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Cancel_Ticket_Button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.CancelTicket_CB = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // button1
+            // Cancel_Ticket_Button
             // 
-            this.button1.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(308, 214);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(248, 49);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Cancel Ticket";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Cancel_Ticket_Button.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
+            this.Cancel_Ticket_Button.Location = new System.Drawing.Point(346, 268);
+            this.Cancel_Ticket_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Cancel_Ticket_Button.Name = "Cancel_Ticket_Button";
+            this.Cancel_Ticket_Button.Size = new System.Drawing.Size(279, 61);
+            this.Cancel_Ticket_Button.TabIndex = 5;
+            this.Cancel_Ticket_Button.Text = "Cancel Ticket";
+            this.Cancel_Ticket_Button.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(224, 134);
+            this.label1.Location = new System.Drawing.Point(252, 168);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 34);
+            this.label1.Size = new System.Drawing.Size(233, 39);
             this.label1.TabIndex = 4;
             this.label1.Text = "Ticket Number";
             // 
@@ -60,20 +60,20 @@ namespace TrainStation.Passenger_forms
             this.CancelTicket_CB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CancelTicket_CB.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.CancelTicket_CB.FormattingEnabled = true;
-            this.CancelTicket_CB.Location = new System.Drawing.Point(457, 131);
+            this.CancelTicket_CB.Location = new System.Drawing.Point(514, 164);
             this.CancelTicket_CB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CancelTicket_CB.Name = "CancelTicket_CB";
-            this.CancelTicket_CB.Size = new System.Drawing.Size(217, 42);
+            this.CancelTicket_CB.Size = new System.Drawing.Size(244, 47);
             this.CancelTicket_CB.TabIndex = 3;
             // 
             // Cancel_Ticket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(835, 406);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(939, 508);
+            this.Controls.Add(this.Cancel_Ticket_Button);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CancelTicket_CB);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -88,7 +88,7 @@ namespace TrainStation.Passenger_forms
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Cancel_Ticket_Button;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox CancelTicket_CB;
     }

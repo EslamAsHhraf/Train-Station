@@ -12,9 +12,19 @@ namespace TrainStation.Passenger_forms
 {
     public partial class Ticket_Details : Form
     {
-        public Ticket_Details()
+        Controller controllerObj;
+        int Passenger_SSN;
+        public Ticket_Details(int pssn)
         {
             InitializeComponent();
+            Passenger_SSN = pssn;
+        }
+
+        private void Ticket_Details_Load(object sender, EventArgs e)
+        {
+            DataTable dt = controllerObj.View_Ticket_Details(Passenger_SSN);
+            TicketDetailsGridView.DataSource = dt;
+            TicketDetailsGridView.Refresh();
         }
     }
 }

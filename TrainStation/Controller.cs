@@ -17,6 +17,100 @@ namespace TrainStation
         }
         /*  Yasmine Ghanem*/
 
+        //Make Complaints
+        public int Submit_Complaint(int code, string Description, int ssn)
+        {
+            string query = "INSERT INTO Complaints (C_Code, Descrip, SSN )" +
+                                    "VALUES (" + code + ",'" + Description + "'," + ssn + "); ";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
+        //Gets ssn of current signed in passenger
+        public int Get_SSN_Of_Email(string email)
+        {
+            string query = "SELECT Pass_SSN FROM Passenger WHERE Pass_Email = '" + email + "');";
+            return (int)dbMan.ExecuteScalar(query);
+        }
+
+        //Book ticket funcations
+        //view available trips to book ticket
+        public DataTable View_Available_Trips()
+        {
+            string query = "SELECT * FROM Trip;";
+            return dbMan.ExecuteReader(query);
+        }
+
+        //View all ticket details of current passenger
+        public DataTable View_Ticket_Details(int ssn)
+        {
+            string query = "SELECT * FROM Ticket WHERE PSSN = " + ssn + ";";
+            return dbMan.ExecuteReader(query);
+        }
+
+        //Edit Profile
+
+        //Change Phone Number
+        public int Change_Phone_Number(string new_pnum, string old_pnum, int ssn)
+        {
+            string query = "UPDATE Pass_PhoneNumber SET P_PhoneNumber = '" + new_pnum + "' WHERE P_PhoneNumber = '" + old_pnum + "' and PSSN = " + ssn + "; ";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
+        //Add phone number for current passenger
+        public int Add_Phone_Number(int ssn, string pnum)
+        {
+            string query = "INSERT INTO Pass_PhoneNumber " +
+                                    "VALUES (" + ssn + ",'" + pnum + "');";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
+        //change email
+        public int Change_Email_Passenger(string new_email, string old_email)
+        {
+            string query = "UPDATE User_Login SET Email = '" + new_email + "' WHERE Email = '" + old_email + "';";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
+        //Change password
+        public int Change_Password_Passenger(string email, string password)
+        {
+            string query = "UPDATE User_Login SET Pass = '" + password + "' WHERE Email = '" + email + "';";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
+        public string Check_Old_Password(string email)
+        {
+            string query = "SELECT Pass FROM User_Login WHERE Email = '" + email + "';";
+            return (string)dbMan.ExecuteScalar(query);
+        }
+
+        //Upgrade ticket
+        public int Upgrade_Ticket(int ticketno)
+        {
+            string query = "UPDATE Ticket SET Class = 'B' WHERE TicketNo = " + ticketno + ";";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
+        public char Get_Ticket_Class(int ticketno)
+        {
+            string query = "SELECT Class FROM Ticket WHERE TicketNo = " + ticketno + ";";
+            return (char)dbMan.ExecuteScalar(query);
+        }
+
+        //Cancel ticket
+        public int Cancel_Ticket(int ticketno)
+        {
+            string query = "DELETE Ticket WHERE TicketNo = " + ticketno + ";";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
+        //ComboBox queries
+        public DataTable Retrieve_Tickets_For_Passenger(int pssn)
+        {
+            string query = "SELECT TicketNo FROM Ticket WHERE PSSN = " + pssn + ";";
+            return dbMan.ExecuteReader(query);
+        }
+
 
 
         /*Sarah Elzayat*/
@@ -145,12 +239,7 @@ namespace TrainStation
             return dbMan.ExecuteNonQuery(query);
 
         }
-        public int updateEmpPassowrdEmployee(string pass, string email)
-        {
-            string query = $@"update user_login set pass = '{pass}' where email = '{email}'";
-            return dbMan.ExecuteNonQuery(query);
 
-        }
         /*Yasmine Elgendi*/
         public DataTable GetAuthority(string email, string password)
         {

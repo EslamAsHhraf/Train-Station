@@ -30,8 +30,8 @@ namespace TrainStation.Passenger_forms
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Add_Phone_Num_TB = new System.Windows.Forms.TextBox();
+            this.Add_Phone_Number = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -41,40 +41,40 @@ namespace TrainStation.Passenger_forms
             this.label2.Location = new System.Drawing.Point(67, 144);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(255, 34);
+            this.label2.Size = new System.Drawing.Size(304, 41);
             this.label2.TabIndex = 12;
             this.label2.Text = "New Phone Number";
             // 
-            // textBox2
+            // Add_Phone_Num_TB
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Location = new System.Drawing.Point(344, 141);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(266, 41);
-            this.textBox2.TabIndex = 11;
+            this.Add_Phone_Num_TB.BackColor = System.Drawing.SystemColors.Control;
+            this.Add_Phone_Num_TB.Location = new System.Drawing.Point(413, 141);
+            this.Add_Phone_Num_TB.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.Add_Phone_Num_TB.Name = "Add_Phone_Num_TB";
+            this.Add_Phone_Num_TB.Size = new System.Drawing.Size(266, 48);
+            this.Add_Phone_Num_TB.TabIndex = 11;
             // 
-            // button1
+            // Add_Phone_Number
             // 
-            this.button1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(353, 224);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(257, 60);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Add Phone Number";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Add_Phone_Number.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.Add_Phone_Number.Location = new System.Drawing.Point(217, 224);
+            this.Add_Phone_Number.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.Add_Phone_Number.Name = "Add_Phone_Number";
+            this.Add_Phone_Number.Size = new System.Drawing.Size(336, 60);
+            this.Add_Phone_Number.TabIndex = 13;
+            this.Add_Phone_Number.Text = "Add Phone Number";
+            this.Add_Phone_Number.UseVisualStyleBackColor = true;
             // 
             // Add_PhoneNumber
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 34F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 39F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(786, 414);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Add_Phone_Number);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Add_Phone_Num_TB);
             this.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Name = "Add_PhoneNumber";
@@ -88,7 +88,7 @@ namespace TrainStation.Passenger_forms
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox Add_Phone_Num_TB;
+        private System.Windows.Forms.Button Add_Phone_Number;
     }
 }

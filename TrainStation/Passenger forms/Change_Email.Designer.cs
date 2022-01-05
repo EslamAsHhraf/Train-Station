@@ -30,51 +30,51 @@ namespace TrainStation.Passenger_forms
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.New_Email_TB = new System.Windows.Forms.TextBox();
+            this.Change_Email_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(278, 153);
+            this.label3.Location = new System.Drawing.Point(250, 191);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 34);
+            this.label3.Size = new System.Drawing.Size(168, 39);
             this.label3.TabIndex = 13;
             this.label3.Text = "New Email";
             // 
-            // textBox3
+            // New_Email_TB
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(443, 153);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(254, 41);
-            this.textBox3.TabIndex = 12;
+            this.New_Email_TB.BackColor = System.Drawing.SystemColors.Control;
+            this.New_Email_TB.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.New_Email_TB.Location = new System.Drawing.Point(465, 188);
+            this.New_Email_TB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.New_Email_TB.Name = "New_Email_TB";
+            this.New_Email_TB.Size = new System.Drawing.Size(285, 48);
+            this.New_Email_TB.TabIndex = 12;
             // 
-            // button2
+            // Change_Email_Button
             // 
-            this.button2.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(359, 223);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(216, 59);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Change Email";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Change_Email_Button.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
+            this.Change_Email_Button.Location = new System.Drawing.Point(329, 280);
+            this.Change_Email_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Change_Email_Button.Name = "Change_Email_Button";
+            this.Change_Email_Button.Size = new System.Drawing.Size(243, 74);
+            this.Change_Email_Button.TabIndex = 14;
+            this.Change_Email_Button.Text = "Change Email";
+            this.Change_Email_Button.UseVisualStyleBackColor = true;
             // 
             // Change_Email
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(849, 407);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(955, 509);
+            this.Controls.Add(this.Change_Email_Button);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.New_Email_TB);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Change_Email";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -87,7 +87,7 @@ namespace TrainStation.Passenger_forms
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox New_Email_TB;
+        private System.Windows.Forms.Button Change_Email_Button;
     }
 }
