@@ -36,7 +36,8 @@ namespace TrainStation.Manager_forms
         {
             Trim_text();
             bool embty = is_embty();
-            if(embty)
+            bool Format = rightFormat();
+            if (embty || !Format)
             {
                 return;
             }
@@ -78,16 +79,16 @@ namespace TrainStation.Manager_forms
                 return;
             }
             int ins1 = con.Insert_CovidVaccination(Serial_num.Text, Type_of_vacc.Text, organis.Text);
-            int ins2 = con.Insert_User_Login(Email.Text, Password.Text,"Employee" ,user_name.Text);
-             char m_char=Mname.Text[0];
-            string mname  = m_char.ToString();
-            int ins3 = con.Insert_Employee(SSN.Text,Fname.Text, mname, Lname.Text,Gender.Text,DOB.Text, Salary.Text, House_num.Text,Street.Text,City.Text,Super_SSN.Text,DNO.Text
-                , Serial_num.Text,Date_Of_vacc.Text,Email.Text);
-            if(Rate.Text.Length!=0)
+            int ins2 = con.Insert_User_Login(Email.Text, Password.Text, "Employee", user_name.Text);
+            char m_char = Mname.Text[0];
+            string mname = m_char.ToString();
+            int ins3 = con.Insert_Employee(SSN.Text, Fname.Text, mname, Lname.Text, Gender.Text, DOB.Text, Salary.Text, House_num.Text, Street.Text, City.Text, Super_SSN.Text, DNO.Text
+                , Serial_num.Text, Date_Of_vacc.Text, Email.Text);
+            if (Rate.Text.Length != 0)
             {
                 con.Set_Rate_Employee(SSN.Text, Rate.Text);
             }
-            if(ins1 ==0 || ins2==0 || ins3==0)
+            if (ins1 == 0 || ins2 == 0 || ins3 == 0)
             {
                 MessageBox.Show("Hire new employee is failed");
             }
@@ -96,6 +97,25 @@ namespace TrainStation.Manager_forms
                 MessageBox.Show("Hire new employee is successfully");
                 Hire_Emplotee_Load(sender, e);
             }
+        }
+        private bool rightFormat()
+        {
+            if (Fname.Text.All(Char.IsLetter))
+            {
+                MessageBox.Show("you can't insert number in first name!");
+                return false;
+            }
+            if(Mname.Text.All(Char.IsLetter))
+            {
+                MessageBox.Show("you can't insert number in Middle name!");
+                return false;
+            }
+              if(Lname.Text.All(Char.IsLetter))
+            {
+                MessageBox.Show("you can't insert number in last name!");
+                return false;
+            }
+            return true;
         }
         private bool is_embty()
         {

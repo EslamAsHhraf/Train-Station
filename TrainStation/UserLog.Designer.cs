@@ -31,8 +31,8 @@ namespace TrainStation
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.LogIn_Email_TextBox = new System.Windows.Forms.TextBox();
+            this.LogIn_Pass_TextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Create_acc = new System.Windows.Forms.Button();
             this.Close = new System.Windows.Forms.Button();
@@ -52,32 +52,35 @@ namespace TrainStation
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(197, 157);
+            this.label2.Location = new System.Drawing.Point(197, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 34);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
-            // textBox1
+            // LogIn_Email_TextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(359, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 41);
-            this.textBox1.TabIndex = 2;
+            this.LogIn_Email_TextBox.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.LogIn_Email_TextBox.Location = new System.Drawing.Point(359, 103);
+            this.LogIn_Email_TextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogIn_Email_TextBox.Name = "LogIn_Email_TextBox";
+            this.LogIn_Email_TextBox.Size = new System.Drawing.Size(232, 41);
+            this.LogIn_Email_TextBox.TabIndex = 2;
             // 
-            // textBox2
+            // LogIn_Pass_TextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(359, 157);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(232, 41);
-            this.textBox2.TabIndex = 3;
+            this.LogIn_Pass_TextBox.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
+            this.LogIn_Pass_TextBox.Location = new System.Drawing.Point(359, 158);
+            this.LogIn_Pass_TextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogIn_Pass_TextBox.Name = "LogIn_Pass_TextBox";
+            this.LogIn_Pass_TextBox.Size = new System.Drawing.Size(232, 41);
+            this.LogIn_Pass_TextBox.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(295, 232);
+            this.button1.Location = new System.Drawing.Point(295, 231);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(296, 46);
             this.button1.TabIndex = 4;
@@ -88,6 +91,7 @@ namespace TrainStation
             // 
             this.Create_acc.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.Create_acc.Location = new System.Drawing.Point(295, 295);
+            this.Create_acc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Create_acc.Name = "Create_acc";
             this.Create_acc.Size = new System.Drawing.Size(301, 44);
             this.Create_acc.TabIndex = 5;
@@ -98,7 +102,8 @@ namespace TrainStation
             // Close
             // 
             this.Close.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Close.Location = new System.Drawing.Point(574, 400);
+            this.Close.Location = new System.Drawing.Point(573, 400);
+            this.Close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Close.Name = "Close";
             this.Close.Size = new System.Drawing.Size(251, 46);
             this.Close.TabIndex = 6;
@@ -116,10 +121,11 @@ namespace TrainStation
             this.Controls.Add(this.Close);
             this.Controls.Add(this.Create_acc);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.LogIn_Pass_TextBox);
+            this.Controls.Add(this.LogIn_Email_TextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserLog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserLog";
@@ -132,8 +138,8 @@ namespace TrainStation
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox LogIn_Email_TextBox;
+        private System.Windows.Forms.TextBox LogIn_Pass_TextBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Create_acc;
         private System.Windows.Forms.Button Close;

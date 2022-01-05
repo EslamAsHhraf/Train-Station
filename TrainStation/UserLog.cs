@@ -13,9 +13,16 @@ namespace TrainStation
     public partial class UserLog : Form
     {
         Handle hand;
+        Controller control;
         public UserLog()
         {
             InitializeComponent();
+
+        }
+
+        private void UserLogin_Load(object sender, EventArgs e)
+        {
+            control = new Controller();
             hand = new Handle();
         }
 
@@ -29,5 +36,42 @@ namespace TrainStation
         {
             Application.Exit();
         }
+
+        private void LogInButton_Click(object sender, EventArgs e)
+        {
+            bool check_empty = LogIn_Email_TextBox.Text.Length > 0 && LogIn_Pass_TextBox.Text.Length > 0;
+            if (!(hand.is_email(LogIn_Email_TextBox) && hand.is_valid(LogIn_Email_TextBox) && check_empty))
+            {
+                MessageBox.Show("Incorrect email or password");
+            }
+            else
+            {
+                DataTable dt = control.GetAuthority(hand.Trim(LogIn_Email_TextBox).Text, hand.Trim(LogIn_Pass_TextBox).Text);
+                string auth = Convert.ToString(dt.Rows[0][0]);
+                if (auth == "admin")
+                {
+                    Form adminForm = new Admin();
+                    adminForm.ShowDialog();
+                }
+                else if (auth == "employee")
+                {
+                    Form employeeForm = new Employee();
+                    employeeForm.ShowDialog();
+                }
+                else if (auth == "manager")
+                {
+                    Form managerForm = new Manager();
+                    managerForm.ShowDialog();
+                }
+                else if (auth == "passenger")
+                {
+                    Form passengerForm = new Passenger();
+                    passengerForm.ShowDialog();
+                }
+
+            }
+        }
+
+       
     }
 }
