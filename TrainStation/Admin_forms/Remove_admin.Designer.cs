@@ -31,7 +31,7 @@ namespace TrainStation.Admin_forms
         {
             this.RemoveAdminButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Remove_Admin_comboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // RemoveAdminButton
@@ -51,28 +51,28 @@ namespace TrainStation.Admin_forms
             this.label1.Location = new System.Drawing.Point(138, 118);
             this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 38);
+            this.label1.Size = new System.Drawing.Size(76, 31);
             this.label1.TabIndex = 3;
             this.label1.Text = "Email";
             // 
-            // comboBox1
+            // Remove_Admin_comboBox
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(274, 115);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(8);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(345, 42);
-            this.comboBox1.TabIndex = 6;
+            this.Remove_Admin_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Remove_Admin_comboBox.FormattingEnabled = true;
+            this.Remove_Admin_comboBox.Location = new System.Drawing.Point(274, 115);
+            this.Remove_Admin_comboBox.Margin = new System.Windows.Forms.Padding(8);
+            this.Remove_Admin_comboBox.Name = "Remove_Admin_comboBox";
+            this.Remove_Admin_comboBox.Size = new System.Drawing.Size(345, 35);
+            this.Remove_Admin_comboBox.TabIndex = 6;
             // 
             // Remove_admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 34F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(865, 384);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.Remove_Admin_comboBox);
             this.Controls.Add(this.RemoveAdminButton);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
@@ -89,6 +89,6 @@ namespace TrainStation.Admin_forms
 
         private System.Windows.Forms.Button RemoveAdminButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox Remove_Admin_comboBox;
     }
 }

@@ -30,53 +30,49 @@ namespace TrainStation.Admin_forms
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.AddAdminEmailtextBox = new System.Windows.Forms.TextBox();
             this.AddAdminButton = new System.Windows.Forms.Button();
+            this.AddAdminEmailComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(107, 141);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(80, 115);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 34);
+            this.label1.Size = new System.Drawing.Size(67, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Email";
-            // 
-            // AddAdminEmailtextBox
-            // 
-            this.AddAdminEmailtextBox.Font = new System.Drawing.Font("Lucida Sans", 12F);
-            this.AddAdminEmailtextBox.Location = new System.Drawing.Point(208, 144);
-            this.AddAdminEmailtextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.AddAdminEmailtextBox.Name = "AddAdminEmailtextBox";
-            this.AddAdminEmailtextBox.Size = new System.Drawing.Size(257, 31);
-            this.AddAdminEmailtextBox.TabIndex = 1;
             // 
             // AddAdminButton
             // 
             this.AddAdminButton.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.AddAdminButton.Location = new System.Drawing.Point(279, 195);
-            this.AddAdminButton.Margin = new System.Windows.Forms.Padding(4);
+            this.AddAdminButton.Location = new System.Drawing.Point(209, 158);
             this.AddAdminButton.Name = "AddAdminButton";
-            this.AddAdminButton.Size = new System.Drawing.Size(113, 44);
+            this.AddAdminButton.Size = new System.Drawing.Size(85, 36);
             this.AddAdminButton.TabIndex = 2;
             this.AddAdminButton.Text = "Add Admin";
             this.AddAdminButton.UseVisualStyleBackColor = true;
             this.AddAdminButton.Click += new System.EventHandler(this.AddAdminButton_Click);
             // 
+            // AddAdminEmailComboBox
+            // 
+            this.AddAdminEmailComboBox.FormattingEnabled = true;
+            this.AddAdminEmailComboBox.Location = new System.Drawing.Point(164, 121);
+            this.AddAdminEmailComboBox.Name = "AddAdminEmailComboBox";
+            this.AddAdminEmailComboBox.Size = new System.Drawing.Size(226, 21);
+            this.AddAdminEmailComboBox.TabIndex = 3;
+            // 
             // Add_admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(660, 336);
+            this.ClientSize = new System.Drawing.Size(495, 273);
+            this.Controls.Add(this.AddAdminEmailComboBox);
             this.Controls.Add(this.AddAdminButton);
-            this.Controls.Add(this.AddAdminEmailtextBox);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Add_admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_admin";
@@ -88,7 +84,7 @@ namespace TrainStation.Admin_forms
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox AddAdminEmailtextBox;
         private System.Windows.Forms.Button AddAdminButton;
+        private System.Windows.Forms.ComboBox AddAdminEmailComboBox;
     }
 }

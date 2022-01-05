@@ -24,7 +24,49 @@ namespace TrainStation
 
 
         /*Yasmine Elgendi*/
+        public DataTable GetAuthority(string email, string password)
+        {
+            string query = "SELECT Authority FROM User_Login WHERE Email = '" + email + "' AND Pass = '" + password + "';";
+            return dbMan.ExecuteReader(query);
+        }
+        public int Create_Pass_Account(string email, string password, string username)
+        {
 
+            string query = "INSERT INTO User_Login VALUES ('" + email + "', '" + password + "', 'passenger', '" + username + "')";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int Insert_Pass(int ssn, string Fname, char Minit, string Lname, char Gender, string email, int CV_SerialNo, DateTime Vacc_Date)
+        {
+            string query = "INSERT INTO Passenger VALUES ( " + ssn + ", '" + Fname + "', '" + Minit + "', '" + Lname + "', '" + Gender + "', '" + email + "', " + CV_SerialNo + ", '" + Vacc_Date + "');";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
+        public DataTable Select_NonAdmin_Emails()
+        {
+            string query = "SELECT Email FROM User_Login WHERE Authority = 'passenger' OR Authority = 'manager'  ;";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable Select_Passenger_Emails()
+        {
+            string query = "SELECT Email FROM User_Login WHERE Authority = 'passenger';";
+            return dbMan.ExecuteReader(query);
+        }
+
+        public DataTable Select_Admin_Emails()
+        {
+            string query = "SELECT Email FROM User_Login WHERE Authority = 'admin';";
+            return dbMan.ExecuteReader(query);
+        }
+        public int Add_Admin(string email)
+        {
+            string query = "UPDATE User_Login SET Authority = 'admin' WHERE Email = '" + email + "'; ";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int Add_BlackList(int PSSN, DateTime Date_Blacklisted, string reason)
+        {
+            string query = "INSERT INTO Blacklist VALUES(" + PSSN + ", '" + Date_Blacklisted.Date + "', '" + reason + "'); ";
+            return dbMan.ExecuteNonQuery(query);
+        }
 
         /* Eslam Ashraf*/
         public DataTable SSN_Employee()
