@@ -29,12 +29,14 @@ namespace TrainStation
 
         private void Create_account_Click(object sender, EventArgs e)
         {
+            bool rightFormat = Create_Fname_TextBox.Text.All(Char.IsLetter) && Create_Minit_TextBox.Text.All(Char.IsLetter)
+                            && Create_Lname_TextBox.Text.All(Char.IsLetter);
+                            && handle.is_email(Create_Email_TextBox);
+            bool isEmpty = Create_Pass_TextBox.Text.Length > 0 && Create_Username_TextBox.Text.Length > 0 &&
+                        Create_Fname_TextBox.Text.Length > 0 && Create_Lname_TextBox.Text.Length > 0
+                        && Create_Minit_TextBox.Text.Length == 1;
 
-            if (false)
-            {
-
-            }
-            else
+            if(isEmpty == false || rightFormat == true)
             {
                 int result1 = control.Create_Pass_Account(handle.Trim(Create_Email_TextBox).Text, handle.Trim(Create_Pass_TextBox).Text,
                                                 Create_Username_TextBox.Text);
@@ -46,13 +48,19 @@ namespace TrainStation
                                                 Create_VaccDate_DateTimePicker.Value.Date);
                 if (result1 == 0 || result2 == 0)
                 {
-
+                    MessageBox.Show("An error occurred during creating a new account");
                 }
                 else
                 {
-
+                    MessageBox.Show("An error occurred during creating a new account");
                 }
+
             }
+            else
+            {
+                MessageBox.Show("Make sure you entered valid inputs");
+            }
+
 
         }
     }
