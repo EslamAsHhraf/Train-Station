@@ -30,7 +30,7 @@ namespace TrainStation
         private void Create_account_Click(object sender, EventArgs e)
         {
             bool rightFormat = Create_Fname_TextBox.Text.All(Char.IsLetter) && Create_Minit_TextBox.Text.All(Char.IsLetter)
-                            && Create_Lname_TextBox.Text.All(Char.IsLetter);
+                            && Create_Lname_TextBox.Text.All(Char.IsLetter)
                             && handle.is_email(Create_Email_TextBox);
             bool isEmpty = Create_Pass_TextBox.Text.Length > 0 && Create_Username_TextBox.Text.Length > 0 &&
                         Create_Fname_TextBox.Text.Length > 0 && Create_Lname_TextBox.Text.Length > 0
