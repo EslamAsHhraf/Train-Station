@@ -21,8 +21,101 @@ namespace TrainStation
 
         /*Sarah Elzayat*/
 
+        public DataTable ticketDetailEmployee(int ticketNo)
+        {
+            string query = $"select * from ticket where ticketno ={ticketNo}";
+            return dbMan.ExecuteReader(query);
+        }
 
+        public DataTable viewTicketNumbers()
+        {
+            string query = "SELECT ticketno  FROM ticket";
+            return dbMan.ExecuteReader(query);
+        }
 
+        public int updateTicketEmployee(char newclass,int ticketNo)
+        {
+            string query = $"update ticket set class = '{newclass}' where ticketno ={ticketNo}";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public string getTicketClass(int ticketNo)
+        {
+            string query = $"SELECT class  FROM ticket where ticketno ={ticketNo}";
+            return (string)dbMan.ExecuteScalar(query);
+        }
+
+        public int cancelTicketEmployee(int ticketNo)
+        {
+            string query = $"delete from ticket where ticketno ={ticketNo}";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public DataTable viewTrainNumbers()
+        {
+            string query = "SELECT PlateNumber  FROM train";
+            return dbMan.ExecuteReader(query);
+        }
+        public bool checkTrainEmployee(int trainNo)
+        {
+            string query = $"select Maintenance from train where PlateNumber ={trainNo}";
+            return (bool)dbMan.ExecuteScalar(query);
+        }
+        public DataTable viewTripNumbers()
+        {
+            string query = "SELECT Trip_Code  FROM trip";
+            return dbMan.ExecuteReader(query);
+        }
+
+        public int getSeatsNumWithClass(char cls,int tripNo)
+        {
+            string query = $"SELECT count(*)  FROM ticket,trip where Trip_Code ={tripNo} and class='{cls}'";
+            return (int)dbMan.ExecuteScalar(query);
+        }
+
+        public int getNumOfBookedTickets(char cls, int tripNo)
+        {
+            string query = $"SELECT count(*)  FROM ticket,trip where Trip_Code ='{tripNo}' and class='{cls}' and pssn is not null";
+            return (int)dbMan.ExecuteScalar(query);
+        }
+        public DataTable viewTrips()
+        {
+            string query = "SELECT *  FROM trip";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable viewPassengerSSNEmployee()
+        {
+            string query = $"SELECT Pass_SSN FROM passenger ";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable viewPassengerDataEmployee(int ssn)
+        {
+            string query = $"SELECT * FROM passenger where Pass_SSN = { ssn}";
+            return dbMan.ExecuteReader(query);
+        }
+      
+        public int updatePassengerPhoneEmployee(Int32 newPhone,int ssn)
+        {
+            string query = $"insert into pass_phonenumber (pssn,p_phoneNumber) values ({ssn},'{newPhone}' )";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public string getPassEmailEmployee(int ssn)
+        {
+            string query = $"select pass_email from passenger where pass_ssn={ssn}";
+            return (string)dbMan.ExecuteScalar(query);
+        }
+        public int updatePassengerEMailEmployee(string email,int ssn,string oldemail)
+        {
+            string query = $@"update user_login set email = '{email}' where email = '{oldemail}';
+                                update passenger set pass_email = '{email}' where pass_ssn = {ssn};
+                            ";
+            return dbMan.ExecuteNonQuery(query);
+
+        }
+        public int updatePassengerPassowrdEmployee(string pass,string email)
+        {
+            string query = $@"update user_login set pass = '{pass}' where email = '{email}'";
+            return dbMan.ExecuteNonQuery(query);
+
+        }
         /*Yasmine Elgendi*/
 
 
