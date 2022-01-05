@@ -17,20 +17,25 @@ namespace TrainStation.Admin_forms
         public Add_admin()
         {
             InitializeComponent();
+            control = new Controller();
             DataTable dtemails = control.Select_NonAdmin_Emails();
             AddAdminEmailComboBox.DataSource = dtemails;
             AddAdminEmailComboBox.DisplayMember = "Email";
 
         }
-        private void Add_admin_Load(object sender, EventArgs e)
-        {
-            control = new Controller();
-
-        }
+   
 
         private void AddAdminButton_Click(object sender, EventArgs e)
         {
             int result = control.Add_Admin(AddAdminEmailComboBox.Text);
+            if(result == 1)
+            {
+                MessageBox.Show("Added admin successfully");
+            }
+            else
+            {
+                MessageBox.Show("Couldn't add admin");
+            }
         }
     }
 }

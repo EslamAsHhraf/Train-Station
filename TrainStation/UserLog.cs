@@ -17,14 +17,11 @@ namespace TrainStation
         public UserLog()
         {
             InitializeComponent();
-
-        }
-
-        private void UserLogin_Load(object sender, EventArgs e)
-        {
             control = new Controller();
             hand = new Handle();
+
         }
+
 
         private void Create_acc_Click(object sender, EventArgs e)
         {
@@ -37,7 +34,8 @@ namespace TrainStation
             Application.Exit();
         }
 
-        private void LogInButton_Click(object sender, EventArgs e)
+
+        private void LogInButton_Click_1(object sender, EventArgs e)
         {
             bool check_empty = LogIn_Email_TextBox.Text.Length > 0 && LogIn_Pass_TextBox.Text.Length > 0;
             if (!(hand.is_email(LogIn_Email_TextBox) && hand.is_valid(LogIn_Email_TextBox) && check_empty))
@@ -72,7 +70,5 @@ namespace TrainStation
 
             }
         }
-
-       
     }
 }

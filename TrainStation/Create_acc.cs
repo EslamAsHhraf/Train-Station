@@ -17,6 +17,11 @@ namespace TrainStation
         public Create_acc()
         {
             InitializeComponent();
+            control = new Controller();
+            handle = new Handle();
+            DataTable dtCSN = control.Select_CovidVacs_Serial();
+            Serial_Covid_ComboBox.DataSource = dtCSN;
+            Serial_Covid_ComboBox.DisplayMember = "CSN";
 
         }
 
@@ -27,7 +32,8 @@ namespace TrainStation
             Application.Restart();
         }
 
-        private void Create_account_Click(object sender, EventArgs e)
+
+        private void Create_account_Click_1(object sender, EventArgs e)
         {
             bool rightFormat = Create_Fname_TextBox.Text.All(Char.IsLetter) && Create_Minit_TextBox.Text.All(Char.IsLetter)
                             && Create_Lname_TextBox.Text.All(Char.IsLetter)
@@ -36,7 +42,7 @@ namespace TrainStation
                         Create_Fname_TextBox.Text.Length > 0 && Create_Lname_TextBox.Text.Length > 0
                         && Create_Minit_TextBox.Text.Length == 1;
 
-            if(isEmpty == false || rightFormat == true)
+            if (isEmpty == false || rightFormat == true)
             {
                 int result1 = control.Create_Pass_Account(handle.Trim(Create_Email_TextBox).Text, handle.Trim(Create_Pass_TextBox).Text,
                                                 Create_Username_TextBox.Text);
@@ -44,7 +50,7 @@ namespace TrainStation
                 int result2 = control.Insert_Pass(Convert.ToInt32(Create_SSN_Serial_NumericUpDown.Value),
                                                 Create_Fname_TextBox.Text, char.Parse(Create_Minit_TextBox.Text),
                                                 Create_Lname_TextBox.Text, Convert.ToChar(Create_Gender_ComboBox.SelectedItem),
-                                                handle.Trim(Create_Email_TextBox).Text, Convert.ToInt32(Create_CV_Serial_NumericUpDown.Value),
+                                                handle.Trim(Create_Email_TextBox).Text, Convert.ToInt32(Serial_Covid_ComboBox.Text),
                                                 Create_VaccDate_DateTimePicker.Value.Date);
                 if (result1 == 0 || result2 == 0)
                 {
@@ -60,8 +66,6 @@ namespace TrainStation
             {
                 MessageBox.Show("Make sure you entered valid inputs");
             }
-
-
         }
     }
 }

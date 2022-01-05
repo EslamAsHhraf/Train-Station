@@ -279,6 +279,36 @@ namespace TrainStation
             string query = "UPDATE User_Login SET Authority = 'admin' WHERE Email = '" + email + "'; ";
             return dbMan.ExecuteNonQuery(query);
         }
+
+        public int Remove_Admin_Employee(string email)
+        {
+            string query = "UPDATE Employee SET Super_SSN = null WHERE Super_SSN = (SELECT SSN FROM Employee WHERE Emp_Email = '" + email +"');";
+            dbMan.ExecuteNonQuery(query);
+
+            string query2 = "DELETE FROM Employee WHERE SSN = (SELECT SSN FROM Employee WHERE Emp_Email = '" + email + "'); ";
+            return dbMan.ExecuteNonQuery(query2);
+        }
+
+
+        public int Remove_Admin(string email)
+        {
+            if(Remove_Admin_Employee(email) == 1)
+            {
+                string query = "DELETE FROM User_Login WHERE Email = '" + email + "'; ";
+                return dbMan.ExecuteNonQuery(query);
+            }
+            else
+            {
+                return 0;
+            }
+            
+        }
+        
+        public DataTable Select_CovidVacs_Serial()
+        {
+            string query = "SELECT SerialNo FROM CovidVaccination;";
+            return dbMan.ExecuteReader(query);
+        }
         public int Add_BlackList(int PSSN, DateTime Date_Blacklisted, string reason)
         {
             string query = "INSERT INTO Blacklist VALUES(" + PSSN + ", '" + Date_Blacklisted.Date + "', '" + reason + "'); ";

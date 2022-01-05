@@ -57,6 +57,7 @@ namespace TrainStation.Admin_forms
             // 
             // AddAdminEmailComboBox
             // 
+            this.AddAdminEmailComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.AddAdminEmailComboBox.FormattingEnabled = true;
             this.AddAdminEmailComboBox.Location = new System.Drawing.Point(164, 121);
             this.AddAdminEmailComboBox.Name = "AddAdminEmailComboBox";

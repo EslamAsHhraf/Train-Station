@@ -43,6 +43,7 @@ namespace TrainStation.Admin_forms
             this.RemoveAdminButton.TabIndex = 5;
             this.RemoveAdminButton.Text = "Remove Admin";
             this.RemoveAdminButton.UseVisualStyleBackColor = true;
+            this.RemoveAdminButton.Click += new System.EventHandler(this.RemoveAdminButton_Click);
             // 
             // label1
             // 

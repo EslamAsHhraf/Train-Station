@@ -37,7 +37,6 @@ namespace TrainStation
             this.label12 = new System.Windows.Forms.Label();
             this.Create_VaccDate_DateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label21 = new System.Windows.Forms.Label();
-            this.Create_CV_Serial_NumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Create_DOB_DateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -60,8 +59,8 @@ namespace TrainStation
             this.Create_Username_TextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Return_to_log_in = new System.Windows.Forms.Button();
+            this.Serial_Covid_ComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Create_CV_Serial_NumericUpDown)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Create_SSN_Serial_NumericUpDown)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -71,28 +70,29 @@ namespace TrainStation
             // 
             this.Create_account.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_account.Location = new System.Drawing.Point(404, 451);
-            this.Create_account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_account.Margin = new System.Windows.Forms.Padding(2);
             this.Create_account.Name = "Create_account";
             this.Create_account.Size = new System.Drawing.Size(148, 57);
             this.Create_account.TabIndex = 50;
             this.Create_account.Text = "Create account";
             this.Create_account.UseVisualStyleBackColor = true;
+            this.Create_account.Click += new System.EventHandler(this.Create_account_Click_1);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Serial_Covid_ComboBox);
             this.groupBox1.Controls.Add(this.Create_VaccOrg_TextBox);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.Create_VaccType_TextBox);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.Create_VaccDate_DateTimePicker);
             this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.Create_CV_Serial_NumericUpDown);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(374, 30);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(356, 193);
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
@@ -102,7 +102,7 @@ namespace TrainStation
             // 
             this.Create_VaccOrg_TextBox.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_VaccOrg_TextBox.Location = new System.Drawing.Point(185, 136);
-            this.Create_VaccOrg_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_VaccOrg_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.Create_VaccOrg_TextBox.Name = "Create_VaccOrg_TextBox";
             this.Create_VaccOrg_TextBox.Size = new System.Drawing.Size(132, 24);
             this.Create_VaccOrg_TextBox.TabIndex = 51;
@@ -122,7 +122,7 @@ namespace TrainStation
             // 
             this.Create_VaccType_TextBox.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_VaccType_TextBox.Location = new System.Drawing.Point(183, 98);
-            this.Create_VaccType_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_VaccType_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.Create_VaccType_TextBox.Name = "Create_VaccType_TextBox";
             this.Create_VaccType_TextBox.Size = new System.Drawing.Size(134, 24);
             this.Create_VaccType_TextBox.TabIndex = 49;
@@ -142,7 +142,7 @@ namespace TrainStation
             // 
             this.Create_VaccDate_DateTimePicker.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_VaccDate_DateTimePicker.Location = new System.Drawing.Point(179, 65);
-            this.Create_VaccDate_DateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_VaccDate_DateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.Create_VaccDate_DateTimePicker.Name = "Create_VaccDate_DateTimePicker";
             this.Create_VaccDate_DateTimePicker.Size = new System.Drawing.Size(173, 24);
             this.Create_VaccDate_DateTimePicker.TabIndex = 47;
@@ -157,15 +157,6 @@ namespace TrainStation
             this.label21.Size = new System.Drawing.Size(138, 18);
             this.label21.TabIndex = 46;
             this.label21.Text = "Date of vaccination";
-            // 
-            // Create_CV_Serial_NumericUpDown
-            // 
-            this.Create_CV_Serial_NumericUpDown.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Create_CV_Serial_NumericUpDown.Location = new System.Drawing.Point(183, 36);
-            this.Create_CV_Serial_NumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Create_CV_Serial_NumericUpDown.Name = "Create_CV_Serial_NumericUpDown";
-            this.Create_CV_Serial_NumericUpDown.Size = new System.Drawing.Size(104, 24);
-            this.Create_CV_Serial_NumericUpDown.TabIndex = 45;
             // 
             // label22
             // 
@@ -194,9 +185,9 @@ namespace TrainStation
             this.groupBox2.Controls.Add(this.Create_Fname_TextBox);
             this.groupBox2.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(16, 24);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(326, 228);
             this.groupBox2.TabIndex = 52;
             this.groupBox2.TabStop = false;
@@ -206,7 +197,7 @@ namespace TrainStation
             // 
             this.Create_DOB_DateTimePicker.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_DOB_DateTimePicker.Location = new System.Drawing.Point(124, 191);
-            this.Create_DOB_DateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_DOB_DateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.Create_DOB_DateTimePicker.Name = "Create_DOB_DateTimePicker";
             this.Create_DOB_DateTimePicker.Size = new System.Drawing.Size(190, 24);
             this.Create_DOB_DateTimePicker.TabIndex = 61;
@@ -245,7 +236,7 @@ namespace TrainStation
             "M",
             "F"});
             this.Create_Gender_ComboBox.Location = new System.Drawing.Point(124, 162);
-            this.Create_Gender_ComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Gender_ComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Gender_ComboBox.Name = "Create_Gender_ComboBox";
             this.Create_Gender_ComboBox.Size = new System.Drawing.Size(102, 26);
             this.Create_Gender_ComboBox.TabIndex = 58;
@@ -265,7 +256,12 @@ namespace TrainStation
             // 
             this.Create_SSN_Serial_NumericUpDown.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_SSN_Serial_NumericUpDown.Location = new System.Drawing.Point(122, 24);
-            this.Create_SSN_Serial_NumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_SSN_Serial_NumericUpDown.Margin = new System.Windows.Forms.Padding(2);
+            this.Create_SSN_Serial_NumericUpDown.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
             this.Create_SSN_Serial_NumericUpDown.Name = "Create_SSN_Serial_NumericUpDown";
             this.Create_SSN_Serial_NumericUpDown.Size = new System.Drawing.Size(104, 24);
             this.Create_SSN_Serial_NumericUpDown.TabIndex = 56;
@@ -307,7 +303,7 @@ namespace TrainStation
             // 
             this.Create_Lname_TextBox.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_Lname_TextBox.Location = new System.Drawing.Point(122, 127);
-            this.Create_Lname_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Lname_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Lname_TextBox.Name = "Create_Lname_TextBox";
             this.Create_Lname_TextBox.Size = new System.Drawing.Size(104, 24);
             this.Create_Lname_TextBox.TabIndex = 52;
@@ -316,7 +312,7 @@ namespace TrainStation
             // 
             this.Create_Minit_TextBox.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_Minit_TextBox.Location = new System.Drawing.Point(122, 87);
-            this.Create_Minit_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Minit_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Minit_TextBox.Name = "Create_Minit_TextBox";
             this.Create_Minit_TextBox.Size = new System.Drawing.Size(104, 24);
             this.Create_Minit_TextBox.TabIndex = 51;
@@ -325,7 +321,7 @@ namespace TrainStation
             // 
             this.Create_Fname_TextBox.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_Fname_TextBox.Location = new System.Drawing.Point(124, 53);
-            this.Create_Fname_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Fname_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Fname_TextBox.Name = "Create_Fname_TextBox";
             this.Create_Fname_TextBox.Size = new System.Drawing.Size(102, 24);
             this.Create_Fname_TextBox.TabIndex = 50;
@@ -340,9 +336,9 @@ namespace TrainStation
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(16, 271);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(326, 167);
             this.groupBox4.TabIndex = 72;
             this.groupBox4.TabStop = false;
@@ -352,7 +348,7 @@ namespace TrainStation
             // 
             this.Create_Email_TextBox.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_Email_TextBox.Location = new System.Drawing.Point(104, 30);
-            this.Create_Email_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Email_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Email_TextBox.Name = "Create_Email_TextBox";
             this.Create_Email_TextBox.Size = new System.Drawing.Size(186, 24);
             this.Create_Email_TextBox.TabIndex = 66;
@@ -372,7 +368,7 @@ namespace TrainStation
             // 
             this.Create_Pass_TextBox.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_Pass_TextBox.Location = new System.Drawing.Point(104, 74);
-            this.Create_Pass_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Pass_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Pass_TextBox.Name = "Create_Pass_TextBox";
             this.Create_Pass_TextBox.Size = new System.Drawing.Size(185, 24);
             this.Create_Pass_TextBox.TabIndex = 67;
@@ -392,7 +388,7 @@ namespace TrainStation
             // 
             this.Create_Username_TextBox.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_Username_TextBox.Location = new System.Drawing.Point(104, 106);
-            this.Create_Username_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Username_TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Username_TextBox.Name = "Create_Username_TextBox";
             this.Create_Username_TextBox.Size = new System.Drawing.Size(185, 24);
             this.Create_Username_TextBox.TabIndex = 68;
@@ -412,13 +408,22 @@ namespace TrainStation
             // 
             this.Return_to_log_in.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Return_to_log_in.Location = new System.Drawing.Point(578, 451);
-            this.Return_to_log_in.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Return_to_log_in.Margin = new System.Windows.Forms.Padding(2);
             this.Return_to_log_in.Name = "Return_to_log_in";
             this.Return_to_log_in.Size = new System.Drawing.Size(148, 57);
             this.Return_to_log_in.TabIndex = 73;
             this.Return_to_log_in.Text = "Return to log in";
             this.Return_to_log_in.UseVisualStyleBackColor = true;
             this.Return_to_log_in.Click += new System.EventHandler(this.Return_to_log_in_Click);
+            // 
+            // Serial_Covid_ComboBox
+            // 
+            this.Serial_Covid_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Serial_Covid_ComboBox.FormattingEnabled = true;
+            this.Serial_Covid_ComboBox.Location = new System.Drawing.Point(214, 34);
+            this.Serial_Covid_ComboBox.Name = "Serial_Covid_ComboBox";
+            this.Serial_Covid_ComboBox.Size = new System.Drawing.Size(121, 26);
+            this.Serial_Covid_ComboBox.TabIndex = 52;
             // 
             // Create_acc
             // 
@@ -432,13 +437,12 @@ namespace TrainStation
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Create_account);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Create_acc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create_acc";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Create_CV_Serial_NumericUpDown)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Create_SSN_Serial_NumericUpDown)).EndInit();
@@ -457,7 +461,6 @@ namespace TrainStation
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker Create_VaccDate_DateTimePicker;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.NumericUpDown Create_CV_Serial_NumericUpDown;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DateTimePicker Create_DOB_DateTimePicker;
@@ -480,5 +483,6 @@ namespace TrainStation
         private System.Windows.Forms.TextBox Create_Username_TextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Return_to_log_in;
+        private System.Windows.Forms.ComboBox Serial_Covid_ComboBox;
     }
 }

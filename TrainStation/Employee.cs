@@ -83,8 +83,8 @@ namespace TrainStation
 
         private void updateMyDataBtn_Click(object sender, EventArgs e)
         {
-            Form f = new Employee_forms.UpdateMyData();
-            f.ShowDialog();
+            //Form f = new Employee_forms.UpdateMyData();
+            //f.ShowDialog();
         }
     }
 }

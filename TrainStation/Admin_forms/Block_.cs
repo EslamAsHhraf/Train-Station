@@ -16,6 +16,7 @@ namespace TrainStation.Admin_forms
         public Block_()
         {
             InitializeComponent();
+            control = new Controller();
             DataTable dtPSSN = control.Select_Passenger_Emails();
             Pass_SSN_ComboBox.DataSource = dtPSSN;
             Pass_SSN_ComboBox.DisplayMember = "PSSN";
