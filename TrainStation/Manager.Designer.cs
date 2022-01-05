@@ -43,7 +43,7 @@ namespace TrainStation
             // Change_rate
             // 
             this.Change_rate.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Change_rate.Location = new System.Drawing.Point(261, 286);
+            this.Change_rate.Location = new System.Drawing.Point(261, 319);
             this.Change_rate.Name = "Change_rate";
             this.Change_rate.Size = new System.Drawing.Size(478, 51);
             this.Change_rate.TabIndex = 2;
@@ -54,7 +54,7 @@ namespace TrainStation
             // Change_Salary
             // 
             this.Change_Salary.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Change_Salary.Location = new System.Drawing.Point(261, 229);
+            this.Change_Salary.Location = new System.Drawing.Point(261, 262);
             this.Change_Salary.Name = "Change_Salary";
             this.Change_Salary.Size = new System.Drawing.Size(478, 51);
             this.Change_Salary.TabIndex = 10;
@@ -65,7 +65,7 @@ namespace TrainStation
             // Hire_E
             // 
             this.Hire_E.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Hire_E.Location = new System.Drawing.Point(262, 34);
+            this.Hire_E.Location = new System.Drawing.Point(262, 67);
             this.Hire_E.Name = "Hire_E";
             this.Hire_E.Size = new System.Drawing.Size(477, 40);
             this.Hire_E.TabIndex = 19;
@@ -76,7 +76,7 @@ namespace TrainStation
             // Schedule_trips
             // 
             this.Schedule_trips.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Schedule_trips.Location = new System.Drawing.Point(261, 432);
+            this.Schedule_trips.Location = new System.Drawing.Point(262, 422);
             this.Schedule_trips.Name = "Schedule_trips";
             this.Schedule_trips.Size = new System.Drawing.Size(477, 42);
             this.Schedule_trips.TabIndex = 18;
@@ -87,7 +87,7 @@ namespace TrainStation
             // view_Employee
             // 
             this.view_Employee.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.view_Employee.Location = new System.Drawing.Point(261, 126);
+            this.view_Employee.Location = new System.Drawing.Point(261, 159);
             this.view_Employee.Name = "view_Employee";
             this.view_Employee.Size = new System.Drawing.Size(477, 40);
             this.view_Employee.TabIndex = 17;
@@ -98,7 +98,7 @@ namespace TrainStation
             // view_passenger
             // 
             this.view_passenger.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.view_passenger.Location = new System.Drawing.Point(262, 367);
+            this.view_passenger.Location = new System.Drawing.Point(262, 376);
             this.view_passenger.Name = "view_passenger";
             this.view_passenger.Size = new System.Drawing.Size(477, 40);
             this.view_passenger.TabIndex = 16;
@@ -109,7 +109,7 @@ namespace TrainStation
             // Change_Dep
             // 
             this.Change_Dep.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Change_Dep.Location = new System.Drawing.Point(261, 172);
+            this.Change_Dep.Location = new System.Drawing.Point(261, 205);
             this.Change_Dep.Name = "Change_Dep";
             this.Change_Dep.Size = new System.Drawing.Size(478, 51);
             this.Change_Dep.TabIndex = 20;
@@ -120,7 +120,7 @@ namespace TrainStation
             // Fire_Employee
             // 
             this.Fire_Employee.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Fire_Employee.Location = new System.Drawing.Point(262, 80);
+            this.Fire_Employee.Location = new System.Drawing.Point(262, 113);
             this.Fire_Employee.Name = "Fire_Employee";
             this.Fire_Employee.Size = new System.Drawing.Size(477, 40);
             this.Fire_Employee.TabIndex = 16;
