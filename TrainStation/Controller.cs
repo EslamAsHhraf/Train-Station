@@ -121,6 +121,36 @@ namespace TrainStation
             string query = $"SELECT P_PhoneNumber FROM Pass_PhoneNumber where PSSN = { ssn}";
             return dbMan.ExecuteReader(query);
         }
+        public string getEmpEmailEmployee(int ssn)
+        {
+            string query = $"select emp_email from employee where ssn={ssn}";
+            return (string)dbMan.ExecuteScalar(query);
+        }
+        public int updateEmployeePhoneEmployee(Int32 newPhone, int ssn)
+        {
+            string query = $"insert into E_PhoneNumber (essn,e_phoneNumber) values ({ssn},'{newPhone}' )";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int updateEmpEmailEmployee(string email, int ssn, string oldemail)
+        {
+            string query = $@"update user_login set email = '{email}' where email = '{oldemail}';
+                                update emplpyee set emp_email = '{email}' where ssn = {ssn};
+                            ";
+            return dbMan.ExecuteNonQuery(query);
+
+        }
+        public int updateEmpPassowrdEmployee(string pass, string email)
+        {
+            string query = $@"update user_login set pass = '{pass}' where email = '{email}'";
+            return dbMan.ExecuteNonQuery(query);
+
+        }
+        public int updateEmpPassowrdEmployee(string pass, string email)
+        {
+            string query = $@"update user_login set pass = '{pass}' where email = '{email}'";
+            return dbMan.ExecuteNonQuery(query);
+
+        }
         /*Yasmine Elgendi*/
         public DataTable GetAuthority(string email, string password)
         {
