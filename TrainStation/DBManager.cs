@@ -11,7 +11,7 @@ namespace TrainStation
 {
     class DBManager
     {
-        static string DB_Connection_String = @"Data Source=DESKTOP-JKJ76I4\SQLEXPRESS;Initial Catalog=TrainStation;Integrated Security=True";
+        static string DB_Connection_String = @"Data Source=LAPTOP-V90LRFKP\MSSQLSERVER01;Initial Catalog=TrainStation;Integrated Security=True";
 
         SqlConnection myConnection;
 

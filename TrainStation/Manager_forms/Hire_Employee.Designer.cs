@@ -149,8 +149,8 @@ namespace TrainStation.Manager_forms
             // 
             this.SSN.Location = new System.Drawing.Point(205, 24);
             this.SSN.Maximum = new decimal(new int[] {
-            1316134912,
-            2328,
+            1215752191,
+            23,
             0,
             0});
             this.SSN.Name = "SSN";
@@ -203,13 +203,23 @@ namespace TrainStation.Manager_forms
             // 
             this.Salary.Location = new System.Drawing.Point(205, 317);
             this.Salary.Maximum = new decimal(new int[] {
-            276447232,
-            23283,
+            1410065407,
+            2,
+            0,
+            0});
+            this.Salary.Minimum = new decimal(new int[] {
+            1000,
+            0,
             0,
             0});
             this.Salary.Name = "Salary";
             this.Salary.Size = new System.Drawing.Size(138, 29);
             this.Salary.TabIndex = 18;
+            this.Salary.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             // 
             // label10
             // 
@@ -249,10 +259,20 @@ namespace TrainStation.Manager_forms
             0,
             0,
             0});
+            this.House_num.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.House_num.Name = "House_num";
             this.House_num.Size = new System.Drawing.Size(67, 29);
             this.House_num.TabIndex = 22;
-            // 
+            this.House_num.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+           // 
             // Street
             // 
             this.Street.Location = new System.Drawing.Point(261, 441);
@@ -384,8 +404,8 @@ namespace TrainStation.Manager_forms
             // 
             this.Serial_num.Location = new System.Drawing.Point(268, 44);
             this.Serial_num.Maximum = new decimal(new int[] {
-            -727379968,
-            232,
+            1215752191,
+            23,
             0,
             0});
             this.Serial_num.Name = "Serial_num";

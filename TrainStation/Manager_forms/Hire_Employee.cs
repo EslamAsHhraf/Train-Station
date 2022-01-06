@@ -36,8 +36,12 @@ namespace TrainStation.Manager_forms
         {
             Trim_text();
             bool embty = is_embty();
+            if (embty )
+            {
+                return;
+            }
             bool Format = rightFormat();
-            if (embty || !Format)
+            if (!Format)
             {
                 return;
             }
@@ -79,8 +83,10 @@ namespace TrainStation.Manager_forms
                 return;
             }
             int ins1 = con.Insert_CovidVaccination(Serial_num.Text, Type_of_vacc.Text, organis.Text);
-            int ins2 = con.Insert_User_Login(Email.Text, Password.Text, "Employee", user_name.Text);
-            char m_char = Mname.Text[0];
+            int ins2 = con.Insert_User_Login(Email.Text, Password.Text, "employee", user_name.Text);
+            string temp_mid= Mname.Text;
+            temp_mid = temp_mid.ToUpper();
+            char m_char = temp_mid[0];
             string mname = m_char.ToString();
             int ins3 = con.Insert_Employee(SSN.Text, Fname.Text, mname, Lname.Text, Gender.Text, DOB.Text, Salary.Text, House_num.Text, Street.Text, City.Text, Super_SSN.Text, DNO.Text
                 , Serial_num.Text, Date_Of_vacc.Text, Email.Text);
@@ -100,19 +106,39 @@ namespace TrainStation.Manager_forms
         }
         private bool rightFormat()
         {
-            if (Fname.Text.All(Char.IsLetter))
+            if (!Fname.Text.All(Char.IsLetter))
             {
                 MessageBox.Show("you can't insert number in first name!");
                 return false;
             }
-            if(Mname.Text.All(Char.IsLetter))
+            if(!Mname.Text.All(Char.IsLetter))
             {
                 MessageBox.Show("you can't insert number in Middle name!");
                 return false;
             }
-              if(Lname.Text.All(Char.IsLetter))
+            if(!Lname.Text.All(Char.IsLetter))
             {
                 MessageBox.Show("you can't insert number in last name!");
+                return false;
+            }
+            if(SSN.Text.Length!=9)
+            {
+                MessageBox.Show("SSN should be 9 digits!");
+                return false;
+            } 
+            if(Serial_num.Text.Length != 9)
+            {
+                MessageBox.Show("Serial Number of vaccination should be 9 digits!");
+                return false;
+            }
+            if (Salary.Text.Length >= 7)
+            {
+                MessageBox.Show("Salary should be less than 7 digits!");
+                return false;
+            }
+            if (House_num.Text.Length > 5)
+            {
+                MessageBox.Show("Salary should be less than 5 digits!");
                 return false;
             }
             return true;
@@ -280,5 +306,7 @@ namespace TrainStation.Manager_forms
         {
             Application.Exit();
         }
+
+     
     }
 }

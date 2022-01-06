@@ -36,6 +36,11 @@ namespace TrainStation.Manager_forms
                 MessageBox.Show("Salary should be large than 0");
                 return;
             }
+            if (Salary.Text.Length >= 7)
+            {
+                MessageBox.Show("Salary should be less than 7 digits!");
+                return;
+            }
             int r = con.Change_Salary(SSN.Text, Salary.Text);
             if (r == 0)
             {

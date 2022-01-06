@@ -375,8 +375,10 @@ namespace TrainStation
         }
         public DataTable Employee()
         {
-            string query = "SELECT * FROM Employee;";
-            return dbMan.ExecuteReader(query);
+            String StoredProcedureName = StoredProcedures.Employee_data;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+            //string query = "SELECT * FROM Employee;";
+            //return dbMan.ExecuteReader(query);
         }
         public DataTable Passenger()
         {
@@ -413,8 +415,13 @@ namespace TrainStation
         }
         public int Change_Rate(string ssn, string rate)
         {
-            string query = "UPDATE Employee SET Rate=" + rate + " WHERE SSN=" + ssn + ";";
-            return dbMan.ExecuteNonQuery(query);
+            //string query = "UPDATE Employee SET Rate=" + rate + " WHERE SSN=" + ssn + ";";
+            //return dbMan.ExecuteNonQuery(query);
+            String StoredProcedureName = StoredProcedures.Change_Rate;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ssn", ssn);
+            Parameters.Add("@rate", rate);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
         public int Change_Salary(string ssn, string salary)
         {
@@ -440,21 +447,6 @@ namespace TrainStation
             Parameters.Add("@Come_Station", Come_Station);
             Parameters.Add("@Go_Station", Go_Station);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
-        }
-        public int Set_Train_PlateNumber_Trip(string Trip_Code, string Train_PlateNumber)
-        {
-            string query = "UPDATE Trip SET Train_PlateNumber=" + Train_PlateNumber + " WHERE Trip_Code='" + Trip_Code + "';";
-            return dbMan.ExecuteNonQuery(query);
-        }
-        public int Set_Come_Station_Trip(string Trip_Code, string Come_Station)
-        {
-            string query = "UPDATE Trip SET Come_Station=" + Come_Station + " WHERE Trip_Code='" + Trip_Code + "';";
-            return dbMan.ExecuteNonQuery(query);
-        }
-        public int Set_Go_Station_Trip(string Trip_Code, string Go_Station)
-        {
-            string query = "UPDATE Trip SET Go_Station=" + Go_Station + " WHERE Trip_Code='" + Trip_Code + "';";
-            return dbMan.ExecuteNonQuery(query);
         }
         public int Delete_Employee(string SSN)
         {
@@ -534,6 +526,7 @@ namespace TrainStation
             Parameters.Add("@TripCode", TripCode);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
+
 
         public void TerminateConnection()
         {

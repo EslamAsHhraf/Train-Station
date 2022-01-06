@@ -69,7 +69,7 @@ namespace TrainStation.Manager_forms
             this.Trip_code.Location = new System.Drawing.Point(469, 28);
             this.Trip_code.Margin = new System.Windows.Forms.Padding(4);
             this.Trip_code.Name = "Trip_code";
-            this.Trip_code.Size = new System.Drawing.Size(204, 24);
+            this.Trip_code.Size = new System.Drawing.Size(204, 29);
             this.Trip_code.TabIndex = 3;
             // 
             // label_arr_time
@@ -79,7 +79,7 @@ namespace TrainStation.Manager_forms
             this.label_arr_time.Location = new System.Drawing.Point(259, 115);
             this.label_arr_time.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_arr_time.Name = "label_arr_time";
-            this.label_arr_time.Size = new System.Drawing.Size(106, 20);
+            this.label_arr_time.Size = new System.Drawing.Size(130, 25);
             this.label_arr_time.TabIndex = 4;
             this.label_arr_time.Text = "Arrival Time";
             // 
@@ -90,7 +90,7 @@ namespace TrainStation.Manager_forms
             this.label_trip.Location = new System.Drawing.Point(268, 32);
             this.label_trip.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_trip.Name = "label_trip";
-            this.label_trip.Size = new System.Drawing.Size(80, 20);
+            this.label_trip.Size = new System.Drawing.Size(98, 25);
             this.label_trip.TabIndex = 5;
             this.label_trip.Text = "Trip code";
             // 
@@ -101,7 +101,7 @@ namespace TrainStation.Manager_forms
             this.label_plate.Location = new System.Drawing.Point(223, 411);
             this.label_plate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_plate.Name = "label_plate";
-            this.label_plate.Size = new System.Drawing.Size(150, 20);
+            this.label_plate.Size = new System.Drawing.Size(186, 25);
             this.label_plate.TabIndex = 6;
             this.label_plate.Text = "Train platenumber";
             // 
@@ -112,7 +112,7 @@ namespace TrainStation.Manager_forms
             this.label_come_station.Location = new System.Drawing.Point(243, 455);
             this.label_come_station.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_come_station.Name = "label_come_station";
-            this.label_come_station.Size = new System.Drawing.Size(109, 20);
+            this.label_come_station.Size = new System.Drawing.Size(136, 25);
             this.label_come_station.TabIndex = 7;
             this.label_come_station.Text = "Come station";
             // 
@@ -123,7 +123,7 @@ namespace TrainStation.Manager_forms
             this.label_go_station.Location = new System.Drawing.Point(259, 517);
             this.label_go_station.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_go_station.Name = "label_go_station";
-            this.label_go_station.Size = new System.Drawing.Size(91, 20);
+            this.label_go_station.Size = new System.Drawing.Size(114, 25);
             this.label_go_station.TabIndex = 8;
             this.label_go_station.Text = "Go station";
             // 
@@ -149,7 +149,7 @@ namespace TrainStation.Manager_forms
             this.MA.Location = new System.Drawing.Point(578, 112);
             this.MA.Margin = new System.Windows.Forms.Padding(4);
             this.MA.Name = "MA";
-            this.MA.Size = new System.Drawing.Size(82, 26);
+            this.MA.Size = new System.Drawing.Size(82, 29);
             this.MA.TabIndex = 10;
             // 
             // HA
@@ -162,7 +162,7 @@ namespace TrainStation.Manager_forms
             this.HA.Location = new System.Drawing.Point(475, 115);
             this.HA.Margin = new System.Windows.Forms.Padding(4);
             this.HA.Name = "HA";
-            this.HA.Size = new System.Drawing.Size(83, 26);
+            this.HA.Size = new System.Drawing.Size(83, 29);
             this.HA.TabIndex = 11;
             // 
             // HD
@@ -174,7 +174,7 @@ namespace TrainStation.Manager_forms
             this.HD.Location = new System.Drawing.Point(475, 164);
             this.HD.Margin = new System.Windows.Forms.Padding(4);
             this.HD.Name = "HD";
-            this.HD.Size = new System.Drawing.Size(83, 26);
+            this.HD.Size = new System.Drawing.Size(83, 29);
             this.HD.TabIndex = 15;
             // 
             // MD
@@ -187,7 +187,7 @@ namespace TrainStation.Manager_forms
             this.MD.Location = new System.Drawing.Point(578, 164);
             this.MD.Margin = new System.Windows.Forms.Padding(4);
             this.MD.Name = "MD";
-            this.MD.Size = new System.Drawing.Size(82, 26);
+            this.MD.Size = new System.Drawing.Size(82, 29);
             this.MD.TabIndex = 14;
             // 
             // label_deptime
@@ -197,7 +197,7 @@ namespace TrainStation.Manager_forms
             this.label_deptime.Location = new System.Drawing.Point(240, 167);
             this.label_deptime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_deptime.Name = "label_deptime";
-            this.label_deptime.Size = new System.Drawing.Size(131, 20);
+            this.label_deptime.Size = new System.Drawing.Size(162, 25);
             this.label_deptime.TabIndex = 13;
             this.label_deptime.Text = "Departure Time";
             // 
@@ -208,7 +208,7 @@ namespace TrainStation.Manager_forms
             this.label7.Location = new System.Drawing.Point(476, 79);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 20);
+            this.label7.Size = new System.Drawing.Size(67, 25);
             this.label7.TabIndex = 17;
             this.label7.Text = "Hours";
             // 
@@ -219,7 +219,7 @@ namespace TrainStation.Manager_forms
             this.label8.Location = new System.Drawing.Point(574, 79);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 20);
+            this.label8.Size = new System.Drawing.Size(86, 25);
             this.label8.TabIndex = 18;
             this.label8.Text = "Minutes";
             // 
@@ -230,7 +230,7 @@ namespace TrainStation.Manager_forms
             this.trainNum.Location = new System.Drawing.Point(460, 407);
             this.trainNum.Margin = new System.Windows.Forms.Padding(4);
             this.trainNum.Name = "trainNum";
-            this.trainNum.Size = new System.Drawing.Size(213, 26);
+            this.trainNum.Size = new System.Drawing.Size(213, 29);
             this.trainNum.TabIndex = 20;
             // 
             // comestation
@@ -240,7 +240,7 @@ namespace TrainStation.Manager_forms
             this.comestation.Location = new System.Drawing.Point(460, 455);
             this.comestation.Margin = new System.Windows.Forms.Padding(4);
             this.comestation.Name = "comestation";
-            this.comestation.Size = new System.Drawing.Size(213, 26);
+            this.comestation.Size = new System.Drawing.Size(213, 29);
             this.comestation.TabIndex = 21;
             // 
             // Gostation
@@ -250,7 +250,7 @@ namespace TrainStation.Manager_forms
             this.Gostation.Location = new System.Drawing.Point(460, 517);
             this.Gostation.Margin = new System.Windows.Forms.Padding(4);
             this.Gostation.Name = "Gostation";
-            this.Gostation.Size = new System.Drawing.Size(213, 26);
+            this.Gostation.Size = new System.Drawing.Size(213, 29);
             this.Gostation.TabIndex = 22;
             // 
             // Date_Of_trip
@@ -259,7 +259,7 @@ namespace TrainStation.Manager_forms
             this.Date_Of_trip.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.Date_Of_trip.Location = new System.Drawing.Point(490, 212);
             this.Date_Of_trip.Name = "Date_Of_trip";
-            this.Date_Of_trip.Size = new System.Drawing.Size(144, 24);
+            this.Date_Of_trip.Size = new System.Drawing.Size(144, 29);
             this.Date_Of_trip.TabIndex = 48;
             // 
             // label_date
@@ -269,7 +269,7 @@ namespace TrainStation.Manager_forms
             this.label_date.Location = new System.Drawing.Point(274, 215);
             this.label_date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_date.Name = "label_date";
-            this.label_date.Size = new System.Drawing.Size(104, 20);
+            this.label_date.Size = new System.Drawing.Size(128, 25);
             this.label_date.TabIndex = 50;
             this.label_date.Text = "Date of trip";
             // 
@@ -280,7 +280,7 @@ namespace TrainStation.Manager_forms
             this.label_Pv.Location = new System.Drawing.Point(528, 298);
             this.label_Pv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Pv.Name = "label_Pv";
-            this.label_Pv.Size = new System.Drawing.Size(110, 20);
+            this.label_Pv.Size = new System.Drawing.Size(132, 25);
             this.label_Pv.TabIndex = 51;
             this.label_Pv.Text = "Price Of VIP";
             // 
@@ -291,7 +291,7 @@ namespace TrainStation.Manager_forms
             this.label_pg.Location = new System.Drawing.Point(529, 346);
             this.label_pg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_pg.Name = "label_pg";
-            this.label_pg.Size = new System.Drawing.Size(136, 20);
+            this.label_pg.Size = new System.Drawing.Size(166, 25);
             this.label_pg.TabIndex = 52;
             this.label_pg.Text = "Price Of General";
             // 
@@ -310,7 +310,7 @@ namespace TrainStation.Manager_forms
             0,
             0});
             this.VIP.Name = "VIP";
-            this.VIP.Size = new System.Drawing.Size(150, 24);
+            this.VIP.Size = new System.Drawing.Size(150, 29);
             this.VIP.TabIndex = 53;
             this.VIP.Value = new decimal(new int[] {
             10,
@@ -333,7 +333,7 @@ namespace TrainStation.Manager_forms
             0,
             0});
             this.GENERAL.Name = "GENERAL";
-            this.GENERAL.Size = new System.Drawing.Size(150, 24);
+            this.GENERAL.Size = new System.Drawing.Size(150, 29);
             this.GENERAL.TabIndex = 54;
             this.GENERAL.Value = new decimal(new int[] {
             5,
@@ -375,7 +375,7 @@ namespace TrainStation.Manager_forms
             0,
             0});
             this.Num_VIP.Name = "Num_VIP";
-            this.Num_VIP.Size = new System.Drawing.Size(150, 24);
+            this.Num_VIP.Size = new System.Drawing.Size(150, 29);
             this.Num_VIP.TabIndex = 57;
             // 
             // NUM_G
@@ -388,7 +388,7 @@ namespace TrainStation.Manager_forms
             0,
             0});
             this.NUM_G.Name = "NUM_G";
-            this.NUM_G.Size = new System.Drawing.Size(150, 24);
+            this.NUM_G.Size = new System.Drawing.Size(150, 29);
             this.NUM_G.TabIndex = 58;
             // 
             // numvip
@@ -398,7 +398,7 @@ namespace TrainStation.Manager_forms
             this.numvip.Location = new System.Drawing.Point(98, 298);
             this.numvip.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.numvip.Name = "numvip";
-            this.numvip.Size = new System.Drawing.Size(183, 20);
+            this.numvip.Size = new System.Drawing.Size(222, 25);
             this.numvip.TabIndex = 59;
             this.numvip.Text = "Number of VIP Ticket";
             // 
@@ -406,16 +406,16 @@ namespace TrainStation.Manager_forms
             // 
             this.numgen.AutoSize = true;
             this.numgen.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numgen.Location = new System.Drawing.Point(72, 351);
+            this.numgen.Location = new System.Drawing.Point(64, 350);
             this.numgen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.numgen.Name = "numgen";
-            this.numgen.Size = new System.Drawing.Size(209, 20);
+            this.numgen.Size = new System.Drawing.Size(256, 25);
             this.numgen.TabIndex = 60;
             this.numgen.Text = "Number of General Ticket";
             // 
             // Schedule_trips
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

@@ -91,6 +91,16 @@ namespace TrainStation.Manager_forms
                 MessageBox.Show("Please Insert Departure Time!");
                 return;
             }
+            if(VIP.Text.Length>=5 || GENERAL.Text.Length >=5)
+            {
+                MessageBox.Show("Price of Vip and General should be less than 5 digits!");
+                return;
+            }
+            if (Num_VIP.Text.Length >= 5 || NUM_G.Text.Length >= 5)
+            {
+                MessageBox.Show("Number of Vip and General tickets should be less than 5 digits!");
+                return;
+            }
             string arrivel = HA.Text + ':' + MA.Text ;
             string departure= HD.Text + ':' + MD.Text ;
             String r1 = con.Is_Trip(Trip_code.Text);
