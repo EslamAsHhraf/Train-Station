@@ -26,6 +26,7 @@ namespace TrainStation
             DataTable x = controllerObj.viewPassengerSSNEmployee();
             foreach (DataRow row in x.Rows)
                 passengerSSNComboBox.Items.Add(row[0].ToString());
+
         }
         private void changePhoneNumButton_Click(object sender, EventArgs e)
         {

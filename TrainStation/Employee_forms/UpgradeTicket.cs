@@ -24,9 +24,9 @@ namespace TrainStation
             DataTable x = controllerObj.viewTicketNumbers();
             foreach (DataRow row in x.Rows)
                 ticketSerialNoComboBox.Items.Add(row[0].ToString());
-            char[] arr = { 'A', 'B', 'C', 'D', 'E' };
-            for (int i = 0; i < arr.Length; i++)
-                 newClassComboBox.Items.Add(arr[i]); 
+            //char[] arr = { 'A', 'B', 'C', 'D', 'E' };
+            //for (int i = 0; i < arr.Length; i++)
+            //     newClassComboBox.Items.Add(arr[i]); 
           
         }
 

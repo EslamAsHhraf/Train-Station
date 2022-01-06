@@ -56,7 +56,7 @@ namespace TrainStation
                 }
                 else if (auth == "employee")
                 {
-                    Form employeeForm = new Employee();
+                    Form employeeForm = new Employee(hand.Trim(LogIn_Email_TextBox).Text);
                     employeeForm.ShowDialog();
                 }
                 else if (auth == "manager")
@@ -73,6 +73,9 @@ namespace TrainStation
             }
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

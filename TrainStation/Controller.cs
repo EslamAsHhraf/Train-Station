@@ -172,7 +172,7 @@ namespace TrainStation
         }
         public DataTable viewTrips()
         {
-            string query = "SELECT *  FROM trip";
+            string query = "SELECT *  FROM trip ";
             return dbMan.ExecuteReader(query);
         }
         public DataTable viewPassengerSSNEmployee()
@@ -222,13 +222,13 @@ namespace TrainStation
         }
         public int updateEmployeePhoneEmployee(Int32 newPhone, int ssn)
         {
-            string query = $"insert into E_PhoneNumber (essn,e_phoneNumber) values ({ssn},'{newPhone}' )";
+            string query = $"insert into E_PhoneNumber (essn,pNumber) values ({ssn},'{newPhone}' )";
             return dbMan.ExecuteNonQuery(query);
         }
         public int updateEmpEmailEmployee(string email, int ssn, string oldemail)
         {
             string query = $@"update user_login set email = '{email}' where email = '{oldemail}';
-                                update emplpyee set emp_email = '{email}' where ssn = {ssn};
+                                update employee set emp_email = '{email}' where ssn = {ssn};
                             ";
             return dbMan.ExecuteNonQuery(query);
 
@@ -239,7 +239,29 @@ namespace TrainStation
             return dbMan.ExecuteNonQuery(query);
 
         }
+        public DataTable viewTripIdEmployee()
+        {
+            string query = $"SELECT Trip_Code FROM trip ";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable getFirstAvailableTicketID(int tripC, char cls)
+        {
+            string query = $@"SELECT TicketNo FROM ticket,trip where Trip_Code ='{tripC}' and class='{cls}' and pssn is null and essn is null";
+            return dbMan.ExecuteReader(query);
 
+        }
+
+        public int BookTicketEmployee(int essn, int pssn, int ticketNo)
+        {
+            string query = $@"update ticket set essn = {essn},pssn={pssn} where ticketNO = {ticketNo}";
+            return dbMan.ExecuteNonQuery(query);
+
+        }
+        public int Get_SSN_Of_EmailEmployee(string email)
+        {
+            string query = $"SELECT ssn FROM employee WHERE emp_Email = '{email}';";
+            return (int)dbMan.ExecuteScalar(query);
+        }
         /*Yasmine Elgendi*/
         public DataTable GetAuthority(string email, string password)
         {

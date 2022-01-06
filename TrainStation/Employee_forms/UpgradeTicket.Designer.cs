@@ -45,7 +45,6 @@ namespace TrainStation
             this.ticketSerialNoComboBox.Name = "ticketSerialNoComboBox";
             this.ticketSerialNoComboBox.Size = new System.Drawing.Size(258, 29);
             this.ticketSerialNoComboBox.TabIndex = 0;
-           
             // 
             // label1
             // 
@@ -57,7 +56,6 @@ namespace TrainStation
             this.label1.Size = new System.Drawing.Size(226, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ticket\'s Serial Number";
-            
             // 
             // label2
             // 
@@ -69,17 +67,18 @@ namespace TrainStation
             this.label2.Size = new System.Drawing.Size(108, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "New Class";
-            
             // 
             // newClassComboBox
             // 
             this.newClassComboBox.FormattingEnabled = true;
+            this.newClassComboBox.Items.AddRange(new object[] {
+            "VIP",
+            "General"});
             this.newClassComboBox.Location = new System.Drawing.Point(210, 225);
             this.newClassComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.newClassComboBox.Name = "newClassComboBox";
             this.newClassComboBox.Size = new System.Drawing.Size(258, 29);
             this.newClassComboBox.TabIndex = 2;
-            
             // 
             // upgradeButton
             // 

@@ -47,7 +47,7 @@ namespace TrainStation
 
         private void BeEmployeebutton_Click(object sender, EventArgs e)
         {
-            Form employee = new Employee();
+            Form employee = new Employee("john.chen@sqltutorial.org");
             employee.ShowDialog();
         }
 
