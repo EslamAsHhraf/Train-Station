@@ -47,7 +47,8 @@ namespace TrainStation
 
         private void BeEmployeebutton_Click(object sender, EventArgs e)
         {
-            Form employee = new Employee();
+            string email = "";
+            Form employee = new Employee(email);
             employee.ShowDialog();
         }
 

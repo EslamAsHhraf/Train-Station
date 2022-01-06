@@ -151,7 +151,8 @@ namespace TrainStation.Employee_forms
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "UpdateMyData";
             this.Text = "UpdateMyData";
-          //  this.button1.Click += new System.EventHandler(this.UpdateMyData_Load);
+            this.Load += new System.EventHandler(this.UpdateMyData_Load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

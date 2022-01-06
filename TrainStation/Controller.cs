@@ -275,6 +275,29 @@ namespace TrainStation
             return dbMan.ExecuteNonQuery(query);
 
         }
+        public DataTable viewTripIdEmployee()
+        {
+            string query = $"SELECT Trip_Code FROM trip ";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable getFirstAvailableTicketID(int tripC, char cls)
+        {
+            string query = $@"SELECT TicketNo FROM ticket,trip where Trip_Code ='{tripC}' and class='{cls}' and pssn is null and essn is null";
+            return dbMan.ExecuteReader(query);
+
+        }
+
+        public int BookTicketEmployee(int essn, int pssn, int ticketNo)
+        {
+            string query = $@"update ticket set essn = {essn},pssn={pssn} where ticketNO = {ticketNo}";
+            return dbMan.ExecuteNonQuery(query);
+
+        }
+        public int Get_SSN_Of_EmailEmployee(string email)
+        {
+            string query = $"SELECT ssn FROM employee WHERE emp_Email = '{email}';";
+            return (int)dbMan.ExecuteScalar(query);
+        }
 
         /*Yasmine Elgendi*/
         public DataTable GetAuthority(string email, string password)

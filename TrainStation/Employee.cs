@@ -12,10 +12,12 @@ namespace TrainStation
     public partial class Employee : Form
     {
         Handle hand;
-        public Employee()
+        string Email;
+        public Employee(string e)
         {
             InitializeComponent();
             hand = new Handle();
+            Email = e;
         }
 
       
@@ -83,8 +85,8 @@ namespace TrainStation
 
         private void updateMyDataBtn_Click(object sender, EventArgs e)
         {
-            //Form f = new Employee_forms.UpdateMyData();
-            //f.ShowDialog();
+            Form f = new Employee_forms.UpdateMyData(Email);
+            f.ShowDialog();
         }
     }
 }
