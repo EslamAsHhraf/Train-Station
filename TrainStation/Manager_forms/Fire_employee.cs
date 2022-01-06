@@ -24,7 +24,7 @@ namespace TrainStation.Admin_forms
         {
             if (SSN.Text == "666664445")
             {
-                MessageBox.Show("You can't fire manager");
+                MessageBox.Show("You can't fire Manager");
                 return;
             }
             con.Super_Employee(SSN.Text);
