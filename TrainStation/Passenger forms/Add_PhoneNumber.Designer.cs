@@ -64,6 +64,7 @@ namespace TrainStation.Passenger_forms
             this.Add_Phone_Number.TabIndex = 13;
             this.Add_Phone_Number.Text = "Add Phone Number";
             this.Add_Phone_Number.UseVisualStyleBackColor = true;
+            this.Add_Phone_Number.Click += new System.EventHandler(this.Add_Phone_Number_Click);
             // 
             // Add_PhoneNumber
             // 

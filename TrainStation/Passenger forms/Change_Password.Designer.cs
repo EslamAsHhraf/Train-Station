@@ -86,6 +86,7 @@ namespace TrainStation.Passenger_forms
             this.Change_Pass_Button.TabIndex = 17;
             this.Change_Pass_Button.Text = "Change Password";
             this.Change_Pass_Button.UseVisualStyleBackColor = true;
+            this.Change_Pass_Button.Click += new System.EventHandler(this.Change_Pass_Button_Click);
             // 
             // Change_Password
             // 

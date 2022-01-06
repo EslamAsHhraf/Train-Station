@@ -18,27 +18,49 @@ namespace TrainStation
         /*  Yasmine Ghanem*/
 
         //Make Complaints
-        public int Submit_Complaint(int code, string Description, int ssn)
+        public int Submit_Complaint(int code, string Description, int pssn)
         {
-            string query = "INSERT INTO Complaints (C_Code, Descrip, SSN )" +
-                                    "VALUES (" + code + ",'" + Description + "'," + ssn + "); ";
+            string query = "INSERT INTO Complaints (C_Code, Descrip, P_SSN) " +
+                                    "VALUES ('" + code + "','" + Description + "'," + pssn + ");";
             return dbMan.ExecuteNonQuery(query);
+        }
+
+        public int Generate_Code(string Code)
+        {
+            string query = "SELECT count(C_Code) FROM Complaints where C_Code = " + Code + ";";
+
+            return (int)dbMan.ExecuteScalar(query);
         }
 
         //Gets ssn of current signed in passenger
         public int Get_SSN_Of_Email(string email)
         {
-            string query = "SELECT Pass_SSN FROM Passenger WHERE Pass_Email = '" + email + "');";
+            string query = "SELECT Pass_SSN FROM Passenger WHERE Pass_Email = '" + email + "';";
             return (int)dbMan.ExecuteScalar(query);
         }
 
-        //Book ticket funcations
+        //Book ticket functions
         //view available trips to book ticket
         public DataTable View_Available_Trips()
         {
-            string query = "SELECT * FROM Trip;";
+            string query = "SELECT Trip_Code, Departure_Time, Arrival_Time, Come_Station, Go_Station FROM Trip;";
             return dbMan.ExecuteReader(query);
         }
+
+        //Get available ticket
+        public int Get_Next_Available_Ticket(int tripcode, char ticketclass)
+        {
+            string query = "SELECT TicketNo FROM Ticket WHERE ESSN IS NULL AND PSSN IS NULL AND TripCode = " + tripcode + " AND Class = '" + ticketclass + "';";
+            return (int)dbMan.ExecuteNonQuery(query);
+        }
+
+        //Book ticket
+        public int Book_Ticket_Passenger(int pssn, int ticketno)
+        {
+            string query = "UPDATE Ticket SET PSSN = " + pssn + " WHERE TicketNo = " + ticketno + ";";
+            return dbMan.ExecuteNonQuery(query);
+        }
+
 
         //View all ticket details of current passenger
         public DataTable View_Ticket_Details(int ssn)
@@ -50,9 +72,9 @@ namespace TrainStation
         //Edit Profile
 
         //Change Phone Number
-        public int Change_Phone_Number(string new_pnum, string old_pnum, int ssn)
+        public int Change_Phone_Number(string new_pnum, string old_pnum, int pssn)
         {
-            string query = "UPDATE Pass_PhoneNumber SET P_PhoneNumber = '" + new_pnum + "' WHERE P_PhoneNumber = '" + old_pnum + "' and PSSN = " + ssn + "; ";
+            string query = "UPDATE Pass_PhoneNumber SET P_PhoneNumber = '" + new_pnum + "' WHERE P_PhoneNumber = '" + old_pnum + "' AND PSSN = " + pssn + ";";
             return dbMan.ExecuteNonQuery(query);
         }
 
@@ -63,6 +85,14 @@ namespace TrainStation
                                     "VALUES (" + ssn + ",'" + pnum + "');";
             return dbMan.ExecuteNonQuery(query);
         }
+
+        public int Check_If_PhoneNo_Exist(string pnum, int pssn)
+        {
+            string query = "SELECT COUNT(PSSN) FROM Pass_PhoneNumber WHERE PSSN = " + pssn + " AND P_PhoneNumber = '" + pnum + "';";
+
+            return (int)dbMan.ExecuteScalar(query);
+        }
+
 
         //change email
         public int Change_Email_Passenger(string new_email, string old_email)
@@ -87,20 +117,20 @@ namespace TrainStation
         //Upgrade ticket
         public int Upgrade_Ticket(int ticketno)
         {
-            string query = "UPDATE Ticket SET Class = 'B' WHERE TicketNo = " + ticketno + ";";
+            string query = "UPDATE Ticket SET Class = 'V' WHERE TicketNo = " + ticketno + ";";
             return dbMan.ExecuteNonQuery(query);
         }
 
-        public char Get_Ticket_Class(int ticketno)
+        public string Get_Ticket_Class(int ticketno)
         {
             string query = "SELECT Class FROM Ticket WHERE TicketNo = " + ticketno + ";";
-            return (char)dbMan.ExecuteScalar(query);
+            return (string)dbMan.ExecuteScalar(query);
         }
 
         //Cancel ticket
         public int Cancel_Ticket(int ticketno)
         {
-            string query = "DELETE Ticket WHERE TicketNo = " + ticketno + ";";
+            string query = "UPDATE Ticket SET PSSN = NULL, ESSN = NULL WHERE TicketNo = " + ticketno + ";";
             return dbMan.ExecuteNonQuery(query);
         }
 
@@ -108,6 +138,12 @@ namespace TrainStation
         public DataTable Retrieve_Tickets_For_Passenger(int pssn)
         {
             string query = "SELECT TicketNo FROM Ticket WHERE PSSN = " + pssn + ";";
+            return dbMan.ExecuteReader(query);
+        }
+
+        public DataTable Retrieve_Available_Trips()
+        {
+            string query = "SELECT Trip_Code FROM Trip;";
             return dbMan.ExecuteReader(query);
         }
 

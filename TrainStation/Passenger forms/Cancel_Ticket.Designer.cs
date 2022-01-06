@@ -44,6 +44,7 @@ namespace TrainStation.Passenger_forms
             this.Cancel_Ticket_Button.TabIndex = 5;
             this.Cancel_Ticket_Button.Text = "Cancel Ticket";
             this.Cancel_Ticket_Button.UseVisualStyleBackColor = true;
+            this.Cancel_Ticket_Button.Click += new System.EventHandler(this.Cancel_Ticket_Button_Click);
             // 
             // label1
             // 
@@ -80,7 +81,6 @@ namespace TrainStation.Passenger_forms
             this.Name = "Cancel_Ticket";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cancel_Ticket";
-            this.Load += new System.EventHandler(this.Cancel_Ticket_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

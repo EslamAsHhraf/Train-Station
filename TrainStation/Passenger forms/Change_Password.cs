@@ -19,6 +19,7 @@ namespace TrainStation.Passenger_forms
         {
             InitializeComponent();
             controllerObj = new Controller();
+            handleObj = new Handle();
             Email = email;
         }
 

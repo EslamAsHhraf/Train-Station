@@ -19,6 +19,8 @@ namespace TrainStation.Passenger_forms
         public Change_Email(string email)
         {
             InitializeComponent();
+            controllerObj = new Controller();
+            handleObj = new Handle();
             Email = email;
         }
 
@@ -29,6 +31,7 @@ namespace TrainStation.Passenger_forms
 
         private void Change_Email_Button_Click(object sender, EventArgs e)
         {
+            handleObj.Trim(New_Email_TB);
             if (New_Email_TB.Text.Length == 0)
             {
                 MessageBox.Show("Please insert email");
@@ -36,9 +39,14 @@ namespace TrainStation.Passenger_forms
             }
             bool email_val = handleObj.is_email(New_Email_TB);
             bool semi_val = handleObj.is_valid(New_Email_TB);
-            if (email_val && semi_val)
+            if (!email_val)
             {
                 MessageBox.Show("Invalid email");
+                return;
+            }
+            if(!semi_val)
+            {
+                MessageBox.Show("You can't insert ;");
                 return;
             }
             else

@@ -44,6 +44,7 @@ namespace TrainStation.Passenger_forms
             this.Upgrade_Ticket_Button.TabIndex = 8;
             this.Upgrade_Ticket_Button.Text = "Upgrade Ticket";
             this.Upgrade_Ticket_Button.UseVisualStyleBackColor = true;
+            this.Upgrade_Ticket_Button.Click += new System.EventHandler(this.Upgrade_Ticket_Button_Click);
             // 
             // label1
             // 

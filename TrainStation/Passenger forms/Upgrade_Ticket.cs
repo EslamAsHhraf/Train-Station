@@ -30,12 +30,6 @@ namespace TrainStation.Passenger_forms
                 UpgradeTicket_CB.DisplayMember = "TicketNo";
             }
         }
-
-        private void Upgrade_Ticket_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Upgrade_Ticket_Button_Click(object sender, EventArgs e)
         {
             if (UpgradeTicket_CB.Text.Length == 0)
@@ -44,8 +38,8 @@ namespace TrainStation.Passenger_forms
                 return;
             }
 
-            char ticket_class = controllerObj.Get_Ticket_Class(Convert.ToInt32(UpgradeTicket_CB.Text));
-            if (ticket_class == 'B')
+            string ticket_class = controllerObj.Get_Ticket_Class(Convert.ToInt32(UpgradeTicket_CB.Text));
+            if (ticket_class == "V")
             {
                 MessageBox.Show("Ticket is already first class");
                 return;
@@ -61,7 +55,6 @@ namespace TrainStation.Passenger_forms
                 {
                     MessageBox.Show("Ticket upgraded successfully");
                 }
-
             }
         }
     }

@@ -17,6 +17,7 @@ namespace TrainStation.Passenger_forms
         public Ticket_Details(int pssn)
         {
             InitializeComponent();
+            controllerObj = new Controller();
             Passenger_SSN = pssn;
         }
 

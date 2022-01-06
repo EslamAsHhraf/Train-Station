@@ -19,6 +19,16 @@ namespace TrainStation.Passenger_forms
             InitializeComponent();
             controllerObj = new Controller();
             Passenger_SSN = pssn;
+            DataTable dt = controllerObj.Retrieve_Available_Trips();
+            if (dt == null)
+            {
+                MessageBox.Show("There are no available trips");
+            }
+            else
+            {
+                Trip_Code_CB.DataSource = dt;
+                Trip_Code_CB.DisplayMember = "Trip_Code";
+            }
         }
 
         private void Vew_Trips_Click(object sender, EventArgs e)
@@ -30,25 +40,31 @@ namespace TrainStation.Passenger_forms
 
         private void Book_Ticket2_Click(object sender, EventArgs e)
         {
-            if (Trip_Code_CB.Text.Length == 0)
+            int available_ticket = controllerObj.Get_Next_Available_Ticket(Convert.ToInt32(Trip_Code_CB.Text), Convert.ToChar(Class_CB.Text));
+            if (available_ticket == -1)
             {
-                MessageBox.Show("Please Choose a Trip Code!");
+                MessageBox.Show("There are no available tickets");
                 return;
             }
-            int r2 = 0;//= controllerObj.Book_Ticket();
-            if (r2 == 0)
+            if (Trip_Code_CB.Text.Length == 0)
             {
-                MessageBox.Show("trip insert failed!");
+                MessageBox.Show("Please select a trip code");
+                return;
+            }
+            if (Class_CB.Text.Length == 0)
+            {
+                MessageBox.Show("Please select ticket class");
+                return;
+            }
+            int r = controllerObj.Book_Ticket_Passenger(Passenger_SSN, available_ticket);
+            if (r == 0)
+            {
+                MessageBox.Show("Failed to book ticket");
             }
             else
             {
-                MessageBox.Show("trip inserted successfully");
+                MessageBox.Show("Ticket booked successfully");
             }
-        }
-
-        private void Book_Ticket_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

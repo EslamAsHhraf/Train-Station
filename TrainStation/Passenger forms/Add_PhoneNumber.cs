@@ -19,6 +19,7 @@ namespace TrainStation.Passenger_forms
         {
             InitializeComponent();
             controllerObj = new Controller();
+            handleObj = new Handle();
             Passenger_SSN = pssn;
         }
 
@@ -47,17 +48,23 @@ namespace TrainStation.Passenger_forms
                 return;
             }
             bool val;
+            int count = controllerObj.Check_If_PhoneNo_Exist(Add_Phone_Num_TB.Text, Passenger_SSN);
+            if (count != 0)
+            {
+                MessageBox.Show("This phone number already exists");
+                return;
+            }
             val = Add_Phone_Num_TB.Text.All(char.IsDigit);
             if (val)
             {
-                int r = controllerObj.Add_Phone_Number(Passenger_SSN, Add_Phone_Num_TB.Text.ToString());
+                int r = controllerObj.Add_Phone_Number(Passenger_SSN, Add_Phone_Num_TB.Text);
                 if (r == 0)
                 {
-                    MessageBox.Show("Phone number added successfully");
+                    MessageBox.Show("Failed to add phone number");
                 }
                 else
                 {
-                    MessageBox.Show("Failed to add phone number");
+                    MessageBox.Show("Phone number added successfully");
                 }
             }
             else

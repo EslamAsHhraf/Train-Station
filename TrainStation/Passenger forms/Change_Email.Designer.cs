@@ -64,6 +64,7 @@ namespace TrainStation.Passenger_forms
             this.Change_Email_Button.TabIndex = 14;
             this.Change_Email_Button.Text = "Change Email";
             this.Change_Email_Button.UseVisualStyleBackColor = true;
+            this.Change_Email_Button.Click += new System.EventHandler(this.Change_Email_Button_Click);
             // 
             // Change_Email
             // 

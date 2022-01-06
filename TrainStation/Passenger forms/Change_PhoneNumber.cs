@@ -19,6 +19,7 @@ namespace TrainStation.Passenger_forms
         {
             InitializeComponent();
             controllerObj = new Controller();
+            handleObj = new Handle();
             Passenger_SSN = pssn;
         }
 
@@ -52,11 +53,11 @@ namespace TrainStation.Passenger_forms
                 int r = controllerObj.Change_Phone_Number(New_Phone_Num_TB.Text, Old_Phone_Num_TB.Text, Passenger_SSN);
                 if (r == 0)
                 {
-                    MessageBox.Show("Phone number added successfully");
+                    MessageBox.Show("Failed to change phone number");
                 }
                 else
                 {
-                    MessageBox.Show("Failed to add phone number");
+                    MessageBox.Show("Phone changed added successfully");
                 }
             }
             else
@@ -64,6 +65,5 @@ namespace TrainStation.Passenger_forms
                 MessageBox.Show("Invalid phone number");
             }
         }
-
     }
 }

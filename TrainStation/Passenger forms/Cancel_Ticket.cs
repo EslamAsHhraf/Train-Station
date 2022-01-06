@@ -23,6 +23,7 @@ namespace TrainStation.Passenger_forms
             if (dt == null)
             {
                 MessageBox.Show("You don't have any booked tickets to cancel");
+                return;
             }
             else
             {

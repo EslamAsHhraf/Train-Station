@@ -46,6 +46,7 @@ namespace TrainStation.Passenger_forms
             this.Change_Phone.TabIndex = 16;
             this.Change_Phone.Text = "Change Phone Number";
             this.Change_Phone.UseVisualStyleBackColor = true;
+            this.Change_Phone.Click += new System.EventHandler(this.Change_Phone_Click);
             // 
             // label2
             // 

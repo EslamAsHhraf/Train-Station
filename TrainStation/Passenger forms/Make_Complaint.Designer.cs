@@ -68,6 +68,7 @@ namespace TrainStation.Passenger_forms
             this.Submit_Complaint.TabIndex = 2;
             this.Submit_Complaint.Text = "Submit";
             this.Submit_Complaint.UseVisualStyleBackColor = true;
+            this.Submit_Complaint.Click += new System.EventHandler(this.Submit_Complaint_Click);
             // 
             // Make_Complaint
             // 

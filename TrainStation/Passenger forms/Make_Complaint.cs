@@ -14,13 +14,14 @@ namespace TrainStation.Passenger_forms
     {
         Controller controllerObj;
         Handle handleObj;
-        static int Code = 0;
+        Random Code;
         int Passenger_SSN;
         public Make_Complaint(int ssn)
         {
             InitializeComponent();
             controllerObj = new Controller();
             handleObj = new Handle();
+            Code = new Random();
             Passenger_SSN = ssn;
         }
 
@@ -31,7 +32,8 @@ namespace TrainStation.Passenger_forms
 
         private void Submit_Complaint_Click(object sender, EventArgs e)
         {
-            Code++;
+            int num;
+            string temp;
             Complaint_Description = handleObj.Trim(Complaint_Description);
             if (Complaint_Description.Text.Length == 0)
             {
@@ -45,14 +47,25 @@ namespace TrainStation.Passenger_forms
                 MessageBox.Show("you can't insert ;");
                 return;
             }
-            int r = controllerObj.Submit_Complaint(Code, Complaint_Description.Text, Passenger_SSN);
+            int r;
+            while (true)
+            {
+                num = Code.Next(1, 1000000);
+                temp = num.ToString();
+                int count = controllerObj.Generate_Code(temp);
+                if (count == 0)
+                {
+                    r = controllerObj.Submit_Complaint(num, Complaint_Description.Text, Passenger_SSN);
+                    break;
+                }
+            }
             if (r == 0)
             {
                 MessageBox.Show("Complaint submission failed!");
             }
             else
             {
-                MessageBox.Show("trip inserted successfully");
+                MessageBox.Show("Complaint submitted successfully");
             }
         }
 

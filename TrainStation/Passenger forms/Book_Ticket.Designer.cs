@@ -73,6 +73,7 @@ namespace TrainStation.Passenger_forms
             this.Book_Ticket2.TabIndex = 9;
             this.Book_Ticket2.Text = "Book Ticket";
             this.Book_Ticket2.UseVisualStyleBackColor = true;
+            this.Book_Ticket2.Click += new System.EventHandler(this.Book_Ticket2_Click);
             // 
             // Trip_Code_CB
             // 
@@ -102,8 +103,8 @@ namespace TrainStation.Passenger_forms
             this.Class_CB.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold);
             this.Class_CB.FormattingEnabled = true;
             this.Class_CB.Items.AddRange(new object[] {
-            "B",
-            "E"});
+            "G",
+            "V"});
             this.Class_CB.Location = new System.Drawing.Point(274, 487);
             this.Class_CB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Class_CB.Name = "Class_CB";
