@@ -246,6 +246,12 @@ namespace TrainStation
             string query = "SELECT Authority FROM User_Login WHERE Email = '" + email + "' AND Pass = '" + password + "';";
             return dbMan.ExecuteReader(query);
         }
+        public int Create_Vacc(int serialno, string Vacc_Type, string Organisation)
+        {
+
+            string query = "INSERT INTO CovidVaccination VALUES ( " + serialno + ", '" + Vacc_Type + "', '" + Organisation + "')";
+            return dbMan.ExecuteNonQuery(query);
+        }
         public int Create_Pass_Account(string email, string password, string username)
         {
 

@@ -19,9 +19,7 @@ namespace TrainStation
             InitializeComponent();
             control = new Controller();
             handle = new Handle();
-            DataTable dtCSN = control.Select_CovidVacs_Serial();
-            Serial_Covid_ComboBox.DataSource = dtCSN;
-            Serial_Covid_ComboBox.DisplayMember = "SerialNo";
+            
         }
 
 
@@ -35,23 +33,25 @@ namespace TrainStation
         private void Create_account_Click_1(object sender, EventArgs e)
         {
             bool rightFormat = Create_Fname_TextBox.Text.All(Char.IsLetter) && Create_Minit_TextBox.Text.All(Char.IsLetter)
-                            && Create_Lname_TextBox.Text.All(Char.IsLetter)
+                            && Create_Lname_TextBox.Text.All(Char.IsLetter) && Serial_Covid_TextBox.Text.All(Char.IsDigit)
                             && handle.is_email(Create_Email_TextBox);
             bool isEmpty = Create_Pass_TextBox.Text.Length > 0 && Create_Username_TextBox.Text.Length > 0 &&
                         Create_Fname_TextBox.Text.Length > 0 && Create_Lname_TextBox.Text.Length > 0
-                        && Create_Minit_TextBox.Text.Length == 1;
+                        && Create_VaccType_TextBox.Text.Length > 0 && Create_VaccOrg_TextBox.Text.Length > 0
+                        && Create_Minit_TextBox.Text.Length == 1 && Serial_Covid_TextBox.Text.Length > 0 ;
 
             if (isEmpty == false || rightFormat == true)
             {
-                int result1 = control.Create_Pass_Account(handle.Trim(Create_Email_TextBox).Text, handle.Trim(Create_Pass_TextBox).Text,
+                int result1 = control.Create_Vacc(Convert.ToInt32(Serial_Covid_TextBox.Text), Create_VaccType_TextBox.Text, Create_VaccOrg_TextBox.Text);
+                int result2 = control.Create_Pass_Account(handle.Trim(Create_Email_TextBox).Text, handle.Trim(Create_Pass_TextBox).Text,
                                                 Create_Username_TextBox.Text);
 
-                int result2 = control.Insert_Pass(Convert.ToInt32(Create_SSN_Serial_NumericUpDown.Value),
+                int result3 = control.Insert_Pass(Convert.ToInt32(Create_SSN_Serial_NumericUpDown.Value),
                                                 Create_Fname_TextBox.Text, char.Parse(Create_Minit_TextBox.Text),
                                                 Create_Lname_TextBox.Text, Convert.ToChar(Create_Gender_ComboBox.SelectedItem),
-                                                handle.Trim(Create_Email_TextBox).Text, Convert.ToInt32(Serial_Covid_ComboBox.Text),
+                                                handle.Trim(Create_Email_TextBox).Text, Convert.ToInt32(Serial_Covid_TextBox.Text),
                                                 Create_VaccDate_DateTimePicker.Value.Date);
-                if (result1 == 0 || result2 == 0)
+                if (result1 == 0 || result2 == 0 || result3 ==0)
                 {
                     MessageBox.Show("An error occurred during creating a new account");
                 }

@@ -59,7 +59,7 @@ namespace TrainStation
             this.Create_Username_TextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Return_to_log_in = new System.Windows.Forms.Button();
-            this.Serial_Covid_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Serial_Covid_TextBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Create_SSN_Serial_NumericUpDown)).BeginInit();
@@ -80,7 +80,7 @@ namespace TrainStation
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Serial_Covid_ComboBox);
+            this.groupBox1.Controls.Add(this.Serial_Covid_TextBox);
             this.groupBox1.Controls.Add(this.Create_VaccOrg_TextBox);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.Create_VaccType_TextBox);
@@ -416,14 +416,12 @@ namespace TrainStation
             this.Return_to_log_in.UseVisualStyleBackColor = true;
             this.Return_to_log_in.Click += new System.EventHandler(this.Return_to_log_in_Click);
             // 
-            // Serial_Covid_ComboBox
+            // Serial_Covid_TextBox
             // 
-            this.Serial_Covid_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Serial_Covid_ComboBox.FormattingEnabled = true;
-            this.Serial_Covid_ComboBox.Location = new System.Drawing.Point(214, 34);
-            this.Serial_Covid_ComboBox.Name = "Serial_Covid_ComboBox";
-            this.Serial_Covid_ComboBox.Size = new System.Drawing.Size(121, 26);
-            this.Serial_Covid_ComboBox.TabIndex = 52;
+            this.Serial_Covid_TextBox.Location = new System.Drawing.Point(217, 31);
+            this.Serial_Covid_TextBox.Name = "Serial_Covid_TextBox";
+            this.Serial_Covid_TextBox.Size = new System.Drawing.Size(100, 24);
+            this.Serial_Covid_TextBox.TabIndex = 52;
             // 
             // Create_acc
             // 
@@ -483,6 +481,6 @@ namespace TrainStation
         private System.Windows.Forms.TextBox Create_Username_TextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Return_to_log_in;
-        private System.Windows.Forms.ComboBox Serial_Covid_ComboBox;
+        private System.Windows.Forms.TextBox Serial_Covid_TextBox;
     }
 }
