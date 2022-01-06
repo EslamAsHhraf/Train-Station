@@ -75,6 +75,7 @@ namespace TrainStation
             this.LogIn_Pass_TextBox.Location = new System.Drawing.Point(269, 128);
             this.LogIn_Pass_TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogIn_Pass_TextBox.Name = "LogIn_Pass_TextBox";
+            this.LogIn_Pass_TextBox.PasswordChar = '*';
             this.LogIn_Pass_TextBox.Size = new System.Drawing.Size(175, 34);
             this.LogIn_Pass_TextBox.TabIndex = 3;
             // 
