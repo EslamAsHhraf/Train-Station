@@ -104,6 +104,7 @@ namespace TrainStation.Admin_forms
             this.Blockbutton.TabIndex = 7;
             this.Blockbutton.Text = "Block";
             this.Blockbutton.UseVisualStyleBackColor = true;
+            this.Blockbutton.Click += new System.EventHandler(this.Blockbutton_Click_1);
             // 
             // Block_
             // 

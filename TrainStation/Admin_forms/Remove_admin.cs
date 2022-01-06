@@ -17,9 +17,9 @@ namespace TrainStation.Admin_forms
         {
             InitializeComponent();
             control = new Controller();
-            DataTable dtPSSN = control.Select_Admin_Emails();
-            Remove_Admin_comboBox.DataSource = dtPSSN;
-            Remove_Admin_comboBox.DisplayMember = "PSSN";
+            DataTable dtAdmin = control.Select_Admin_Emails();
+            Remove_Admin_comboBox.DataSource = dtAdmin;
+            Remove_Admin_comboBox.DisplayMember = "Email";
         }
 
         private void RemoveAdminButton_Click(object sender, EventArgs e)

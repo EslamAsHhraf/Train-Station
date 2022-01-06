@@ -21,8 +21,7 @@ namespace TrainStation
             handle = new Handle();
             DataTable dtCSN = control.Select_CovidVacs_Serial();
             Serial_Covid_ComboBox.DataSource = dtCSN;
-            Serial_Covid_ComboBox.DisplayMember = "CSN";
-
+            Serial_Covid_ComboBox.DisplayMember = "SerialNo";
         }
 
 

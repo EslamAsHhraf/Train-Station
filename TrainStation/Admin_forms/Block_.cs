@@ -17,12 +17,14 @@ namespace TrainStation.Admin_forms
         {
             InitializeComponent();
             control = new Controller();
-            DataTable dtPSSN = control.Select_Passenger_Emails();
+            DataTable dtPSSN = control.Select_Passenger_SSN();
             Pass_SSN_ComboBox.DataSource = dtPSSN;
-            Pass_SSN_ComboBox.DisplayMember = "PSSN";
+            Pass_SSN_ComboBox.DisplayMember = "Pass_SSN";
         }
 
-        private void Blockbutton_Click(object sender, EventArgs e)
+      
+
+        private void Blockbutton_Click_1(object sender, EventArgs e)
         {
             int result = control.Add_BlackList(int.Parse(Pass_SSN_ComboBox.Text), dateTimePicker1.Value, BlackList_Reason_richTextBox.Text);
             if (result == 0)

@@ -268,7 +268,12 @@ namespace TrainStation
             string query = "SELECT Email FROM User_Login WHERE Authority = 'passenger';";
             return dbMan.ExecuteReader(query);
         }
-
+        
+        public DataTable Select_Passenger_SSN()
+        {
+            string query = "SELECT Pass_SSN FROM Passenger WHERE Pass_SSN NOT IN (SELECT PSSN FROM Blacklist); ";
+            return dbMan.ExecuteReader(query);
+        }
         public DataTable Select_Admin_Emails()
         {
             string query = "SELECT Email FROM User_Login WHERE Authority = 'admin';";
