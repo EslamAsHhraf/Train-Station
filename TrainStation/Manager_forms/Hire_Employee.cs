@@ -83,25 +83,35 @@ namespace TrainStation.Manager_forms
                 return;
             }
             int ins1 = con.Insert_CovidVaccination(Serial_num.Text, Type_of_vacc.Text, organis.Text);
+            if (ins1 == 0)
+            {
+                MessageBox.Show("Hire new employee is failed");
+                return;
+            }
             int ins2 = con.Insert_User_Login(Email.Text, Password.Text, "employee", user_name.Text);
+            if (ins2 == 0)
+            {
+                MessageBox.Show("Hire new employee is failed");
+                return;
+            }
             string temp_mid= Mname.Text;
             temp_mid = temp_mid.ToUpper();
             char m_char = temp_mid[0];
             string mname = m_char.ToString();
             int ins3 = con.Insert_Employee(SSN.Text, Fname.Text, mname, Lname.Text, Gender.Text, DOB.Text, Salary.Text, House_num.Text, Street.Text, City.Text, Super_SSN.Text, DNO.Text
                 , Serial_num.Text, Date_Of_vacc.Text, Email.Text);
-            if (Rate.Text.Length != 0)
-            {
-                con.Set_Rate_Employee(SSN.Text, Rate.Text);
-            }
-            if (ins1 == 0 || ins2 == 0 || ins3 == 0)
+            if ( ins3 == 0)
             {
                 MessageBox.Show("Hire new employee is failed");
             }
             else
             {
+                if (Rate.Text.Length != 0)
+                {
+                    con.Set_Rate_Employee(SSN.Text, Rate.Text);
+                }
                 MessageBox.Show("Hire new employee is successfully");
-                Hire_Emplotee_Load(sender, e);
+               // Hire_Emplotee_Load(sender, e);
             }
         }
         private bool rightFormat()

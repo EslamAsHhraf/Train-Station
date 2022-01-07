@@ -33,6 +33,12 @@ namespace TrainStation
         private void Create_account_Click_1(object sender, EventArgs e)
         {
             Trim_text();
+            bool semo_Col=semo();
+            if (semo_Col)
+            {
+                MessageBox.Show("you can't insert ;");
+                return;
+            }
             bool rightFormat = Create_Fname_TextBox.Text.All(Char.IsLetter) && Create_Minit_TextBox.Text.All(Char.IsLetter)
                             && Create_Lname_TextBox.Text.All(Char.IsLetter) && Serial_Covid_TextBox.Text.All(Char.IsDigit)
                             && handle.is_email(Create_Email_TextBox);
@@ -74,17 +80,27 @@ namespace TrainStation
                     return;
                 }
                 int result1 = control.Create_Vacc(Convert.ToInt32(Serial_Covid_TextBox.Text), Create_VaccType_TextBox.Text, Create_VaccOrg_TextBox.Text);
-                int result2 = control.Create_Pass_Account(handle.Trim(Create_Email_TextBox).Text, handle.Trim(Create_Pass_TextBox).Text,
+                if (result1 == 0)
+                {
+                    MessageBox.Show("An error occurred during creating a new account");
+                    return;
+                }
+                 int result2 = control.Create_Pass_Account(handle.Trim(Create_Email_TextBox).Text, handle.Trim(Create_Pass_TextBox).Text,
                                                 Create_Username_TextBox.Text);
-
+                if (result2 == 0)
+                {
+                    MessageBox.Show("An error occurred during creating a new account");
+                    return;
+                }
                 int result3 = control.Insert_Pass(Convert.ToInt32(Create_SSN_Serial_NumericUpDown.Value),
                                                 Create_Fname_TextBox.Text, char.Parse(Create_Minit_TextBox.Text),
                                                 Create_Lname_TextBox.Text, Convert.ToChar(Create_Gender_ComboBox.SelectedItem),
                                                 handle.Trim(Create_Email_TextBox).Text, Convert.ToInt32(Serial_Covid_TextBox.Text),
                                                 Create_VaccDate_DateTimePicker.Value.Date);
-                if (result1 == 0 || result2 == 0 || result3 ==0)
+                if (result3 ==0)
                 {
                     MessageBox.Show("An error occurred during creating a new account");
+                    return;
                 }
                 else
                 {
@@ -107,6 +123,51 @@ namespace TrainStation
             Create_VaccOrg_TextBox = handle.Trim(Create_VaccOrg_TextBox);
             Create_Minit_TextBox = handle.Trim(Create_Minit_TextBox);
             Create_Email_TextBox = handle.Trim(Create_Email_TextBox);
+        }
+        private bool semo()
+        {
+            bool semo = true;
+            semo = handle.is_valid(Create_Pass_TextBox);
+            if (!semo)
+            {
+                return true;
+            }
+            semo = handle.is_valid(Create_Username_TextBox);
+            if (!semo)
+            {
+                return true;
+            }
+            semo = handle.is_valid(Create_Fname_TextBox);
+            if (!semo)
+            {
+                return true;
+            }
+            semo = handle.is_valid(Create_Lname_TextBox);
+            if (!semo)
+            { 
+                return true;
+            }
+            semo = handle.is_valid(Create_VaccType_TextBox);
+            if (!semo)
+            {
+                return true;
+            }
+            semo = handle.is_valid(Create_VaccOrg_TextBox);
+            if (!semo)
+            {
+                return true;
+            }
+            semo = handle.is_valid(Create_Minit_TextBox);
+            if (!semo)
+            {
+                return true;
+            } 
+            semo = handle.is_valid(Create_Email_TextBox);
+            if (!semo)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
