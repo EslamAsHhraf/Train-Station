@@ -59,8 +59,26 @@ namespace TrainStation.Passenger_forms
                 else
                 {
                     MessageBox.Show("Email changed successfully");
+
+                    foreach (Form f in Application.OpenForms)
+                    {
+                        if (f.Name != "UserLog")
+                            f.Close();
+                    }
+                    Form passengerForm = new Passenger(New_Email_TB.Text);
+                    passengerForm.ShowDialog();
                 }
             }
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

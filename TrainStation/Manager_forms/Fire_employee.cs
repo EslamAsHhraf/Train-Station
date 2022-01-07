@@ -22,14 +22,23 @@ namespace TrainStation.Admin_forms
 
         private void Fireemployee_Click(object sender, EventArgs e)
         {
-            if (SSN.Text == "666664445")
+            DataTable vacc = con.Get_Vacc_Serial_ESSN(SSN.Text);
+            string no = vacc.Rows[0][0].ToString();
+            DataTable email = con.Get_Email_from_ssn(SSN.Text);
+            string no2 = email.Rows[0][0].ToString();
+            int Man = con.get_Authority(no2);
+            if (Man!=0)
             {
                 MessageBox.Show("You can't fire Manager");
                 return;
             }
             con.Super_Employee(SSN.Text);
             int r = con.Delete_Employee(SSN.Text);
-            if(r==0)
+         
+            int r2=con.Delete_vacc(Convert.ToInt32(no));
+         
+            int r3=con.Delete_Email(no2);
+            if (r==0|| r2==0||r3==0)
             {
                 MessageBox.Show("Delete employee is failed!");
             }

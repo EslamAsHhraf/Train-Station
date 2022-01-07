@@ -37,5 +37,20 @@ namespace TrainStation.Admin_forms
                 MessageBox.Show("Couldn't add admin");
             }
         }
+
+        private void Add_admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

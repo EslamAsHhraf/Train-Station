@@ -91,7 +91,7 @@ namespace TrainStation
             this.view_Employee.Name = "view_Employee";
             this.view_Employee.Size = new System.Drawing.Size(477, 40);
             this.view_Employee.TabIndex = 17;
-            this.view_Employee.Text = "View Employess\'s data";
+            this.view_Employee.Text = "View Employees\' data";
             this.view_Employee.UseVisualStyleBackColor = true;
             this.view_Employee.Click += new System.EventHandler(this.view_Employee_Click_1);
             // 
@@ -102,7 +102,7 @@ namespace TrainStation
             this.view_passenger.Name = "view_passenger";
             this.view_passenger.Size = new System.Drawing.Size(477, 40);
             this.view_passenger.TabIndex = 16;
-            this.view_passenger.Text = "View Passenger\'s data";
+            this.view_passenger.Text = "View Passengers\' data";
             this.view_passenger.UseVisualStyleBackColor = true;
             this.view_passenger.Click += new System.EventHandler(this.view_passenger_Click_1);
             // 

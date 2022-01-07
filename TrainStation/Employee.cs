@@ -23,7 +23,7 @@ namespace TrainStation
       
         private void bookTicketBtn_Click(object sender, EventArgs e)
         {
-            Form f = new Ticket_booking();
+            Form f = new Ticket_booking(Email);
             f.ShowDialog();
         }
 

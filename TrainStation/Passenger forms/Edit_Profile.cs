@@ -44,5 +44,15 @@ namespace TrainStation.Passenger_forms
             Change_Password f = new Change_Password(Email);
             f.ShowDialog();
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

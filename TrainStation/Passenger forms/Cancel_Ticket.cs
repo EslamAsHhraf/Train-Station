@@ -19,6 +19,10 @@ namespace TrainStation.Passenger_forms
             InitializeComponent();
             controllerObj = new Controller();
             Passenger_SSN = pssn;
+        }
+
+        private void Cancel_Ticket_Load(object sender, EventArgs e)
+        {
             DataTable dt = controllerObj.Retrieve_Tickets_For_Passenger(Passenger_SSN);
             if (dt == null)
             {
@@ -30,11 +34,6 @@ namespace TrainStation.Passenger_forms
                 CancelTicket_CB.DataSource = dt;
                 CancelTicket_CB.DisplayMember = "TicketNo";
             }
-        }
-
-        private void Cancel_Ticket_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void Cancel_Ticket_Button_Click(object sender, EventArgs e)
@@ -54,9 +53,20 @@ namespace TrainStation.Passenger_forms
                 else
                 {
                     MessageBox.Show("Ticket cancelled successfully");
+                    Cancel_Ticket_Load(sender, e);
                 }
 
             }
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

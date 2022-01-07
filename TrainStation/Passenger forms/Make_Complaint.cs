@@ -69,5 +69,14 @@ namespace TrainStation.Passenger_forms
             }
         }
 
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

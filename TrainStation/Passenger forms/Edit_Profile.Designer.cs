@@ -33,6 +33,8 @@ namespace TrainStation.Passenger_forms
             this.Change_Email = new System.Windows.Forms.Button();
             this.Change_Password = new System.Windows.Forms.Button();
             this.Add_Phone_Number = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Change_Phone_Number
@@ -83,6 +85,30 @@ namespace TrainStation.Passenger_forms
             this.Add_Phone_Number.UseVisualStyleBackColor = true;
             this.Add_Phone_Number.Click += new System.EventHandler(this.Add_Phone_Number_Click);
             // 
+            // Back
+            // 
+            this.Back.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.Location = new System.Drawing.Point(510, 371);
+            this.Back.Margin = new System.Windows.Forms.Padding(4);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(118, 59);
+            this.Back.TabIndex = 62;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // Exit
+            // 
+            this.Exit.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(636, 371);
+            this.Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(118, 59);
+            this.Exit.TabIndex = 61;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // Edit_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -90,6 +116,8 @@ namespace TrainStation.Passenger_forms
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(767, 443);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.Add_Phone_Number);
             this.Controls.Add(this.Change_Phone_Number);
             this.Controls.Add(this.Change_Password);
@@ -107,5 +135,7 @@ namespace TrainStation.Passenger_forms
         private System.Windows.Forms.Button Change_Email;
         private System.Windows.Forms.Button Change_Password;
         private System.Windows.Forms.Button Add_Phone_Number;
+        private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Button Exit;
     }
 }

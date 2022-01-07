@@ -14,10 +14,12 @@ namespace TrainStation
     public partial class Admin : Form
     {
         Handle hand;
-        public Admin()
+        string email;
+        public Admin(string e)
         {
             InitializeComponent();
-            hand = new Handle(); 
+            hand = new Handle();
+            email = e;
         }
 
         private void AddAdminButton_Click(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace TrainStation
 
         private void RemoveAdminbutton_Click(object sender, EventArgs e)
         {
-            Form RemAdmin = new Remove_admin();
+            Form RemAdmin = new Remove_admin(email);
             RemAdmin.ShowDialog();
         }
 
@@ -47,7 +49,7 @@ namespace TrainStation
 
         private void BeEmployeebutton_Click(object sender, EventArgs e)
         {
-            string email = "";
+            //string email = "";
             Form employee = new Employee(email);
             employee.ShowDialog();
         }

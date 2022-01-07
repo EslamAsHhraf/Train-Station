@@ -18,6 +18,17 @@ namespace TrainStation
         /*  Yasmine Ghanem*/
 
         //Make Complaints
+        public int Get_Available_VIP_Tickets()
+        {
+            string query = "SELECT Count(TicketNo) FROM Ticket WHERE PSSN IS NULL AND ESSN IS NULL AND Class = 'V';";
+            return (int)dbMan.ExecuteScalar(query);
+        }
+
+        public DataTable Get_Trip_Code(int ticketno)
+        {
+            string query = "SELECT TripCode FROM Ticket WHERE TicketNo = " + ticketno + ";";
+            return dbMan.ExecuteReader(query);
+        }
         public int Submit_Complaint(int code, string Description, int pssn)
         {
             string query = "INSERT INTO Complaints (C_Code, Descrip, P_SSN) " +
@@ -43,15 +54,16 @@ namespace TrainStation
         //view available trips to book ticket
         public DataTable View_Available_Trips()
         {
-            string query = "SELECT Trip_Code, Departure_Time, Arrival_Time, Come_Station, Go_Station FROM Trip;";
+            string query = "SELECT distinct Trip_Code, Ticket_Date,Departure_Time, Arrival_Time, a.St_Location 'Come station', b.St_Location 'Go station' FROM Trip,Ticket ,Station a,Station b"
+               + " where TripCode = Trip_Code and Come_Station = a.ID and b.ID = Go_Station; ";
             return dbMan.ExecuteReader(query);
         }
 
         //Get available ticket
-        public int Get_Next_Available_Ticket(int tripcode, char ticketclass)
+        public DataTable Get_Next_Available_Ticket(int tripcode, char ticketclass)
         {
-            string query = "SELECT TicketNo FROM Ticket WHERE ESSN IS NULL AND PSSN IS NULL AND TripCode = " + tripcode + " AND Class = '" + ticketclass + "';";
-            return (int)dbMan.ExecuteNonQuery(query);
+            string query = "SELECT TicketNo FROM Ticket WHERE ESSN IS NULL AND PSSN IS NULL AND TripCode = '" + tripcode + "' AND Class = '" + ticketclass + "';";
+            return dbMan.ExecuteReader(query);
         }
 
         //Book ticket
@@ -208,7 +220,7 @@ namespace TrainStation
         }
         public DataTable viewTrips()
         {
-            string query = "SELECT *  FROM trip";
+            string query = "SELECT *  FROM trip ";
             return dbMan.ExecuteReader(query);
         }
         public DataTable viewPassengerSSNEmployee()
@@ -258,13 +270,13 @@ namespace TrainStation
         }
         public int updateEmployeePhoneEmployee(Int32 newPhone, int ssn)
         {
-            string query = $"insert into E_PhoneNumber (essn,e_phoneNumber) values ({ssn},'{newPhone}' )";
+            string query = $"insert into E_PhoneNumber (essn,pNumber) values ({ssn},'{newPhone}' )";
             return dbMan.ExecuteNonQuery(query);
         }
         public int updateEmpEmailEmployee(string email, int ssn, string oldemail)
         {
             string query = $@"update user_login set email = '{email}' where email = '{oldemail}';
-                                update emplpyee set emp_email = '{email}' where ssn = {ssn};
+                                update employee set emp_email = '{email}' where ssn = {ssn};
                             ";
             return dbMan.ExecuteNonQuery(query);
 
@@ -298,8 +310,32 @@ namespace TrainStation
             string query = $"SELECT ssn FROM employee WHERE emp_Email = '{email}';";
             return (int)dbMan.ExecuteScalar(query);
         }
-
         /*Yasmine Elgendi*/
+        public int Delete_vacc(int serial)
+        {
+            string query = "DELETE FROM CovidVaccination WHERE SerialNo = " + serial + " ;";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public DataTable Get_Vacc_Serial_Email(string email)
+        {
+            string query = "SELECT SerialNo FROM CovidVaccination,Employee WHERE SerialNo = CV_SerialNo AND Emp_Email = '" + email + "';";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable Get_Vacc_Serial_ESSN(string ssn)
+        {
+            string query = "SELECT CV_SerialNo FROM Employee WHERE SSN = " + ssn + ";";
+            return dbMan.ExecuteReader(query);
+        }
+        public int get_Authority(string Email)
+        {
+            string query = "SELECT count(Email) FROM User_Login WHERE Authority =  'manager' and Email='"+ Email + "' ;";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public DataTable isBlocked(string email)
+        {
+            string query = "SELECT COUNT(PSSN) FROM Blacklist, Passenger WHERE PSSN = Pass_SSN AND Pass_Email ='" + email + "'";
+            return dbMan.ExecuteReader(query);
+        }
         public DataTable GetAuthority(string email, string password)
         {
             string query = "SELECT Authority FROM User_Login WHERE Email = '" + email + "' AND Pass = '" + password + "';";
@@ -325,7 +361,7 @@ namespace TrainStation
 
         public DataTable Select_NonAdmin_Emails()
         {
-            string query = "SELECT Email FROM User_Login WHERE Authority = 'passenger' OR Authority = 'manager'  ;";
+            string query = "SELECT Email FROM User_Login WHERE Authority = 'employee' ;";
             return dbMan.ExecuteReader(query);
         }
         public DataTable Select_Passenger_Emails()
@@ -350,28 +386,21 @@ namespace TrainStation
             return dbMan.ExecuteNonQuery(query);
         }
 
-        public int Remove_Admin_Employee(string email)
+        public void Remove_Admin_Employee(string email)
         {
             string query = "UPDATE Employee SET Super_SSN = null WHERE Super_SSN = (SELECT SSN FROM Employee WHERE Emp_Email = '" + email +"');";
             dbMan.ExecuteNonQuery(query);
 
-            string query2 = "DELETE FROM Employee WHERE SSN = (SELECT SSN FROM Employee WHERE Emp_Email = '" + email + "'); ";
-            return dbMan.ExecuteNonQuery(query2);
+            //string query2 = "DELETE FROM User_Login  WHERE  Email = '" + email + "'); ";
+            //return dbMan.ExecuteNonQuery(query2);
         }
 
 
         public int Remove_Admin(string email)
         {
-            if(Remove_Admin_Employee(email) == 1)
-            {
-                string query = "DELETE FROM User_Login WHERE Email = '" + email + "'; ";
-                return dbMan.ExecuteNonQuery(query);
-            }
-            else
-            {
-                return 0;
-            }
-            
+            Remove_Admin_Employee(email);
+            string query = "DELETE FROM User_Login WHERE Email = '" + email + "'; ";
+            return dbMan.ExecuteNonQuery(query);  
         }
         
         public DataTable Select_CovidVacs_Serial()
@@ -386,6 +415,11 @@ namespace TrainStation
         }
 
         /* Eslam Ashraf*/
+        public DataTable Get_Email_from_ssn(string ssn)
+        {
+            string query = "SELECT Emp_Email FROM Employee Where SSN =" + ssn+";";
+            return dbMan.ExecuteReader(query);
+        }
         public DataTable SSN_Employee()
         {
             string query = "SELECT SSN FROM Employee;";
@@ -549,8 +583,12 @@ namespace TrainStation
             Parameters.Add("@TripCode", TripCode);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
-
-
+        public int Delete_Email(string email)
+        {
+            string query = "DELETE FROM User_Login WHERE Email = '" + email + "'; ";
+            return dbMan.ExecuteNonQuery(query);
+        }
+       
         public void TerminateConnection()
         {
             dbMan.CloseConnection();

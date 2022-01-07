@@ -31,17 +31,11 @@ namespace TrainStation.Passenger_forms
             }
         }
 
-        private void Vew_Trips_Click(object sender, EventArgs e)
-        {
-            DataTable dt = controllerObj.View_Available_Trips();
-            View_Trips_Grid.DataSource = dt;
-            View_Trips_Grid.Refresh();
-        }
-
+      
         private void Book_Ticket2_Click(object sender, EventArgs e)
         {
-            int available_ticket = controllerObj.Get_Next_Available_Ticket(Convert.ToInt32(Trip_Code_CB.Text), Convert.ToChar(Class_CB.Text));
-            if (available_ticket == -1)
+            DataTable available_ticket = controllerObj.Get_Next_Available_Ticket(Convert.ToInt32(Trip_Code_CB.Text), Convert.ToChar(Class_CB.Text));
+            if (available_ticket == null)
             {
                 MessageBox.Show("There are no available tickets");
                 return;
@@ -56,7 +50,13 @@ namespace TrainStation.Passenger_forms
                 MessageBox.Show("Please select ticket class");
                 return;
             }
-            int r = controllerObj.Book_Ticket_Passenger(Passenger_SSN, available_ticket);
+            string no="";
+            foreach (DataRow row in available_ticket.Rows)
+            {
+                no = row[0].ToString();
+                break;
+            }
+            int r = controllerObj.Book_Ticket_Passenger(Passenger_SSN,Int32.Parse(no));
             if (r == 0)
             {
                 MessageBox.Show("Failed to book ticket");
@@ -65,6 +65,23 @@ namespace TrainStation.Passenger_forms
             {
                 MessageBox.Show("Ticket booked successfully");
             }
+        }
+
+        private void Book_Ticket_Load(object sender, EventArgs e)
+        {
+            DataTable dt = controllerObj.View_Available_Trips();
+            View_Trips_Grid.DataSource = dt;
+            View_Trips_Grid.Refresh();
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

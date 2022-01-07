@@ -227,7 +227,6 @@ namespace TrainStation.Manager_forms
             Type_of_vacc = Hand.Trim(Type_of_vacc);
             organis = Hand.Trim(organis);
             Email = Hand.Trim(Email);
-            Password = Hand.Trim(Password);
             user_name = Hand.Trim(user_name);
             
         }

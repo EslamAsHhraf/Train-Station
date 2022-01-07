@@ -32,16 +32,28 @@ namespace TrainStation
 
         private void Create_account_Click_1(object sender, EventArgs e)
         {
+            Trim_text();
             bool rightFormat = Create_Fname_TextBox.Text.All(Char.IsLetter) && Create_Minit_TextBox.Text.All(Char.IsLetter)
                             && Create_Lname_TextBox.Text.All(Char.IsLetter) && Serial_Covid_TextBox.Text.All(Char.IsDigit)
                             && handle.is_email(Create_Email_TextBox);
             bool isEmpty = Create_Pass_TextBox.Text.Length > 0 && Create_Username_TextBox.Text.Length > 0 &&
                         Create_Fname_TextBox.Text.Length > 0 && Create_Lname_TextBox.Text.Length > 0
                         && Create_VaccType_TextBox.Text.Length > 0 && Create_VaccOrg_TextBox.Text.Length > 0
-                        && Create_Minit_TextBox.Text.Length == 1 && Serial_Covid_TextBox.Text.Length > 0 ;
+                        && Create_Minit_TextBox.Text.Length == 1 && Serial_Covid_TextBox.Text.Length > 0
+                        && Create_Gender_ComboBox.SelectedIndex != -1 && Create_Email_TextBox.Text.Length > 0;
 
             if (isEmpty == false || rightFormat == true)
             {
+                if (Create_SSN_Serial_NumericUpDown.Text.Length != 9)
+                {
+                    MessageBox.Show("SSN should be 9 digits!");
+                    return ;
+                }
+                if (Serial_Covid_TextBox.Text.Length != 9)
+                {
+                    MessageBox.Show("Serial Number of vaccination should be 9 digits!");
+                    return ;
+                }
                 int result1 = control.Create_Vacc(Convert.ToInt32(Serial_Covid_TextBox.Text), Create_VaccType_TextBox.Text, Create_VaccOrg_TextBox.Text);
                 int result2 = control.Create_Pass_Account(handle.Trim(Create_Email_TextBox).Text, handle.Trim(Create_Pass_TextBox).Text,
                                                 Create_Username_TextBox.Text);
@@ -65,6 +77,17 @@ namespace TrainStation
             {
                 MessageBox.Show("Make sure you entered valid inputs");
             }
+        }
+        private void Trim_text()
+        {
+            Create_Pass_TextBox = handle.Trim(Create_Pass_TextBox);
+            Create_Username_TextBox = handle.Trim(Create_Username_TextBox);
+            Create_Fname_TextBox = handle.Trim(Create_Fname_TextBox);
+            Create_Lname_TextBox = handle.Trim(Create_Lname_TextBox);
+            Create_VaccType_TextBox = handle.Trim(Create_VaccType_TextBox);
+            Create_VaccOrg_TextBox = handle.Trim(Create_VaccOrg_TextBox);
+            Create_Minit_TextBox = handle.Trim(Create_Minit_TextBox);
+            Create_Email_TextBox = handle.Trim(Create_Email_TextBox);
         }
     }
 }
