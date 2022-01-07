@@ -24,9 +24,7 @@ namespace TrainStation
             DataTable x = controllerObj.viewTicketNumbers();
             foreach (DataRow row in x.Rows)
                 ticketSerialNoComboBox.Items.Add(row[0].ToString());
-            //char[] arr = { 'A', 'B', 'C', 'D', 'E' };
-            //for (int i = 0; i < arr.Length; i++)
-            //     newClassComboBox.Items.Add(arr[i]); 
+           
           
         }
 
@@ -45,14 +43,29 @@ namespace TrainStation
 
             }
             string tClass = controllerObj.getTicketClass(Int32.Parse(ticketSerialNoComboBox.Text));
-            if(tClass==newClassComboBox.Text)
+            if(tClass[0]==newClassComboBox.Text[0])
             {
                 MessageBox.Show("The ticket's class is already " + tClass + "!");
                 return;
             }
+            string tripCode = controllerObj.getTripCodeOfTIcketEmployee(Int32.Parse(ticketSerialNoComboBox.Text));
+            DataTable availableTickets = controllerObj.getFirstAvailableTicketID(tripCode, newClassComboBox.Text[0]);
+            if (availableTickets == null)
+            {
+                MessageBox.Show("There are no available tickets in class "+newClassComboBox.Text);
+                return;
+            }
+            string no = "00";
 
-            int x = controllerObj.updateTicketEmployee(newClassComboBox.Text[0], Int32.Parse(ticketSerialNoComboBox.Text));
-            if(x==1)
+            foreach (DataRow row in availableTickets.Rows)
+            {
+                no = row[0].ToString();
+                break;
+            }
+            controllerObj.changeTicketClass(tClass[0], Int32.Parse(no));
+            int x = controllerObj.changeTicketClass(newClassComboBox.Text[0], Int32.Parse(ticketSerialNoComboBox.Text));
+           
+            if (x==1)
             MessageBox.Show("You succefully upgraded a ticket with Serial No. : "+ticketSerialNoComboBox.Text+" \n " +
                 "To class : "+newClassComboBox.Text);
         }

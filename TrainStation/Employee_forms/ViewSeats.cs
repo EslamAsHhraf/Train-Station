@@ -32,13 +32,13 @@ namespace TrainStation
                 return;
 
             }
-            char[] arr = { 'A', 'B', 'C', 'D', 'E' };
-            int[] num = {0,0,0,0,0};
+            char[] arr = { 'V','G' };
+            int[] num = {0,0};
             for (int i = 0; i < arr.Length; i++)
-                num[i] = controllerObj.getSeatsNumWithClass(arr[i], Int32.Parse(comboBox1.Text));
+                num[i] = controllerObj.getSeatsNumWithClass(arr[i], comboBox1.Text);
             for (int i = 0; i < arr.Length; i++)
-                num[i] -= controllerObj.getNumOfBookedTickets(arr[i], Int32.Parse(comboBox1.Text));
-            MessageBox.Show("Number of availabe A class seats: "+num[0]+ "\n Number of availabe B class seats: "+num[1]+ "\n Number of availabe C class seats: "+num[2] + "\n Number of availabe D class seats: " + num[3] + "\n Number of availabe E class seats: " + num[4]);
+                num[i] -= controllerObj.getNumOfBookedTickets(arr[i], comboBox1.Text);
+            MessageBox.Show("Number of availabe VIP class seats: "+num[0]+ "\n Number of availabe General class seats: "+num[1]);
 
 
         }

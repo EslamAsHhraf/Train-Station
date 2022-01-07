@@ -207,13 +207,13 @@ namespace TrainStation
             return dbMan.ExecuteReader(query);
         }
 
-        public int getSeatsNumWithClass(char cls, int tripNo)
+        public int getSeatsNumWithClass(char cls, string tripNo)
         {
-            string query = $"SELECT count(*)  FROM ticket,trip where Trip_Code ={tripNo} and class='{cls}'";
+            string query = $"SELECT count(*)  FROM ticket,trip where Trip_Code ='{tripNo}' and class='{cls}'";
             return (int)dbMan.ExecuteScalar(query);
         }
 
-        public int getNumOfBookedTickets(char cls, int tripNo)
+        public int getNumOfBookedTickets(char cls, string tripNo)
         {
             string query = $"SELECT count(*)  FROM ticket,trip where Trip_Code ='{tripNo}' and class='{cls}' and pssn is not null";
             return (int)dbMan.ExecuteScalar(query);
@@ -319,6 +319,17 @@ namespace TrainStation
         {
             string query = $"select pass from user_login where email='{email}'";
             return (string)dbMan.ExecuteScalar(query);
+        }
+        public string getTripCodeOfTIcketEmployee(int ticketID)
+        {
+            string query = $"select tripcode from ticket where ticketno={ticketID}";
+            return (string)dbMan.ExecuteScalar(query);
+        }
+        public int changeTicketClass(char cls,int ticketNO)
+        {
+            string query = $@"update ticket set class = '{cls}' where ticketno = {ticketNO}";
+            return dbMan.ExecuteNonQuery(query);
+
         }
 
         /*Yasmine Elgendi*/
