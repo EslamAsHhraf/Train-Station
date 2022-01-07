@@ -41,8 +41,8 @@ namespace TrainStation
                 MessageBox.Show("Please enter a valid phone number.");
                 return;
             }
-            Int32 m = Int32.Parse(newPhoneNumTextBox.Text);
-            int y = controllerObj.updatePassengerPhoneEmployee(m, Int32.Parse(passengerSSNComboBox.Text));
+           //Int32 m = Int32.Parse(newPhoneNumTextBox.Text);
+            int y = controllerObj.updatePassengerPhoneEmployee(newPhoneNumTextBox.Text, Int32.Parse(passengerSSNComboBox.Text));
             if (y == 1)
                 MessageBox.Show("You successfully added a new passenger's phone number");
             else

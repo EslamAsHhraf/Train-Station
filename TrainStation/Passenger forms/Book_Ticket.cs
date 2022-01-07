@@ -34,7 +34,7 @@ namespace TrainStation.Passenger_forms
       
         private void Book_Ticket2_Click(object sender, EventArgs e)
         {
-            DataTable available_ticket = controllerObj.Get_Next_Available_Ticket(Convert.ToInt32(Trip_Code_CB.Text), Convert.ToChar(Class_CB.Text));
+            DataTable available_ticket = controllerObj.Get_Next_Available_Ticket(Trip_Code_CB.Text, Convert.ToChar(Class_CB.Text));
             if (available_ticket == null)
             {
                 MessageBox.Show("There are no available tickets");

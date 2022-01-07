@@ -177,7 +177,7 @@ namespace TrainStation.Manager_forms
                         }
                     }
                 }
-                if(num_ticke == gnum+ vnum)
+                if(-1*num_ticke == gnum+ vnum)
                 {
                     MessageBox.Show("Ticket inserted successfully");
                 }

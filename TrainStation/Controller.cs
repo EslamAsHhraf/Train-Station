@@ -60,7 +60,7 @@ namespace TrainStation
         }
 
         //Get available ticket
-        public DataTable Get_Next_Available_Ticket(int tripcode, char ticketclass)
+        public DataTable Get_Next_Available_Ticket(string tripcode, char ticketclass)
         {
             string query = "SELECT TicketNo FROM Ticket WHERE ESSN IS NULL AND PSSN IS NULL AND TripCode = '" + tripcode + "' AND Class = '" + ticketclass + "';";
             return dbMan.ExecuteReader(query);
@@ -209,13 +209,13 @@ namespace TrainStation
 
         public int getSeatsNumWithClass(char cls, string tripNo)
         {
-            string query = $"SELECT count(*)  FROM ticket,trip where Trip_Code ='{tripNo}' and class='{cls}'";
+            string query = $"SELECT count(*)  FROM ticket,trip where Trip_Code ='{tripNo}' and class='{cls}' and tripCode = trip_code";
             return (int)dbMan.ExecuteScalar(query);
         }
 
         public int getNumOfBookedTickets(char cls, string tripNo)
         {
-            string query = $"SELECT count(*)  FROM ticket,trip where Trip_Code ='{tripNo}' and class='{cls}' and pssn is not null";
+            string query = $"SELECT count(*)  FROM ticket,trip where Trip_Code ='{tripNo}' and class='{cls}' and pssn is not null and tripCode = trip_code";
             return (int)dbMan.ExecuteScalar(query);
         }
         public DataTable viewTrips()
@@ -234,7 +234,7 @@ namespace TrainStation
             return dbMan.ExecuteReader(query);
         }
 
-        public int updatePassengerPhoneEmployee(Int32 newPhone, int ssn)
+        public int updatePassengerPhoneEmployee(string newPhone, int ssn)
         {
             string query = $"insert into pass_phonenumber (pssn,p_phoneNumber) values ({ssn},'{newPhone}' )";
             return dbMan.ExecuteNonQuery(query);
@@ -351,7 +351,7 @@ namespace TrainStation
         public int get_Authority(string Email)
         {
             string query = "SELECT count(Email) FROM User_Login WHERE (Authority =  'manager' or Authority =  'admin') and Email='" + Email + "' ;";
-            return dbMan.ExecuteNonQuery(query);
+            return (int)dbMan.ExecuteScalar(query);
         }
         public DataTable isBlocked(string email)
         {

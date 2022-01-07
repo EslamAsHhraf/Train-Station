@@ -49,7 +49,7 @@ namespace TrainStation.Passenger_forms
                     no2 = row[0].ToString();
                     break;
                 }
-                DataTable get_vip_ticket = controllerObj.Get_Next_Available_Ticket(Int32.Parse(no2), 'V');
+                DataTable get_vip_ticket = controllerObj.Get_Next_Available_Ticket(no2, 'V');
                 string no = "";
                 foreach (DataRow row in get_vip_ticket.Rows)
                 {
