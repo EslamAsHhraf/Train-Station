@@ -15,5 +15,8 @@ namespace TrainStation
         public static string Change_Salary = "Change_Salary";
         public static string Change_Rate = "Change_Rate";
         public static string Employee_data = "Employee_data";
+        public static string Dno_Department = "Dno_Department";
+        public static string SSN_Employee = "SSN_Employee";
+        public static string Passenger_data = "Passenger_data";
     }
 }

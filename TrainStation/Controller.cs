@@ -444,13 +444,17 @@ namespace TrainStation
         }
         public DataTable SSN_Employee()
         {
-            string query = "SELECT SSN FROM Employee;";
-            return dbMan.ExecuteReader(query);
+            String StoredProcedureName = StoredProcedures.SSN_Employee;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+            //string query = "SELECT SSN FROM Employee;";
+            //return dbMan.ExecuteReader(query);
         }
         public DataTable Dno_Department()
         {
-            string query = "SELECT DepartmentNumber FROM Department order by DepartmentNumber ;";
-            return dbMan.ExecuteReader(query);
+            String StoredProcedureName = StoredProcedures.Dno_Department;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+            //string query = "SELECT DepartmentNumber FROM Department order by DepartmentNumber ;";
+            //return dbMan.ExecuteReader(query);
         }
         public DataTable Employee()
         {
@@ -461,8 +465,10 @@ namespace TrainStation
         }
         public DataTable Passenger()
         {
-            string query = "SELECT * FROM Passenger;";
-            return dbMan.ExecuteReader(query);
+            String StoredProcedureName = StoredProcedures.Passenger_data;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+            //string query = "SELECT * FROM Passenger;";
+            //return dbMan.ExecuteReader(query);
         }
         public DataTable ID_Station()
         {
@@ -572,6 +578,11 @@ namespace TrainStation
         public int Is_Employee(string SSN)
         {
             string query = "SELECT count(SSN) FROM Employee where SSN =" + SSN + ";";
+            return (int)dbMan.ExecuteScalar(query);
+        }
+        public int Is_Passenger(string SSN)
+        {
+            string query = "SELECT count(Pass_SSN) FROM Passenger where Pass_SSN =" + SSN + ";";
             return (int)dbMan.ExecuteScalar(query);
         }
         public int Is_User_Login(string Email)

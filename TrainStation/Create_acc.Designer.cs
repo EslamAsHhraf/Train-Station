@@ -31,6 +31,7 @@ namespace TrainStation
         {
             this.Create_account = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Serial_Covid_TextBox = new System.Windows.Forms.NumericUpDown();
             this.Create_VaccOrg_TextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Create_VaccType_TextBox = new System.Windows.Forms.TextBox();
@@ -59,12 +60,11 @@ namespace TrainStation
             this.Create_Username_TextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Return_to_log_in = new System.Windows.Forms.Button();
-            this.Serial_Covid_TextBox = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Serial_Covid_TextBox)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Create_SSN_Serial_NumericUpDown)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Serial_Covid_TextBox)).BeginInit();
             this.SuspendLayout();
             // 
             // Create_account
@@ -98,6 +98,20 @@ namespace TrainStation
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Covid Vaccination";
+            // 
+            // Serial_Covid_TextBox
+            // 
+            this.Serial_Covid_TextBox.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Serial_Covid_TextBox.Location = new System.Drawing.Point(259, 44);
+            this.Serial_Covid_TextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Serial_Covid_TextBox.Maximum = new decimal(new int[] {
+            1215752191,
+            23,
+            0,
+            0});
+            this.Serial_Covid_TextBox.Name = "Serial_Covid_TextBox";
+            this.Serial_Covid_TextBox.Size = new System.Drawing.Size(176, 29);
+            this.Serial_Covid_TextBox.TabIndex = 62;
             // 
             // Create_VaccOrg_TextBox
             // 
@@ -348,7 +362,7 @@ namespace TrainStation
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 134);
+            this.label2.Location = new System.Drawing.Point(22, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 21);
             this.label2.TabIndex = 69;
@@ -404,20 +418,6 @@ namespace TrainStation
             this.Return_to_log_in.UseVisualStyleBackColor = true;
             this.Return_to_log_in.Click += new System.EventHandler(this.Return_to_log_in_Click);
             // 
-            // Serial_Covid_TextBox
-            // 
-            this.Serial_Covid_TextBox.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Serial_Covid_TextBox.Location = new System.Drawing.Point(259, 44);
-            this.Serial_Covid_TextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Serial_Covid_TextBox.Maximum = new decimal(new int[] {
-            1215752191,
-            23,
-            0,
-            0});
-            this.Serial_Covid_TextBox.Name = "Serial_Covid_TextBox";
-            this.Serial_Covid_TextBox.Size = new System.Drawing.Size(176, 29);
-            this.Serial_Covid_TextBox.TabIndex = 62;
-            // 
             // Create_acc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -436,12 +436,12 @@ namespace TrainStation
             this.Text = "Create_acc";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Serial_Covid_TextBox)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Create_SSN_Serial_NumericUpDown)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Serial_Covid_TextBox)).EndInit();
             this.ResumeLayout(false);
 
         }

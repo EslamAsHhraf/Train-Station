@@ -46,7 +46,7 @@ namespace TrainStation.Manager_s_forms
             this.data.ReadOnly = true;
             this.data.RowHeadersWidth = 51;
             this.data.RowTemplate.Height = 24;
-            this.data.Size = new System.Drawing.Size(776, 390);
+            this.data.Size = new System.Drawing.Size(811, 395);
             this.data.TabIndex = 0;
             // 
             // Back

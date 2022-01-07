@@ -40,9 +40,10 @@ namespace TrainStation
                         Create_Fname_TextBox.Text.Length > 0 && Create_Lname_TextBox.Text.Length > 0
                         && Create_VaccType_TextBox.Text.Length > 0 && Create_VaccOrg_TextBox.Text.Length > 0
                         && Create_Minit_TextBox.Text.Length == 1 && Serial_Covid_TextBox.Text.Length > 0
-                        && Create_Gender_ComboBox.SelectedIndex != -1 && Create_Email_TextBox.Text.Length > 0;
+                        && Create_Gender_ComboBox.SelectedIndex != -1 && Create_Email_TextBox.Text.Length > 0
+                        && Create_VaccType_TextBox.Text.Length > 0 && Create_VaccOrg_TextBox.Text.Length > 0;
 
-            if (isEmpty == false || rightFormat == true)
+            if (isEmpty == true && rightFormat == true)
             {
                 if (Create_SSN_Serial_NumericUpDown.Text.Length != 9)
                 {
@@ -53,6 +54,24 @@ namespace TrainStation
                 {
                     MessageBox.Show("Serial Number of vaccination should be 9 digits!");
                     return ;
+                }
+                int s = control.Is_Passenger(Create_SSN_Serial_NumericUpDown.Text);
+                if (s != 0)
+                {
+                    MessageBox.Show("This SSN is alraedy exists");
+                    return;
+                }
+                int c = control.Is_CovidVaccination(Serial_Covid_TextBox.Text);
+                if (c != 0)
+                {
+                    MessageBox.Show("This Serial number vaccination is alraedy exists");
+                    return;
+                }
+                int log = control.Is_User_Login(Create_Email_TextBox.Text);
+                if (log != 0)
+                {
+                    MessageBox.Show("This Email is alraedy exists");
+                    return;
                 }
                 int result1 = control.Create_Vacc(Convert.ToInt32(Serial_Covid_TextBox.Text), Create_VaccType_TextBox.Text, Create_VaccOrg_TextBox.Text);
                 int result2 = control.Create_Pass_Account(handle.Trim(Create_Email_TextBox).Text, handle.Trim(Create_Pass_TextBox).Text,
@@ -69,7 +88,7 @@ namespace TrainStation
                 }
                 else
                 {
-                    MessageBox.Show("An error occurred during creating a new account");
+                    MessageBox.Show("Creating a new account sucessfully!");
                 }
 
             }

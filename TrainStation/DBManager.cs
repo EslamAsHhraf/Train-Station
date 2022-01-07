@@ -11,7 +11,7 @@ namespace TrainStation
 {
     class DBManager
     {
-        static string DB_Connection_String = @"Data Source=LAPTOP-7IJ92SLJ;Initial Catalog=TrainStation;Integrated Security=True";
+        static string DB_Connection_String = @"Data Source=LAPTOP-V90LRFKP\MSSQLSERVER01;Initial Catalog=TrainStation;Integrated Security=True";
 
         SqlConnection myConnection;
 
@@ -26,12 +26,12 @@ namespace TrainStation
                 // this should NOT be shown in GUI to the user in the final application
                 // but we show it here only to make sure that the database is working
                 //MessageBox.Show("Successfully connected to the database!");
-                //Console.WriteLine("The DB connection is opened successfully");
+                Console.WriteLine("The DB connection is opened successfully");
             }
             catch (Exception e)
             {
                 // this message should not appear to user in the final application
-                //Console.WriteLine("The DB connection is failed");
+                Console.WriteLine("The DB connection is failed");
                 //Console.WriteLine(e.ToString());
             }
         }
@@ -47,7 +47,7 @@ namespace TrainStation
             {
                 // this message should not appear to user in the final application
                 //MessageBox.Show(ex.Message);
-                // Console.WriteLine(ex.Message);
+                 Console.WriteLine(ex.Message);
                 return 0;
             }
         }
@@ -75,7 +75,7 @@ namespace TrainStation
             {
                 // this message should not appear to user in the final application
                 //MessageBox.Show(ex.Message);
-                //Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.Message);
                 return null;
             }
         }
@@ -91,7 +91,7 @@ namespace TrainStation
             {
                 // this message should not appear to user in the final application
                // MessageBox.Show(ex.Message);
-                //  Console.WriteLine(ex.Message);
+                 Console.WriteLine(ex.Message);
                 return 0;
             }
         }
@@ -141,7 +141,7 @@ namespace TrainStation
             }
             catch (Exception ex)
             {
-               // Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.Message);
                 return null;
             }
         }
@@ -166,7 +166,7 @@ namespace TrainStation
             {
                 // this message should not appear to user in the final application
                // MessageBox.Show(ex.Message);
-                // Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.Message);
                 return 0;
             }
         }
