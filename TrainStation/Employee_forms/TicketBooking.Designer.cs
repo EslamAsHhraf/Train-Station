@@ -137,22 +137,22 @@ namespace TrainStation
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(482, 296);
+            this.label2.Location = new System.Drawing.Point(457, 299);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(306, 34);
+            this.label2.Size = new System.Drawing.Size(437, 34);
             this.label2.TabIndex = 24;
-            this.label2.Text = "Price of VIP ticket is : ";
+            this.label2.Text = "Price of VIP ticket is : 2000 EGP";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(482, 351);
+            this.label5.Location = new System.Drawing.Point(457, 351);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(345, 34);
+            this.label5.Size = new System.Drawing.Size(469, 34);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Price of general ticket is : ";
+            this.label5.Text = "Price of general ticket is : 1000 EGP";
             // 
             // Ticket_booking
             // 

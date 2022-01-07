@@ -38,13 +38,15 @@ namespace TrainStation.Employee_forms
             this.label2 = new System.Windows.Forms.Label();
             this.changePhoneNumButton = new System.Windows.Forms.Button();
             this.newPhoneNumTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.oldPasswordTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(178, 324);
+            this.label4.Location = new System.Drawing.Point(178, 408);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(148, 25);
@@ -53,7 +55,7 @@ namespace TrainStation.Employee_forms
             // 
             // changePasswordBtn
             // 
-            this.changePasswordBtn.Location = new System.Drawing.Point(441, 359);
+            this.changePasswordBtn.Location = new System.Drawing.Point(441, 437);
             this.changePasswordBtn.Margin = new System.Windows.Forms.Padding(4);
             this.changePasswordBtn.Name = "changePasswordBtn";
             this.changePasswordBtn.Size = new System.Drawing.Size(251, 38);
@@ -64,7 +66,7 @@ namespace TrainStation.Employee_forms
             // 
             // newPasswordTextBox
             // 
-            this.newPasswordTextBox.Location = new System.Drawing.Point(182, 359);
+            this.newPasswordTextBox.Location = new System.Drawing.Point(182, 437);
             this.newPasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.newPasswordTextBox.Name = "newPasswordTextBox";
             this.newPasswordTextBox.PasswordChar = '*';
@@ -131,6 +133,26 @@ namespace TrainStation.Employee_forms
             this.newPhoneNumTextBox.Size = new System.Drawing.Size(223, 41);
             this.newPhoneNumTextBox.TabIndex = 11;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(178, 327);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 25);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Old Password";
+            // 
+            // oldPasswordTxt
+            // 
+            this.oldPasswordTxt.Location = new System.Drawing.Point(182, 356);
+            this.oldPasswordTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.oldPasswordTxt.Name = "oldPasswordTxt";
+            this.oldPasswordTxt.PasswordChar = '*';
+            this.oldPasswordTxt.Size = new System.Drawing.Size(223, 41);
+            this.oldPasswordTxt.TabIndex = 18;
+            // 
             // UpdateMyData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 34F);
@@ -138,6 +160,8 @@ namespace TrainStation.Employee_forms
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(867, 502);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.oldPasswordTxt);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.changePasswordBtn);
             this.Controls.Add(this.newPasswordTextBox);
@@ -152,7 +176,6 @@ namespace TrainStation.Employee_forms
             this.Name = "UpdateMyData";
             this.Text = "UpdateMyData";
             this.Load += new System.EventHandler(this.UpdateMyData_Load);
-
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,5 +192,7 @@ namespace TrainStation.Employee_forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button changePhoneNumButton;
         private System.Windows.Forms.TextBox newPhoneNumTextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox oldPasswordTxt;
     }
 }

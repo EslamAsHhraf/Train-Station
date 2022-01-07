@@ -188,7 +188,7 @@ namespace TrainStation
 
         public int cancelTicketEmployee(int ticketNo)
         {
-            string query = $"delete from ticket where ticketno ={ticketNo}";
+            string query = $"update ticket set essn = null, pssn = null where ticketno ={ticketNo}";
             return dbMan.ExecuteNonQuery(query);
         }
         public DataTable viewTrainNumbers()
@@ -292,16 +292,16 @@ namespace TrainStation
             string query = $"SELECT Trip_Code FROM trip ";
             return dbMan.ExecuteReader(query);
         }
-        public DataTable getFirstAvailableTicketID(int tripC, char cls)
+        public DataTable getFirstAvailableTicketID(string tripC, char cls)
         {
             string query = $@"SELECT TicketNo FROM ticket,trip where Trip_Code ='{tripC}' and class='{cls}' and pssn is null and essn is null";
             return dbMan.ExecuteReader(query);
 
         }
 
-        public int BookTicketEmployee(int essn, int pssn, int ticketNo)
+        public int BookTicketEmployee(int essn, int pssn, string ticketNo)
         {
-            string query = $@"update ticket set essn = {essn},pssn={pssn} where ticketNO = {ticketNo}";
+            string query = $@"update ticket set essn = {essn},pssn={pssn} where ticketNO = '{ticketNo}'";
             return dbMan.ExecuteNonQuery(query);
 
         }
@@ -310,6 +310,17 @@ namespace TrainStation
             string query = $"SELECT ssn FROM employee WHERE emp_Email = '{email}';";
             return (int)dbMan.ExecuteScalar(query);
         }
+        public DataTable checkIfPassengerIsBlackListed(int ssn)
+        {
+            string query = $"SELECT * FROM blacklist WHERE pssn = {ssn};";
+            return dbMan.ExecuteReader(query);
+        }
+        public string getEmpPasswordEmployee(string email)
+        {
+            string query = $"select pass from user_login where email='{email}'";
+            return (string)dbMan.ExecuteScalar(query);
+        }
+
         /*Yasmine Elgendi*/
         public int Delete_vacc(int serial)
         {

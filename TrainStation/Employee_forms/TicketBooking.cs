@@ -56,7 +56,13 @@ namespace TrainStation
                 MessageBox.Show("Please pick an SSN! ");
                 return;
             }
-            DataTable dt = controllerObj.getFirstAvailableTicketID(Int32.Parse(Trip_Code_CB.Text), Class_CB.Text[0]);
+            DataTable ddd= controllerObj.checkIfPassengerIsBlackListed(Int32.Parse(SSN_CB.Text));
+            if(ddd!= null)
+            {
+                MessageBox.Show("This user is on blacklist.");
+                return;
+            }
+            DataTable dt = controllerObj.getFirstAvailableTicketID(Trip_Code_CB.Text, Class_CB.Text[0]);
            
 
             if (dt==null)
@@ -73,7 +79,7 @@ namespace TrainStation
             }
             
             int essn = controllerObj.Get_SSN_Of_EmailEmployee(Email);
-            int i = controllerObj.BookTicketEmployee(essn, Int32.Parse(SSN_CB.Text), Int32.Parse(no));
+            int i = controllerObj.BookTicketEmployee(essn, Int32.Parse(SSN_CB.Text), no);
             if (i == 1)
             {
                 MessageBox.Show("You succefully booked a ticket with Serial No. : " + no);
