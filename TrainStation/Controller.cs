@@ -350,7 +350,7 @@ namespace TrainStation
         }
         public int get_Authority(string Email)
         {
-            string query = "SELECT count(Email) FROM User_Login WHERE Authority =  'manager' and Email='"+ Email + "' ;";
+            string query = "SELECT count(Email) FROM User_Login WHERE (Authority =  'manager' or Authority =  'admin') and Email='" + Email + "' ;";
             return dbMan.ExecuteNonQuery(query);
         }
         public DataTable isBlocked(string email)

@@ -29,7 +29,7 @@ namespace TrainStation.Admin_forms
             int Man = con.get_Authority(no2);
             if (Man!=0)
             {
-                MessageBox.Show("You can't fire Manager");
+                MessageBox.Show("You can't fire Manager or Admin");
                 return;
             }
             con.Super_Employee(SSN.Text);
