@@ -37,8 +37,6 @@ namespace TrainStation
             this.label4 = new System.Windows.Forms.Label();
             this.View_Trips_Grid = new System.Windows.Forms.DataGridView();
             this.SSN_CB = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.View_Trips_Grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -133,27 +131,6 @@ namespace TrainStation
             this.SSN_CB.Size = new System.Drawing.Size(163, 42);
             this.SSN_CB.TabIndex = 23;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(457, 299);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(437, 34);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Price of VIP ticket is : 2000 EGP";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Ink Free", 16F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(457, 351);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(469, 34);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Price of general ticket is : 1000 EGP";
-            // 
             // Ticket_booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -161,8 +138,6 @@ namespace TrainStation
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(938, 635);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.SSN_CB);
             this.Controls.Add(this.Class_CB);
             this.Controls.Add(this.label1);
@@ -191,7 +166,5 @@ namespace TrainStation
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView View_Trips_Grid;
         private System.Windows.Forms.ComboBox SSN_CB;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
     }
 }
