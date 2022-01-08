@@ -22,6 +22,13 @@ namespace TrainStation.Admin_forms
             SSN.DisplayMember = "SSN";
 
             DataTable dt2 = con.Dno_Department();
+            foreach (DataRow row in dt2.Rows)
+            {
+                if (row["DepartmentNumber"].ToString() == "1")
+                {
+                    row.Delete();
+                }
+            }
             Department_num.DataSource = dt2;
             Department_num.DisplayMember = "DepartmentNumber";
         }
