@@ -404,6 +404,8 @@ namespace TrainStation
         }
         public int Add_Admin(string email)
         {
+            string query1 = "UPDATE Employee SET Dno = 1 WHERE Emp_Email = '"+ email+"' ;";
+            dbMan.ExecuteNonQuery(query1);
             string query = "UPDATE User_Login SET Authority = 'admin' WHERE Email = '" + email + "'; ";
             return dbMan.ExecuteNonQuery(query);
         }
