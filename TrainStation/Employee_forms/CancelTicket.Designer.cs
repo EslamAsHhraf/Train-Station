@@ -57,6 +57,7 @@ namespace TrainStation
             // 
             // ticketSerialNoComboBox
             // 
+            this.ticketSerialNoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ticketSerialNoComboBox.FormattingEnabled = true;
             this.ticketSerialNoComboBox.Location = new System.Drawing.Point(261, 177);
             this.ticketSerialNoComboBox.Margin = new System.Windows.Forms.Padding(6);
@@ -80,7 +81,6 @@ namespace TrainStation
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancelTicket";
             this.Load += new System.EventHandler(this.CancelTicket_load);
-
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -41,6 +41,7 @@ namespace TrainStation
             // 
             // passengerSSNComboBox
             // 
+            this.passengerSSNComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.passengerSSNComboBox.FormattingEnabled = true;
             this.passengerSSNComboBox.Location = new System.Drawing.Point(410, 114);
             this.passengerSSNComboBox.Margin = new System.Windows.Forms.Padding(4);

@@ -39,6 +39,7 @@ namespace TrainStation
             // 
             // ticketSerialNoComboBox
             // 
+            this.ticketSerialNoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ticketSerialNoComboBox.FormattingEnabled = true;
             this.ticketSerialNoComboBox.Location = new System.Drawing.Point(210, 111);
             this.ticketSerialNoComboBox.Margin = new System.Windows.Forms.Padding(4);
@@ -70,6 +71,7 @@ namespace TrainStation
             // 
             // newClassComboBox
             // 
+            this.newClassComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.newClassComboBox.FormattingEnabled = true;
             this.newClassComboBox.Items.AddRange(new object[] {
             "VIP",

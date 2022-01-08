@@ -36,6 +36,7 @@ namespace TrainStation
             // 
             // trainPlateNumberComboBox
             // 
+            this.trainPlateNumberComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.trainPlateNumberComboBox.FormattingEnabled = true;
             this.trainPlateNumberComboBox.Location = new System.Drawing.Point(432, 159);
             this.trainPlateNumberComboBox.Margin = new System.Windows.Forms.Padding(6);
@@ -78,7 +79,6 @@ namespace TrainStation
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrainStatus";
             this.Load += new System.EventHandler(this.TrainStatus_load);
-
             this.ResumeLayout(false);
             this.PerformLayout();
 

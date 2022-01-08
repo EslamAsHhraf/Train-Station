@@ -38,6 +38,7 @@ namespace TrainStation
             // 
             // ticketSerialNoComboBox
             // 
+            this.ticketSerialNoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ticketSerialNoComboBox.FormattingEnabled = true;
             this.ticketSerialNoComboBox.Location = new System.Drawing.Point(269, 102);
             this.ticketSerialNoComboBox.Margin = new System.Windows.Forms.Padding(4);
