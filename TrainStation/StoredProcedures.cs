@@ -18,5 +18,8 @@ namespace TrainStation
         public static string Dno_Department = "Dno_Department";
         public static string SSN_Employee = "SSN_Employee";
         public static string Passenger_data = "Passenger_data";
+        public static string get_tele_E = "get_tele_E";
+        public static string SSN_Passenger = "SSN_Passenger";
+        public static string get_tele_p = "get_tele_p";
     }
 }

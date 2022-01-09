@@ -237,10 +237,10 @@
     <Compile Include="Employee_forms\UpgradeTicket.Designer.cs">
       <DependentUpon>UpgradeTicket.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\UpdateMyData.cs">
+    <Compile Include="Employee_forms\UpdateMyData.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Properties\UpdateMyData.Designer.cs">
+    <Compile Include="Employee_forms\UpdateMyData.Designer.cs">
       <DependentUpon>UpdateMyData.cs</DependentUpon>
     </Compile>
     <Compile Include="StoredProcedures.cs" />
@@ -379,7 +379,7 @@
     <EmbeddedResource Include="Employee_forms\UpgradeTicket.resx">
       <DependentUpon>UpgradeTicket.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\UpdateMyData.resx">
+    <EmbeddedResource Include="Employee_forms\UpdateMyData.resx">
       <DependentUpon>UpdateMyData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserLog.resx">

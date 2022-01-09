@@ -32,6 +32,8 @@ namespace TrainStation
             this.trainPlateNumberComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ShowMaintenanceStatusButton = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // trainPlateNumberComboBox
@@ -64,12 +66,38 @@ namespace TrainStation
             this.ShowMaintenanceStatusButton.UseVisualStyleBackColor = true;
             this.ShowMaintenanceStatusButton.Click += new System.EventHandler(this.ShowMaintenanceStatusButton_Click);
             // 
+            // Back
+            // 
+            this.Back.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.Location = new System.Drawing.Point(523, 548);
+            this.Back.Margin = new System.Windows.Forms.Padding(4);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(118, 59);
+            this.Back.TabIndex = 64;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // Exit
+            // 
+            this.Exit.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(649, 548);
+            this.Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(118, 59);
+            this.Exit.TabIndex = 63;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // TrainStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 34F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.ClientSize = new System.Drawing.Size(780, 620);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.ShowMaintenanceStatusButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.trainPlateNumberComboBox);
@@ -89,5 +117,7 @@ namespace TrainStation
         private System.Windows.Forms.ComboBox trainPlateNumberComboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ShowMaintenanceStatusButton;
+        private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Button Exit;
     }
 }

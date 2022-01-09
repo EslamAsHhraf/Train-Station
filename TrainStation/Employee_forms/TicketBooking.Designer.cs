@@ -37,6 +37,8 @@ namespace TrainStation
             this.label4 = new System.Windows.Forms.Label();
             this.View_Trips_Grid = new System.Windows.Forms.DataGridView();
             this.SSN_CB = new System.Windows.Forms.ComboBox();
+            this.Back = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.View_Trips_Grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,6 +133,30 @@ namespace TrainStation
             this.SSN_CB.Size = new System.Drawing.Size(163, 42);
             this.SSN_CB.TabIndex = 23;
             // 
+            // Back
+            // 
+            this.Back.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.Location = new System.Drawing.Point(668, 550);
+            this.Back.Margin = new System.Windows.Forms.Padding(4);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(118, 59);
+            this.Back.TabIndex = 64;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // Exit
+            // 
+            this.Exit.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(794, 550);
+            this.Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(118, 59);
+            this.Exit.TabIndex = 63;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // Ticket_booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -138,6 +164,8 @@ namespace TrainStation
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(938, 635);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.SSN_CB);
             this.Controls.Add(this.Class_CB);
             this.Controls.Add(this.label1);
@@ -166,5 +194,7 @@ namespace TrainStation
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView View_Trips_Grid;
         private System.Windows.Forms.ComboBox SSN_CB;
+        private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Button Exit;
     }
 }

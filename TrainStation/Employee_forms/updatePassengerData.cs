@@ -35,6 +35,12 @@ namespace TrainStation
                 MessageBox.Show("Please select a passenger's SSN!");
                 return;
             }
+            bool semi_val = handleObj.is_valid(newPhoneNumTextBox);
+            if (!semi_val)
+            {
+                MessageBox.Show("You can't insert ;");
+                return;
+            }
             bool x = Int32.TryParse(newPhoneNumTextBox.Text, out int i);
             if (!x)
             {
@@ -56,6 +62,12 @@ namespace TrainStation
             if (passengerSSNComboBox.Text == "")
             {
                 MessageBox.Show("Please select a passenger's SSN!");
+                return;
+            }
+            bool semi_val = handleObj.is_valid(newEmailTextBox);
+            if (!semi_val)
+            {
+                MessageBox.Show("You can't insert ;");
                 return;
             }
             bool x = handleObj.is_email(newEmailTextBox);
@@ -81,6 +93,12 @@ namespace TrainStation
                 MessageBox.Show("Please select a passenger's SSN!");
                 return;
             }
+            bool semi_val = handleObj.is_valid(newPasswordTextBox);
+            if (!semi_val)
+            {
+                MessageBox.Show("You can't insert ;");
+                return;
+            }
             string Email = controllerObj.getPassEmailEmployee(Int32.Parse(passengerSSNComboBox.Text));
             int y = controllerObj.updatePassengerPassowrdEmployee(newPasswordTextBox.Text, Email);
             if (y==1) 
@@ -88,6 +106,16 @@ namespace TrainStation
             else
                 MessageBox.Show("Failed to update the passenger's password");
 
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

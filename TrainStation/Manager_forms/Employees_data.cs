@@ -24,6 +24,10 @@ namespace TrainStation.Manager_s_forms
             DataTable dt = con.Employee();
             data.DataSource = dt;
             data.Refresh();
+
+            DataTable dt2 = con.SSN_Employee();
+            SSN.DataSource = dt2;
+            SSN.DisplayMember = "SSN";
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -34,6 +38,22 @@ namespace TrainStation.Manager_s_forms
         private void Back_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Get_phone_Click(object sender, EventArgs e)
+        {
+            if(SSN.SelectedIndex==-1)
+            {
+                MessageBox.Show("You should select SSN");
+                return;
+            }
+            DataTable dt = con.get_tele_E(SSN.Text);
+            if(dt==null)
+            {
+                MessageBox.Show("This employee hasn't phone number");
+            }
+            SSN_PHONE.DataSource = dt;
+            SSN_PHONE.Refresh();
         }
     }
 }

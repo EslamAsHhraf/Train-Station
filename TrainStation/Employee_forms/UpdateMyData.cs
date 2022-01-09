@@ -36,17 +36,22 @@ namespace TrainStation.Employee_forms
                 MessageBox.Show("Please enter a phone number!");
                 return;
             }
-
+            bool semi_val = handleObj.is_valid(newPhoneNumTextBox);
+            if (!semi_val)
+            {
+                MessageBox.Show("You can't insert ;");
+                return;
+            }
 
             bool x = Int32.TryParse(newPhoneNumTextBox.Text, out int i);
-            if (!x)
+            if (!x||newPhoneNumTextBox.Text.Length!=11)
             {
                 MessageBox.Show("Please enter a valid phone number.");
                 return;
             }
             int m = Int32.Parse(newPhoneNumTextBox.Text);
             int essn = controllerObj.Get_SSN_Of_EmailEmployee(Email);
-            int y = controllerObj.updateEmployeePhoneEmployee(m, essn);
+            int y = controllerObj.updateEmployeePhoneEmployee(newPhoneNumTextBox.Text, essn);
             if (y == 1)
                 MessageBox.Show("You successfully added a phone number");
             else
@@ -67,12 +72,26 @@ namespace TrainStation.Employee_forms
                 MessageBox.Show("Please enter a valid Email.");
                 return;
             }
-            //string oldEmial= controllerObj.getEmpEmailEmployee(Int32.Parse(passengerSSNComboBox.Text));
+            bool semi_val = handleObj.is_valid(newEmailTextBox);
+            if (!semi_val)
+            {
+                MessageBox.Show("You can't insert ;");
+                return;
+            }
             int ssn = controllerObj.Get_SSN_Of_EmailEmployee(Email);
 
             int y= controllerObj.updateEmpEmailEmployee(newEmailTextBox.Text,ssn, Email);
             if (y == 2)
+            {
                 MessageBox.Show("You successfully updated your Email");
+                foreach (Form f in Application.OpenForms)
+                {
+                    if (f.Name != "UserLog")
+                        f.Close();
+                }
+                Form passengerForm = new Employee(newEmailTextBox.Text);
+                passengerForm.ShowDialog();
+            }
             else
                 MessageBox.Show("Failed to update your email");
 
@@ -85,7 +104,18 @@ namespace TrainStation.Employee_forms
                 MessageBox.Show("Please enter a password");
                 return;
             }
-
+            bool semi_val = handleObj.is_valid(newPasswordTextBox);
+            if (!semi_val)
+            {
+                MessageBox.Show("You can't insert ;");
+                return;
+            }
+            string oldP = controllerObj.getEmpPasswordEmployee(Email);
+            if (oldP != oldPasswordTxt.Text)
+            {
+                MessageBox.Show("Incorrect old passowrd!");
+                return;
+            }
             int y= controllerObj.updateEmpPassowrdEmployee(newPasswordTextBox.Text, Email);
             if (y == 1)
                 MessageBox.Show("You successfully updated your password");

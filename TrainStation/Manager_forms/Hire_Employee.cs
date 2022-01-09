@@ -28,6 +28,13 @@ namespace TrainStation.Manager_forms
             Super_SSN.DisplayMember = "SSN";
 
             DataTable dt2 = con.Dno_Department();
+            foreach (DataRow row in dt2.Rows)
+            {
+                if (row["DepartmentNumber"].ToString() == "1")
+                {
+                    row.Delete();
+                }
+            }
             DNO.DataSource = dt2;
             DNO.DisplayMember = "DepartmentNumber";
         }

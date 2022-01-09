@@ -268,7 +268,7 @@ namespace TrainStation
             string query = $"select emp_email from employee where ssn={ssn}";
             return (string)dbMan.ExecuteScalar(query);
         }
-        public int updateEmployeePhoneEmployee(Int32 newPhone, int ssn)
+        public int updateEmployeePhoneEmployee(string newPhone, int ssn)
         {
             string query = $"insert into E_PhoneNumber (essn,pNumber) values ({ssn},'{newPhone}' )";
             return dbMan.ExecuteNonQuery(query);
@@ -451,6 +451,13 @@ namespace TrainStation
             //string query = "SELECT SSN FROM Employee;";
             //return dbMan.ExecuteReader(query);
         }
+        public DataTable SSN_Passenger()
+        {
+            String StoredProcedureName = StoredProcedures.SSN_Passenger;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+            //string query = "SELECT SSN FROM Employee;";
+            //return dbMan.ExecuteReader(query);
+        }
         public DataTable Dno_Department()
         {
             String StoredProcedureName = StoredProcedures.Dno_Department;
@@ -479,10 +486,23 @@ namespace TrainStation
             //string query = "SELECT ID FROM Station;";
             //return dbMan.ExecuteReader(query);
         }
-        public DataTable Trip_Code_Trip()
+        public DataTable get_tele_E(string ssn)
         {
-            string query = "SELECT Trip_Code FROM Trip;";
-            return dbMan.ExecuteReader(query);
+            String StoredProcedureName = StoredProcedures.get_tele_E;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ssn_e", ssn);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+            //string query = "SELECT ID FROM Station;";
+            //return dbMan.ExecuteReader(query);
+        }
+        public DataTable get_tele_p(string ssn)
+        {
+            String StoredProcedureName = StoredProcedures.get_tele_p;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ssn_e", ssn);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+            //string query = "SELECT ID FROM Station;";
+            //return dbMan.ExecuteReader(query);
         }
         public DataTable PlateNumber_Train()
         {
