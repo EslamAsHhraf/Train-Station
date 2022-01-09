@@ -280,9 +280,9 @@ namespace TrainStation
             this.label14.Font = new System.Drawing.Font("Ink Free", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(36, 107);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 21);
+            this.label14.Size = new System.Drawing.Size(53, 21);
             this.label14.TabIndex = 55;
-            this.label14.Text = "Middle name";
+            this.label14.Text = "Minit";
             // 
             // label15
             // 
