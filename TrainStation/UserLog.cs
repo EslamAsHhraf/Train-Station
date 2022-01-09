@@ -56,7 +56,7 @@ namespace TrainStation
                     MessageBox.Show("There is no such email");
                     return;
                 }
-                DataTable dt = control.GetAuthority(hand.Trim(LogIn_Email_TextBox).Text, hand.Trim(LogIn_Pass_TextBox).Text);
+                DataTable dt = control.GetAuthority(hand.Trim(LogIn_Email_TextBox).Text.ToLower(), hand.Trim(LogIn_Pass_TextBox).Text);
                 if(dt==null)
                 {
                     MessageBox.Show("Incorrect Password");
@@ -66,12 +66,12 @@ namespace TrainStation
                 auth = auth.ToLower();
                 if (auth == "admin")
                 {
-                    Form adminForm = new Admin(hand.Trim(LogIn_Email_TextBox).Text);
+                    Form adminForm = new Admin(hand.Trim(LogIn_Email_TextBox).Text.ToLower());
                     adminForm.ShowDialog();
                 }
                 else if (auth == "employee")
                 {
-                    Form employeeForm = new Employee(hand.Trim(LogIn_Email_TextBox).Text);
+                    Form employeeForm = new Employee(hand.Trim(LogIn_Email_TextBox).Text.ToLower());
                     employeeForm.ShowDialog();
                 }
                 else if (auth == "manager")
@@ -81,7 +81,7 @@ namespace TrainStation
                 }
                 else if (auth == "passenger")
                 {
-                    Form passengerForm = new Passenger(hand.Trim(LogIn_Email_TextBox).Text);
+                    Form passengerForm = new Passenger(hand.Trim(LogIn_Email_TextBox).Text.ToLower());
                     passengerForm.ShowDialog();
                 }
 
