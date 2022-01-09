@@ -27,13 +27,12 @@ namespace TrainStation.Passenger_forms
             if (dt == null)
             {
                 MessageBox.Show("You don't have any booked tickets to cancel");
-                return;
+              
             }
-            else
-            {
-                CancelTicket_CB.DataSource = dt;
-                CancelTicket_CB.DisplayMember = "TicketNo";
-            }
+          
+            CancelTicket_CB.DataSource = dt;
+            CancelTicket_CB.DisplayMember = "TicketNo";
+            
         }
 
         private void Cancel_Ticket_Button_Click(object sender, EventArgs e)

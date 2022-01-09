@@ -101,6 +101,13 @@ namespace TrainStation.Manager_forms
                 MessageBox.Show("Number of Vip and General tickets should be less than 5 digits!");
                 return;
             }
+            int PlateNumber = Int32.Parse(trainNum.Text);
+            bool m = con.checkTrainEmployee(PlateNumber);
+            if (m == true)
+            {
+                MessageBox.Show("The train is in maintenance.");
+                return;
+            }
             string arrivel = HA.Text + ':' + MA.Text;
             string departure = HD.Text + ':' + MD.Text;
             String r1 = con.Is_Trip(Trip_code.Text);
