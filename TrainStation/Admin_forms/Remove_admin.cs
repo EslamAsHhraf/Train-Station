@@ -43,7 +43,7 @@ namespace TrainStation.Admin_forms
             DataTable dtAdmin = control.Select_Admin_Emails();
             foreach (DataRow row in dtAdmin.Rows)
             {
-                if (row["Email"].ToString() == email)
+                if (row["Email"].ToString().ToLower()== email)
                 {
                     row.Delete();
                 }
