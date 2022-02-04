@@ -1,4 +1,0 @@
-Sarah Mohamed Hossam	SEC:1	BN:30	email: sarahelzayat@outlook.com
-Eslam Ashraf Ibrahim	SEC:1	BN:13	email: eslam.azab01@eng-st.cu.edu.eg
-Yasmine Ashraf Ghanem	SEC:2	BN:35	email: yasmine.ghanem01@eng-st.cu.edu.eg
-Yasmin Abdullah Nasser	SEC:2	BN:36	email: yasmin.mahmoud01@eng-st.cu.edu.eg
