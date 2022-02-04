@@ -4,7 +4,7 @@
   
    <img width=100% src="images/cover.png" alt="logo">
 </p>
-<p align="center"> Train Station.
+<p align="center"> 
     <br> 
 </p>
 

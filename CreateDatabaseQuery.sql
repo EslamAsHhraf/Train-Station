@@ -213,7 +213,7 @@ ESSN int,
 PSSN int,
 TripCode varchar(20),
 
-PRIMARY KEY (TicketNo),
+PRIMARY KEY (TicketNo,TripCode),
 FOREIGN KEY (ESSN) REFERENCES Employee
 ON DELETE SET NULL,
 FOREIGN KEY (TripCode) REFERENCES Trip
