@@ -7,6 +7,16 @@
 <p align="center"> 
     <br> 
 </p>
+![image](https://user-images.githubusercontent.com/71986226/152617091-2cef5403-5968-4cba-8f21-bb372260def5.png)
+![image](https://user-images.githubusercontent.com/71986226/152618137-1d4237a3-1e88-45cf-bdd9-f55c2a0ad120.png)
+![image](https://user-images.githubusercontent.com/71986226/152618194-859cfff3-2d1f-4a48-a7bc-4c6346b891c6.png)
+![image](https://user-images.githubusercontent.com/71986226/152618258-3065b370-e6cb-4fa4-81fb-2977a0c8bf0b.png)
+![image](https://user-images.githubusercontent.com/71986226/152618310-bdc06254-957e-4ffc-9475-473c698480b2.png)
+![image](https://user-images.githubusercontent.com/71986226/152618397-134b104c-c859-47be-8e73-a0dc370f7d2a.png)
+![image](https://user-images.githubusercontent.com/71986226/152618615-f2d18bb1-66ad-4d05-8542-20f1c09e805c.png)
+
+
+
 
 ## 📜 Table of Contents
 
