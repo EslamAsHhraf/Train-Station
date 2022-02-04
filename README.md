@@ -50,8 +50,18 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 <li> you will need to download <a href="https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017"> SQL Server Management Studio (SSMS)</a> </li>
 <li>Excute <a href='https://github.com/EslamAsHhraf/Train-Station/blob/master/CreateDatabaseQuery.sql'> CreateDatabaseQuery </a> to create Data Base </li>
 <li> Excute <a href='https://github.com/EslamAsHhraf/Train-Station/blob/master/InsertValues.sql'>InsertValues </a> to fill Data Base</li>
-<li> To link Data Base with application</li>
+<li> Do steps<a href='https://github.com/EslamAsHhraf/Train-Station/blob/master/Accessing%20DB%20from%20C%23%20App.pdf'>Accessing DB from C# App</a> to link Data Base with application</li>
+
+<li> Read <a href='https://github.com/EslamAsHhraf/Train-Station/blob/master/Report%20.pdf'>Report</a>  to undertand well how to use application
+</li>
 </ol>
+
+## 🔨 Built Using
+
+<ul>
+  <li>Windows form application</li>
+  <li>my sql</li>
+</ul>
 
 ## 📷 Demo Screenshots <a id ="Screenshots"></a>
 
@@ -64,4 +74,4 @@ git clone https://github.com/EslamAsHhraf/Train-Station
      <td align="center"><a href="https://github.com/YasminElgendi"><img src="https://avatars.githubusercontent.com/u/54359829?v=4" width="150px;" alt=""/><br /><sub><b>Yasmin Elgendi</b></sub></a><br /></td>
      <td align="center"><a href="https://github.com/EslamAsHhraf"><img src="https://avatars.githubusercontent.com/u/71986226?v=4" width="150px;" alt=""/><br /><sub><b>Eslam Ashraf</b></sub></a><br /></td>
   </tr>
- </table>
+</table>
