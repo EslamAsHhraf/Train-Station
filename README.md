@@ -2,7 +2,7 @@
 
 <p align="center">
   
-   <img width=100% src="images/cover2.png" alt="logo">
+   <img width=100% src="images/cover.png" alt="logo">
 </p>
 <p align="center"> Train Station.
     <br> 
@@ -14,6 +14,7 @@
 - <a href ="#Started"> 💻 Get Started</a>
 - <a href ="#Built"> 🔨 Built Using</a>
 - <a href ="#Screenshots"> 📷 Demo Screenshots</a>
+- <a href ="#Structure"> 🧱 File Structure</a>
 - <a href ="#Contributors"> ✨ Contributors</a>
 <hr style="background-color: #4b4c60"></hr>
 
@@ -106,7 +107,7 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 
 <hr style="background-color: #4b4c60"></hr>
 
-## 🧱 File Structure
+## 🧱 File Structure <a id="Structure"> </a>
 
 ```
 Train-Station
@@ -124,7 +125,7 @@ Train-Station
 │   └── get_tele_psql.sql
 ├── images
 │   ├── cover.jpg
-│   └── cover2.jpg
+│   └── cover.png
 ├── TrainStation
 │   ├── Admin_forms
 │   │   ├── Add_admin.Designer.cs
