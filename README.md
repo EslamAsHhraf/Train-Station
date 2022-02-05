@@ -1,4 +1,4 @@
-# Train Station <img width=100px height=100px src="images/emoji/budding-pop-cute.gif">
+# Train Station <img width=100px height=100px src="images/emoji/locomotive-joypixels.gif">
 
 <p align="center">
   
@@ -18,7 +18,7 @@
 - <a href ="#Contributors"> ✨ Contributors</a>
 <hr style="background-color: #4b4c60"></hr>
 
-## <img align="center" height =40px src="images/emoji/minions-cute.gif"> overview <a id = "about"></a>
+## <img align="center"  height =50px src="images/emoji/minions-cute.gif"> overview <a id = "about"></a>
 
 <ul> 
 <li > A windows application for a train station DBMS. A train station DBMS
@@ -69,7 +69,7 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 </ul>
 <hr style="background-color: #4b4c60"></hr>
 
-## <img align= center width=60px height=60px src="images/emoji/cute-penguin.gif"> Demo Screenshots <a id ="Screenshots"></a>
+## <img align= center width=70px height=70px src="images/emoji/cute-penguin.gif"> Demo Screenshots <a id ="Screenshots"></a>
 
 ![image](https://user-images.githubusercontent.com/71986226/152590582-56b12986-57b6-4685-881c-2471ddf917c8.png)
 
@@ -275,7 +275,7 @@ Train-Station
 
 <hr style="background-color: #4b4c60"></hr>
 
-## <img  width= 60px height =60px src="images/emoji/husky-and-shiba-二哈萌柴微信表情.gif"> Contributors <a id ="Contributors"></a>
+## <img  width= 70px height =70px src="images/emoji/husky-and-shiba-二哈萌柴微信表情.gif"> Contributors <a id ="Contributors"></a>
 
 <table align="center" >
   <tr>
