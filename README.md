@@ -1,8 +1,7 @@
-# Train Station <img width=100px height=100px src="images/emoji/locomotive-joypixels.gif">
+# <img width=70px height=70px src="images/emoji/locomotive-joypixels.gif"> Train Station
 
 <p align="center">
-  
-   <img width=100% src="images/cover.png" alt="logo">
+   <img align="center" width=500px src="images/cover.png" alt="logo">
 </p>
 <p align="center"> 
     <br> 
@@ -107,7 +106,7 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 
 <hr style="background-color: #4b4c60"></hr>
 
-## <img align= center width=50px height=50px src="images/emoji/folder-walk.gif"> File Structure <a id="Structure"> </a>
+## <img align= center width=60px height=60px src="images/emoji/folder-walk.gif"> File Structure <a id="Structure"> </a>
 
 ```
 Train-Station
