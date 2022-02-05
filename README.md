@@ -1,4 +1,8 @@
-# <img width=70px height=70px src="images/emoji/locomotive-joypixels.gif"> Train Station
+<div align=center >
+
+# <img  width=70px height=70px src="images/emoji/locomotive-joypixels.gif"> Train Station
+
+</div>
 
 <p align="center">
    <img align="center" width=500px src="images/cover.png" alt="logo">

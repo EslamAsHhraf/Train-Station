@@ -40,6 +40,8 @@ namespace TrainStation.Employee_forms
             this.newPhoneNumTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.oldPasswordTxt = new System.Windows.Forms.TextBox();
+            this.Back = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -153,13 +155,39 @@ namespace TrainStation.Employee_forms
             this.oldPasswordTxt.Size = new System.Drawing.Size(223, 41);
             this.oldPasswordTxt.TabIndex = 18;
             // 
+            // Back
+            // 
+            this.Back.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.Location = new System.Drawing.Point(656, 494);
+            this.Back.Margin = new System.Windows.Forms.Padding(4);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(118, 59);
+            this.Back.TabIndex = 66;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // Exit
+            // 
+            this.Exit.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(782, 494);
+            this.Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(118, 59);
+            this.Exit.TabIndex = 65;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // UpdateMyData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 34F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrainStation.Properties.Resources._1419767;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(867, 502);
+            this.ClientSize = new System.Drawing.Size(913, 566);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.oldPasswordTxt);
             this.Controls.Add(this.label4);
@@ -194,5 +222,7 @@ namespace TrainStation.Employee_forms
         private System.Windows.Forms.TextBox newPhoneNumTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox oldPasswordTxt;
+        private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Button Exit;
     }
 }

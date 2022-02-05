@@ -122,5 +122,15 @@ namespace TrainStation.Employee_forms
             else
                 MessageBox.Show("Failed to update your password");
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
