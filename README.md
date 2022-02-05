@@ -1,4 +1,4 @@
-# Train Station
+# Train Station <img width=100px height=100px src="images/emoji/budding-pop-cute.gif">
 
 <p align="center">
   
@@ -7,20 +7,10 @@
 <p align="center"> 
     <br> 
 </p>
-![image](https://user-images.githubusercontent.com/71986226/152617091-2cef5403-5968-4cba-8f21-bb372260def5.png)
-![image](https://user-images.githubusercontent.com/71986226/152618137-1d4237a3-1e88-45cf-bdd9-f55c2a0ad120.png)
-![image](https://user-images.githubusercontent.com/71986226/152618194-859cfff3-2d1f-4a48-a7bc-4c6346b891c6.png)
-![image](https://user-images.githubusercontent.com/71986226/152618258-3065b370-e6cb-4fa4-81fb-2977a0c8bf0b.png)
-![image](https://user-images.githubusercontent.com/71986226/152618310-bdc06254-957e-4ffc-9475-473c698480b2.png)
-![image](https://user-images.githubusercontent.com/71986226/152618397-134b104c-c859-47be-8e73-a0dc370f7d2a.png)
-![image](https://user-images.githubusercontent.com/71986226/152618615-f2d18bb1-66ad-4d05-8542-20f1c09e805c.png)
 
+## <img align= center width=50px height=50px src="images/emoji/to-do-list-checklist.gif"> Table of Contents
 
-
-
-## 📜 Table of Contents
-
-- <a href ="#about"> 📙 About</a>
+- <a href ="#about"> 📙 overview</a>
 - <a href ="#Started"> 💻 Get Started</a>
 - <a href ="#Built"> 🔨 Built Using</a>
 - <a href ="#Screenshots"> 📷 Demo Screenshots</a>
@@ -28,7 +18,7 @@
 - <a href ="#Contributors"> ✨ Contributors</a>
 <hr style="background-color: #4b4c60"></hr>
 
-## 📙 About <a id = "about"></a>
+## <img align="center" height =40px src="images/emoji/minions-cute.gif"> overview <a id = "about"></a>
 
 <ul> 
 <li > A windows application for a train station DBMS. A train station DBMS
@@ -51,7 +41,7 @@ train trips, available seats and passengers in an easy way.
 </ul>
 <hr style="background-color: #4b4c60"></hr>
 
-## 💻 Get Started <a id = "Started"></a>
+## <img align= center width=70px height=70px src="images/emoji/monitors-computer.gif"> Get Started <a id = "Started"></a>
 
 <ol>
 <li>Clone the repository
@@ -71,7 +61,7 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 </ol>
 <hr style="background-color: #4b4c60"></hr>
 
-## 🔨 Built Using <a id ="Built"></a>
+## <img align= center width=50px height=50px src="images/emoji/building-construction-travel.gif"> Built Using <a id ="Built"></a>
 
 <ul>
   <li>Windows form application</li>
@@ -79,7 +69,7 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 </ul>
 <hr style="background-color: #4b4c60"></hr>
 
-## 📷 Demo Screenshots <a id ="Screenshots"></a>
+## <img align= center width=60px height=60px src="images/emoji/cute-penguin.gif"> Demo Screenshots <a id ="Screenshots"></a>
 
 ![image](https://user-images.githubusercontent.com/71986226/152590582-56b12986-57b6-4685-881c-2471ddf917c8.png)
 
@@ -117,7 +107,7 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 
 <hr style="background-color: #4b4c60"></hr>
 
-## 🧱 File Structure <a id="Structure"> </a>
+## <img align= center width=50px height=50px src="images/emoji/folder-walk.gif"> File Structure <a id="Structure"> </a>
 
 ```
 Train-Station
@@ -285,7 +275,7 @@ Train-Station
 
 <hr style="background-color: #4b4c60"></hr>
 
-## ✨ Contributors <a id ="Contributors"></a>
+## <img  width= 60px height =60px src="images/emoji/husky-and-shiba-二哈萌柴微信表情.gif"> Contributors <a id ="Contributors"></a>
 
 <table align="center" >
   <tr>
