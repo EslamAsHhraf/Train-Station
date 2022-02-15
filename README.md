@@ -74,6 +74,10 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 
 ## <img align= center width=70px height=70px src="images/emoji/cute-penguin.gif"> Demo Screenshots <a id ="Screenshots"></a>
 
+![Uploading admin.gif…]()
+
+<hr></hr>
+
 ![image](https://user-images.githubusercontent.com/71986226/152590582-56b12986-57b6-4685-881c-2471ddf917c8.png)
 
 <hr></hr>
