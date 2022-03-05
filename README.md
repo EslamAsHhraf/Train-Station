@@ -46,7 +46,7 @@ train trips, available seats and passengers in an easy way.
 </ul>
 <hr style="background-color: #4b4c60"></hr>
 
-## <img align= center width=70px height=70px src="https://user-images.githubusercontent.com/71986226/154076272-37f6df38-6707-4eea-a737-96de97223e9e.gif"> Get Started <a id = "Started"></a>
+## <img align= center width=70px height=70px src="https://media0.giphy.com/media/QvpqIQAAl66EfoTJj8/200w.webp?cid=ecf05e47kn4j0qln8fk4xybgqwle0nju8stj9hjw4z6fk8c2&rid=200w.webp&ct=s"> Get Started <a id = "Started"></a>
 
 <ol>
 <li>Clone the repository
@@ -150,7 +150,7 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 
 <hr style="background-color: #4b4c60"></hr>
 
-## <img align= center width=60px height=60px src="https://user-images.githubusercontent.com/71986226/154076698-11ce2920-aba6-48db-8d4b-f55e36faf28e.gif"> File Structure <a id="Structure"> </a>
+## <img align= center width=60px height=60px src="https://media1.giphy.com/media/igsIZv3VwIIlRIpq5G/giphy.gif?cid=ecf05e47faatmwdhcst7c2d4eontr459hjd35zf3an324elo&rid=giphy.gif&ct=s"> File Structure <a id="Structure"> </a>
 
 ```
 Train-Station
