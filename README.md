@@ -77,47 +77,76 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 
 ## <img align= center width=70px height=70px src="https://user-images.githubusercontent.com/71986226/154076591-9c365459-41fe-4b2e-97d5-33042ba52053.gif"> Demo Screenshots <a id ="Screenshots"></a>
 
-
-![image](https://user-images.githubusercontent.com/71986226/152590582-56b12986-57b6-4685-881c-2471ddf917c8.png)
-
-<hr></hr>
-
-![image](https://user-images.githubusercontent.com/71986226/152595291-9620172c-1269-4065-91ca-d3bd3b8a7897.png)
+<p  align="center" > 
+<img width=80% src="https://user-images.githubusercontent.com/71986226/152590582-56b12986-57b6-4685-881c-2471ddf917c8.png">
+</p>
 
 <hr></hr>
 
-![image](https://user-images.githubusercontent.com/71986226/152595391-daee792e-79ee-430d-8aa1-65871834db30.png)
+<p  align="center" > 
+<img width=80% src="https://user-images.githubusercontent.com/71986226/152595291-9620172c-1269-4065-91ca-d3bd3b8a7897.png">
+</p>
+
 
 <hr></hr>
 
-![image](https://user-images.githubusercontent.com/71986226/152595482-f931c3b8-9340-4e58-a8b0-729cb113e327.png)
+<p  align="center" > 
+<img width=80% src="https://user-images.githubusercontent.com/71986226/152595391-daee792e-79ee-430d-8aa1-65871834db30.png">
+</p>
+
 
 <hr></hr>
 
-![image](https://user-images.githubusercontent.com/71986226/152595633-d7d64ccd-162a-4987-af51-b5c0acae61f0.png)
+
+<p  align="center" > 
+<img width=80% src="https://user-images.githubusercontent.com/71986226/152595482-f931c3b8-9340-4e58-a8b0-729cb113e327.png">
+</p>
+
 
 <hr></hr>
 
-![image](https://user-images.githubusercontent.com/71986226/152596490-2e174c9f-748a-416e-ab99-e203293bebdc.png)
+<p  align="center" > 
+<img width=80% src="https://user-images.githubusercontent.com/71986226/152595633-d7d64ccd-162a-4987-af51-b5c0acae61f0.png">
+</p>
+
 
 <hr></hr>
 
-![image](https://user-images.githubusercontent.com/71986226/152596595-201cc206-27b7-4a6d-b23f-ae45b16b8a35.png)
+<p  align="center" > 
+<img width=80% src="https://user-images.githubusercontent.com/71986226/152596490-2e174c9f-748a-416e-ab99-e203293bebdc.png">
+</p>
+
 
 <hr></hr>
 
-![image](https://user-images.githubusercontent.com/71986226/152596751-06bc6240-6446-4cac-b9c5-96e432d714e5.png)
+<p  align="center" > 
+<img width=80% src="https://user-images.githubusercontent.com/71986226/152596595-201cc206-27b7-4a6d-b23f-ae45b16b8a35.png">
+</p>
+
 
 <hr></hr>
 
-![image](https://user-images.githubusercontent.com/71986226/152596803-9a0b0a7e-69e7-4b7f-bbee-4ef64d7578da.png)
+<p  align="center" > 
+<img width=80% src="https://user-images.githubusercontent.com/71986226/152596751-06bc6240-6446-4cac-b9c5-96e432d714e5.png">
+</p>
+
+
+<hr></hr>
+
+<p  align="center" > 
+<img width=80% src="https://user-images.githubusercontent.com/71986226/152596803-9a0b0a7e-69e7-4b7f-bbee-4ef64d7578da.png">
+</p>
+
 
 <hr style="background-color: #4b4c60"></hr>
 
 ## <img  align= center width= 50px height =50px src="https://user-images.githubusercontent.com/71986226/154077167-a25cb6de-d3fe-494d-abf8-42204f62b177.gif">  GIF Demo <a id ="Video"></a>
 
+<p  align="center" > 
+<img width=80% src="https://user-images.githubusercontent.com/71986226/154062346-3b3045c4-f763-454b-ba0f-665294070b56.gif">
+</p>
 
-![admin](https://user-images.githubusercontent.com/71986226/154062346-3b3045c4-f763-454b-ba0f-665294070b56.gif)
+
 
 <hr style="background-color: #4b4c60"></hr>
 
