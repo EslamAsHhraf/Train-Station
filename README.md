@@ -1,7 +1,7 @@
 <div align=center >
    
 
-# <img  width=70px height=70px src="https://user-images.githubusercontent.com/71986226/154075707-8165db20-c25c-4093-86a6-d61996b22132.gif"> Train Station
+# 🚂 Train Station
 
 </div>
 <p align="center">
@@ -12,7 +12,7 @@
     <br> 
 </p>
 
-## <img align= center width=50px height=50px src="https://user-images.githubusercontent.com/71986226/154075883-2a5679d2-b411-448f-b423-9565babf35aa.gif"> Table of Contents
+## 📝 Table of Contents
 
 - <a href ="#about"> 📙 overview</a>
 - <a href ="#Started"> 💻 Get Started</a>
@@ -22,8 +22,9 @@
 - <a href ="#Structure"> 🧱 File Structure</a>
 - <a href ="#Contributors"> ✨ Contributors</a>
 <hr style="background-color: #4b4c60"></hr>
+<a id = "about"></a>
 
-## <img align="center"  height =50px src="https://user-images.githubusercontent.com/71986226/154076110-1233d7a8-92c2-4d79-82c1-30e278aa518a.gif"> overview <a id = "about"></a>
+## 📙 overview 
 
 <ul> 
 <li > A windows application for a train station DBMS. A train station DBMS
@@ -45,8 +46,9 @@ train trips, available seats and passengers in an easy way.
 </li>
 </ul>
 <hr style="background-color: #4b4c60"></hr>
+<a id = "Started"></a>
 
-## <img align= center width=70px height=70px src="https://media0.giphy.com/media/QvpqIQAAl66EfoTJj8/200w.webp?cid=ecf05e47kn4j0qln8fk4xybgqwle0nju8stj9hjw4z6fk8c2&rid=200w.webp&ct=s"> Get Started <a id = "Started"></a>
+## 🚀 Get Started 
 
 <ol>
 <li>Clone the repository
@@ -65,9 +67,9 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 </li>
 </ol>
 <hr style="background-color: #4b4c60"></hr>
+<a id ="Built"></a>
 
-
-## <img align= center width=50px height=50px src="https://user-images.githubusercontent.com/71986226/154076496-78b6f488-2e01-4606-a225-5bec3eb2f489.gif"> Built Using <a id ="Built"></a>
+## 🧱 Built Using 
 
 <ul>
   <li>Windows form application</li>
@@ -75,7 +77,7 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 </ul>
 <hr style="background-color: #4b4c60"></hr>
 
-## <img align= center width=70px height=70px src="https://user-images.githubusercontent.com/71986226/154076591-9c365459-41fe-4b2e-97d5-33042ba52053.gif"> Demo Screenshots <a id ="Screenshots"></a>
+## 📸 Demo Screenshots <a id ="Screenshots"></a>
 
 <p  align="center" > 
 <img width=80% src="https://user-images.githubusercontent.com/71986226/152590582-56b12986-57b6-4685-881c-2471ddf917c8.png">
@@ -139,8 +141,9 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 
 
 <hr style="background-color: #4b4c60"></hr>
+<a id ="Video"></a>
 
-## <img  align= center width= 50px height =50px src="https://user-images.githubusercontent.com/71986226/154077167-a25cb6de-d3fe-494d-abf8-42204f62b177.gif">  GIF Demo <a id ="Video"></a>
+## 🎥  GIF Demo 
 
 <p  align="center" > 
 <img width=80% src="https://user-images.githubusercontent.com/71986226/154062346-3b3045c4-f763-454b-ba0f-665294070b56.gif">
@@ -149,8 +152,9 @@ git clone https://github.com/EslamAsHhraf/Train-Station
 
 
 <hr style="background-color: #4b4c60"></hr>
+<a id="Structure"> </a>
 
-## <img align= center width=60px height=60px src="https://media1.giphy.com/media/igsIZv3VwIIlRIpq5G/giphy.gif?cid=ecf05e47faatmwdhcst7c2d4eontr459hjd35zf3an324elo&rid=giphy.gif&ct=s"> File Structure <a id="Structure"> </a>
+## 🗃️ File Structure 
 
 ```
 Train-Station
@@ -317,8 +321,9 @@ Train-Station
 ```
 
 <hr style="background-color: #4b4c60"></hr>
-
-## <img  width= 70px height =70px src="https://user-images.githubusercontent.com/71986226/154076804-fe8b1364-8a22-4f4c-a9b0-990ea68ea227.gif"> Contributors <a id ="Contributors"></a>
+ <a id ="Contributors"></a>
+ 
+## 👑 Contributors
 
 <table align="center" >
   <tr>
